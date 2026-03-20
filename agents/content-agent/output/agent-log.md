@@ -104,3 +104,22 @@ Run #3 complete. Here's what changed:
 - Copyright: removed the em dash (style rule violation), replaced with a period
 [2026-03-20 16:49:14] Run #3 finished
 [2026-03-20 16:49:19] Run #4 starting (model: sonnet)
+
+[2026-03-20] Content Agent Run #4 — Complete
+
+Style applied: Option 3 (Field guide) for IV and injection menu items. Option 2 (Founder memo) for product descriptions.
+
+Pages updated:
+- components/Footer.tsx: Fixed en dash in hours (Mon–Fri → Monday through Friday, style rule violation)
+- app/injections/page.tsx: Fixed semicolon in Skinny description (style rule violation); removed "boost" buzzword from Illari, Illari Plus, Energy, and Immunity descriptions; sharpened Glutathione Plus.
+- app/iv-infusions/page.tsx: Rewrote all 9 drip descriptions on the menu page for specificity and voice.
+- app/products/page.tsx: Rewrote all 6 AlumierMD product descriptions and all 4 Derma Made product descriptions.
+
+Key changes made:
+- Footer hours: "Mon – Fri" (en dash) → "Monday through Friday" per style rules.
+- Skinny injection: removed semicolon separating two clauses; made two clean sentences.
+- Removed "boost" from Illari, Illari Plus, and Energy injection names/descriptions.
+- IV infusion descriptions now explain the mechanism or the why behind each drip (Myers Cocktail history, NAD+ coenzyme mechanism, High Dose C oral absorption ceiling, Allergy histamine targeting, etc.).
+- AlumierMD product descriptions now reference in-office treatments for context (Bright & Clear used after cryoablation/peel, HydraDew after chemical peel, Retinol 0.5 vs OTC concentration limits).
+- Derma Made descriptions cut filler phrases ("advanced moisturizing formula", "optimal") and replaced with direct clinical context.
+[2026-03-20] Run #4 complete. Deployed and live.
