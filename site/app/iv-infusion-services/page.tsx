@@ -115,7 +115,7 @@ export default function IVTherapyPage() {
               </div>
               <h3 className="font-serif text-2xl text-white mb-4">Injections</h3>
               <p className="text-neutral-light text-sm leading-relaxed mb-6">
-                Quick intramuscular injections for targeted results including hair, skin, and nail boost, B12 energy, glutathione antioxidant, immunity, NAD+, and weight wellness. Approximately 15 minutes.
+                Intramuscular injections for targeted results. Hair, skin, and nails. B12 energy. Glutathione. Immunity. NAD+. Weight wellness. Each one takes about 15 minutes.
               </p>
               <p className="text-gold font-sans text-sm font-medium mb-6">Starting at $35</p>
               <Link href="/injections" className="btn-outline-white">
@@ -131,7 +131,7 @@ export default function IVTherapyPage() {
               </div>
               <h3 className="font-serif text-2xl text-dark-medium mb-4">Add-Ons</h3>
               <p className="text-neutral-medium text-sm leading-relaxed mb-6">
-                Enhance any IV infusion with add-on boosters including glutathione, Toradol for pain, Zofran for nausea, and additional hydration.
+                Add glutathione, Toradol for pain relief, Zofran for nausea, or extra saline to any IV infusion. Tell us when you book or when you arrive.
               </p>
               <p className="text-gold font-sans text-sm font-medium mb-6">Starting at $35</p>
               <Link href="/add-ons" className="btn-outline">

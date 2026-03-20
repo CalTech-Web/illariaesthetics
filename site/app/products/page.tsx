@@ -128,7 +128,7 @@ export default function ProductsPage() {
               <h2 className="text-4xl font-serif text-dark-medium mb-4">AlumierMD</h2>
               <div className="gold-divider-left" />
               <p className="text-neutral-medium leading-relaxed mb-6">
-                A true professionally-dispensed medical-grade skincare brand dedicated to the latest advancements in Clean Science, delivering therapeutic outcomes for patients presenting an array of skin conditions and concerns.
+                AlumierMD is what the industry calls clean science. The formulations are built for clinical use, not general retail. No unnecessary fillers, no preservatives that compromise active ingredients. Dr. Chavez carries it because it holds up to the same standard he applies to everything else in the practice.
               </p>
               <p className="text-neutral-medium leading-relaxed mb-8">
                 AlumierMD products used at Illari Aesthetics are available through our physician referral link. Same formulas, same guidance. Not a third-party reseller.

@@ -7,10 +7,10 @@ export const metadata: Metadata = {
 };
 
 const addOns = [
-  { name: "Glutathione", price: "$35+", description: "Enhance your IV treatment with this powerful antioxidant for added radiance and cellular protection." },
-  { name: "Toradol", price: "$35", description: "Add pain relief to your infusion session." },
-  { name: "Zofran", price: "$35", description: "Curb nausea and vomiting during or after your infusion." },
-  { name: "Additional Hydration", price: "$35+", description: "Extra saline to boost hydration beyond your standard infusion." },
+  { name: "Glutathione", price: "$35+", description: "The same antioxidant available as a standalone injection, added directly into your drip. Supports skin radiance and cellular detox. No extra appointment needed." },
+  { name: "Toradol", price: "$35", description: "Ketorolac, a non-opioid anti-inflammatory, delivered intravenously. Works faster than a pill and skips your stomach entirely. Useful for headaches, muscle pain, or inflammation." },
+  { name: "Zofran", price: "$35", description: "Ondansetron for nausea. Particularly useful during hangover recovery or if you experience GI sensitivity from certain drip formulas." },
+  { name: "Additional Hydration", price: "$35+", description: "Plain saline added to your infusion. More volume, more time in the chair. Worth it if you came in dehydrated or want to push your recovery further." },
 ];
 
 export default function AddOnsPage() {

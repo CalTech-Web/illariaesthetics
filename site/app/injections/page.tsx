@@ -11,12 +11,12 @@ const injections = [
   { name: "Illari Plus", price: "$40", description: "The Illari injection plus a glow antioxidant. Same 15 minutes, wider effect." },
   { name: "Energy", price: "$35", description: "B12 injected directly into muscle. Cuts fatigue faster than any supplement you can swallow." },
   { name: "Energy Plus", price: "$40", description: "Full B complex for energy and immune support, not just B12 alone." },
-  { name: "Glutathione", price: "$35", description: "Antioxidant to fight free radicals and promote anti-aging." },
+  { name: "Glutathione", price: "$35", description: "Master antioxidant your liver produces naturally. Levels drop with age, stress, and poor diet. One shot replenishes them faster than any supplement." },
   { name: "Glutathione Plus", price: "$40", description: "Double the glutathione. Twice the antioxidant load in the same 15-minute window." },
   { name: "Immunity", price: "$40", description: "Three-part formula targeting immune defense, inflammation reduction, and free radical damage." },
   { name: "Skinny", price: "$40", description: "Intended to complement diet and exercise. May release stored fat deposits. Not a standalone weight loss solution." },
-  { name: "NAD+ 50mg", price: "$75", description: "Reverse aging, support DNA repair, and help with withdrawal symptoms." },
-  { name: "NAD+ 100mg", price: "$100", description: "Higher-dose NAD+ for reverse aging, DNA repair, and withdrawal symptom support." },
+  { name: "NAD+ 50mg", price: "$75", description: "NAD+ coenzyme for cellular energy and DNA repair at a starter dose. Good for first-timers. Effects are real and manageable." },
+  { name: "NAD+ 100mg", price: "$100", description: "Full therapeutic dose. Stronger cellular energy response, deeper impact on DNA repair. For those who have done the 50mg or want the higher tier from the start." },
 ];
 
 export default function InjectionsPage() {

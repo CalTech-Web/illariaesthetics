@@ -123,3 +123,18 @@ Key changes made:
 - AlumierMD product descriptions now reference in-office treatments for context (Bright & Clear used after cryoablation/peel, HydraDew after chemical peel, Retinol 0.5 vs OTC concentration limits).
 - Derma Made descriptions cut filler phrases ("advanced moisturizing formula", "optimal") and replaced with direct clinical context.
 [2026-03-20] Run #4 complete. Deployed and live.
+**Run #4 complete. Deployed and live.**
+
+Here's what changed across 4 files:
+
+**Style rule violations fixed**
+- `Footer.tsx` — "Mon &ndash; Fri" (en dash between text words) replaced with "Monday through Friday"
+- `injections/page.tsx` — Skinny injection description had a semicolon splitting two clauses; now two clean sentences
+
+**Injections page** — Removed "boost" as a buzzword from 4 descriptions. Illari is now "Nutrients for hair, skin, and nails. One shot, 15 minutes." Energy is now "B12 injected directly into muscle. Cuts fatigue faster than any supplement you can swallow." Immunity drops "amplify" for a more direct three-part breakdown.
+
+**IV infusions menu page** — All 9 drip descriptions sharpened. Allergy now targets "histamine response" specifically. Myers Cocktail gets its history (Dr. John Myers, 1960s). High Dose C explains the oral absorption problem before stating the benefit. Modest is honest and direct: "Plain saline. No vitamins, no add-ons." NAD+ explains the coenzyme mechanism.
+
+**Products page** — AlumierMD descriptions now tie products to in-office treatments (Bright & Clear used after cryoablation or peels, HydraDew positioned as peel aftercare, Retinol 0.5 calls out the OTC concentration gap). Derma Made descriptions cut filler phrases and added clinical context.
+[2026-03-20 16:56:11] Run #4 finished
+[2026-03-20 16:56:16] Run #5 starting (model: sonnet)
