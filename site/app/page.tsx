@@ -94,6 +94,32 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Google Trust Band */}
+      <section className="py-14 bg-dark-medium border-b border-gold/20">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+          <p className="text-gold text-xs tracking-widest uppercase mb-5 font-sans">Patient Trust</p>
+          <div className="flex justify-center gap-1 mb-4">
+            {[1, 2, 3, 4, 5].map((i) => (
+              <svg key={i} className="w-8 h-8 text-gold" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            ))}
+          </div>
+          <p className="text-white font-serif text-3xl mb-2">5.0 Stars on Google</p>
+          <p className="text-neutral-light text-sm leading-relaxed mb-6 max-w-lg mx-auto">
+            Patients across Chicago&apos;s Wicker Park trust Illari Aesthetics for physician-led care and medical-grade results.
+          </p>
+          <a
+            href="https://www.google.com/maps/place/Illari+Aesthetics"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-outline-white text-xs"
+          >
+            Read Reviews
+          </a>
+        </div>
+      </section>
+
       {/* About Intro */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
