@@ -61,14 +61,18 @@ export default function IVTherapyPage() {
             At Illari Aesthetics in Chicago, every IV infusion is administered in a physician-supervised environment, ensuring safety, proper formulation, and optimal results for your specific goals.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 relative">
+            {/* Connector line — desktop only */}
+            <div className="hidden md:block absolute top-8 left-[16.67%] right-[16.67%] h-px bg-gold/25 z-0" />
             {[
               { step: "01", title: "Select Your Drip", detail: "Choose from our full menu of infusions targeting beauty, energy, immunity, hydration, and more." },
               { step: "02", title: "Relax (About 45 Min)", detail: "Sit back in our comfortable treatment room while your IV infusion delivers nutrients directly to your cells." },
               { step: "03", title: "Feel the Difference", detail: "Many patients notice effects immediately or within hours as nutrients are rapidly absorbed and utilized." },
             ].map((item) => (
-              <div key={item.step} className="text-center">
-                <div className="text-5xl font-serif text-gold/20 mb-4">{item.step}</div>
+              <div key={item.step} className="text-center relative z-10">
+                <div className="w-16 h-16 rounded-full border-2 border-gold flex items-center justify-center mx-auto mb-6 bg-white">
+                  <span className="font-serif text-gold text-xl">{item.step}</span>
+                </div>
                 <h3 className="font-serif text-xl text-dark-medium mb-3">{item.title}</h3>
                 <p className="text-neutral-medium text-sm leading-relaxed">{item.detail}</p>
               </div>
