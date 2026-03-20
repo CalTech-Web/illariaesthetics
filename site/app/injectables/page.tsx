@@ -29,7 +29,7 @@ export default function InjectablesPage() {
           </h1>
           <div className="w-16 h-px bg-gold mb-8" />
           <p className="text-white/70 text-lg max-w-2xl leading-relaxed mb-10">
-            When a physician administers your injectables, the results are different. Dr. Chavez combines 30+ years of medical expertise with advanced training in filler technique to deliver natural, precise results in Chicago&apos;s Wicker Park.
+            Anatomy, dosing, placement depth. When a physician administers your injectables, those decisions are backed by 30 years of clinical training, not a certification course. Dr. Chavez brings that same precision to every appointment at Illari Aesthetics in Wicker Park.
           </p>
           <a
             href="https://illariaesthetics.zenoti.com/webstoreNew/services/e815a1a1-0210-4e12-bd1b-4cd9d22b34c2"
@@ -49,10 +49,10 @@ export default function InjectablesPage() {
           <h2 className="section-title">Doctor-Level Precision in Every Injection</h2>
           <div className="gold-divider" />
           <p className="text-neutral-medium leading-relaxed mb-6 text-lg">
-            In Chicago, many med spas offer injectables performed by nurse practitioners or estheticians. At Illari Aesthetics, Dr. Chavez, a board-certified family physician with additional specialized training in advanced filler technique, performs your treatment. The depth of medical knowledge matters when it comes to anatomy, dosing, and outcome.
+            Most Chicago med spas use nurse practitioners or estheticians for injectables. Dr. Chavez is a board-certified family physician with advanced training specifically in filler technique. That is a different level of anatomical knowledge, and it shows in how your results turn out.
           </p>
           <p className="text-neutral-medium leading-relaxed text-lg">
-            Every injectable treatment is fully customized to your facial anatomy, your goals, and your medical history, delivering results that look natural and feel like you.
+            Every treatment is built around your facial anatomy, your goals, and your medical history. Results that look natural, not like you had work done.
           </p>
         </div>
       </section>
@@ -80,7 +80,7 @@ export default function InjectablesPage() {
               <h3 className="font-serif text-2xl text-dark-medium mb-4">Wrinkle Relaxers</h3>
               <div className="w-8 h-px bg-gold mb-4" />
               <p className="text-neutral-medium leading-relaxed mb-4">
-                Relax muscles and temporarily reduce the appearance of fine lines and wrinkles. Dr. Chavez uses leading wrinkle relaxer brands to achieve soft, natural-looking results tailored to your expressions and face.
+                Relax the muscles that create fine lines and wrinkles. Dr. Chavez calibrates dosing and placement to your face and your natural expressions, so results read as refreshed, not frozen.
               </p>
               <p className="text-sm text-neutral-medium font-sans">
                 <span className="text-gold font-medium">Brands used:</span> Botox, Xeomin, and Dysport
@@ -100,7 +100,7 @@ export default function InjectablesPage() {
               <h3 className="font-serif text-2xl text-dark-medium mb-4">Filler</h3>
               <div className="w-8 h-px bg-gold mb-4" />
               <p className="text-neutral-medium leading-relaxed mb-4">
-                Hyaluronic acid dermal filler restores volume to the face, smooths fine lines and wrinkles, and creates fuller, plumper lips. Dr. Chavez&apos;s advanced filler technique training means every placement is precise and results look natural, not overdone.
+                Hyaluronic acid filler restores volume, smooths lines, and enhances lips. Dr. Chavez trained specifically in advanced filler technique. Precise placement and conservative dosing mean results that hold up and look like you, not a filter.
               </p>
               <p className="text-sm text-neutral-medium font-sans">
                 <span className="text-gold font-medium">Product type:</span> Hyaluronic Acid
@@ -120,7 +120,7 @@ export default function InjectablesPage() {
               <h3 className="font-serif text-2xl text-dark-medium mb-4">PRF (Platelet Rich Fibrinogen)</h3>
               <div className="w-8 h-px bg-gold mb-4" />
               <p className="text-neutral-medium leading-relaxed mb-4">
-                A natural option derived entirely from your own blood. One to two vials are drawn and spun at lower speed to separate PRF from red blood cells, then injected back into the treatment area. Used for skin rejuvenation, hair growth promotion, and wound healing support.
+                Derived entirely from your own blood. One to two vials are drawn, spun at lower speed to separate PRF from red blood cells, and injected back into the treatment area. Used for skin rejuvenation, hair growth support, and wound healing. Nothing foreign introduced.
               </p>
               <p className="text-sm text-neutral-medium font-sans">
                 <span className="text-gold font-medium">Source:</span> Your own blood, 100% natural
@@ -168,11 +168,11 @@ export default function InjectablesPage() {
             {[
               {
                 q: "What injectables do you offer?",
-                a: "We offer wrinkle relaxers including Botox, Xeomin, and Dysport, as well as hyaluronic acid dermal fillers for volume restoration and lip enhancement, and PRF (Platelet Rich Fibrinogen) treatments using your own blood for natural skin rejuvenation and hair growth support.",
+                a: "Wrinkle relaxers including Botox, Xeomin, and Dysport. Hyaluronic acid dermal filler for volume and lip enhancement. And PRF, a treatment derived from your own blood used for skin rejuvenation, hair growth support, and wound healing.",
               },
               {
                 q: "Why should I choose a physician over a nurse practitioner for injectables?",
-                a: "Dr. Chavez brings 30+ years of medical training and specialized knowledge of facial anatomy to every injection. His advanced filler technique training and physician-level understanding of physiology means a higher standard of safety, precision, and outcome for your treatment.",
+                a: "Dr. Chavez brings 30 years of clinical training and a physician's knowledge of facial anatomy to every injection. His advanced filler technique training is not standard at most med spas. The difference shows in safety, accuracy, and how the results actually look.",
               },
               {
                 q: "How long do wrinkle relaxers last?",
@@ -184,7 +184,7 @@ export default function InjectablesPage() {
               },
               {
                 q: "Is PRF safe?",
-                a: "Yes. PRF is derived entirely from your own blood, making it one of the most biocompatible treatments available. There is no risk of allergic reaction to a foreign substance. As a physician, Dr. Chavez follows strict protocols for blood draw and processing.",
+                a: "Yes. PRF comes entirely from your own blood, so there is no risk of allergic reaction to a foreign substance. As a physician, Dr. Chavez follows strict clinical protocols for every step of the draw and processing.",
               },
             ].map((item) => (
               <details key={item.q} className="border border-neutral-bg bg-white group">

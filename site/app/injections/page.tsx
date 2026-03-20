@@ -29,7 +29,7 @@ export default function InjectionsPage() {
           <h1 className="text-5xl font-serif text-white mb-6">Injections</h1>
           <div className="w-16 h-px bg-gold mx-auto mb-8" />
           <p className="text-neutral-light leading-relaxed text-lg max-w-2xl mx-auto">
-            Quick intramuscular injections targeting specific wellness goals. Each appointment takes approximately 15 minutes.
+            Fifteen minutes. One injection, direct into muscle for fast absorption. No IV required. Each option targets a specific outcome.
           </p>
         </div>
       </section>

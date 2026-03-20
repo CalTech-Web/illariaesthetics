@@ -28,7 +28,7 @@ export default function IVInfusionsPage() {
           <h1 className="text-5xl font-serif text-white mb-6">IV Infusions</h1>
           <div className="w-16 h-px bg-gold mx-auto mb-8" />
           <p className="text-neutral-light leading-relaxed text-lg max-w-2xl mx-auto">
-            Full intravenous drips delivering concentrated vitamins, minerals, and nutrients directly into your bloodstream. Each session takes approximately 45 minutes.
+            Every drip on this menu delivers nutrients straight into your bloodstream, bypassing your digestive system entirely. Sessions run about 45 minutes. Choose based on what you need today.
           </p>
         </div>
       </section>

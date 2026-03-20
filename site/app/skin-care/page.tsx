@@ -10,33 +10,33 @@ export const metadata: Metadata = {
 const treatments = [
   {
     title: "Skin Survey",
-    description: "A full facial survey of all facial lesions, scars, and blemishes with treatment options, recommendations, and pricing. Ideal for clients who are unsure of their needs or are seeking a second professional opinion. Dr. Chavez reviews your skin with the precision of a physician, not an esthetician.",
+    description: "A full facial assessment covering all lesions, scars, and blemishes, with treatment options and transparent pricing. If you are unsure what your skin needs, or want a second opinion from an actual physician, this is where to start.",
     image: "/assets/gallery/skincare-survey.jpg",
   },
   {
     title: "Cryoablation",
-    description: "Uses extremely cold liquid to freeze and destroy abnormal tissue. Dr. Chavez uses this physician-grade technique to target hyperpigmentation, sun spots, benign skin tissue, melasma, and irregular pigmentation. A medical approach to stubborn pigmentation concerns.",
+    description: "Extremely cold liquid applied with precision to freeze and destroy abnormal tissue. Dr. Chavez uses cryoablation to target hyperpigmentation, sun spots, melasma, and irregular pigmentation. A physician-grade technique for pigmentation that does not respond to topical treatments.",
     image: "/assets/gallery/skincare-cryo.jpg",
   },
   {
     title: "Surgical Dermatology",
-    description: "Removal of warts, suspicious or benign lesions, and moles with minimal scarring. Also addresses scar removal and revisions. As a physician with specialized training in surgical scar revisions, Dr. Chavez brings clinical precision to every dermatological procedure.",
+    description: "Wart removal, lesion and mole removal, scar revision. Dr. Chavez trained specifically in surgical scar revisions, which is not common at med spas. If you have a scar or a suspicious growth you want addressed by an actual physician, this is the treatment.",
     image: "/assets/gallery/skincare-surgical.jpg",
   },
   {
     title: "Chemical Peels",
-    description: "Customizable to any peel history, our chemical peels improve skin tone and pigmentation, target acne, and reduce pore size. We use higher-grade medical products than what is available at a typical spa, resulting in better patient outcomes.",
+    description: "Chemical peels customized to your peel history and skin type, improving tone, targeting acne, and reducing pore size. The difference here is the grade of products. Dr. Chavez uses medical-grade formulations that are not available at a standard spa.",
     image: "/assets/gallery/skincare-facial.jpg",
     quote: "As a doctor, we use higher grade medical products for a better patient result.",
   },
   {
     title: "Dermaplane",
-    description: "Manual exfoliation that removes surface debris, increases topical product absorption, and creates a healthier, more radiant appearance. Pairs beautifully with a facial or chemical peel for enhanced results.",
+    description: "Manual exfoliation that clears surface debris and significantly increases topical product absorption. Cleaner delivery means the AlumierMD or Derma Made products applied afterward actually do more. Works well paired with a chemical peel.",
     image: "/assets/gallery/skincare-dermaplane.jpg",
   },
   {
     title: "Microneedling",
-    description: "Promotes collagen and elastin production by creating small, controlled injuries in the first layer of skin to keep skin firm and smooth. Excellent for texture concerns, acne scarring, and overall skin rejuvenation.",
+    description: "Small controlled injuries to the first layer of skin trigger collagen and elastin production. The result is firmer, smoother skin over time. Good for texture, acne scarring, and general skin renewal.",
     image: "/assets/gallery/skincare-microneedling.jpg",
   },
 ];
@@ -64,7 +64,7 @@ export default function SkinCarePage() {
           </h1>
           <div className="w-16 h-px bg-gold mb-8" />
           <p className="text-white/70 text-lg max-w-2xl leading-relaxed mb-10">
-            At Illari Aesthetics in Wicker Park, Chicago, every skin care treatment is guided by Dr. Milton Chavez, a board-certified family physician with over 30 years of clinical experience. The difference is measurable.
+            Most skin care in Chicago is performed by estheticians using retail-grade products. At Illari Aesthetics, it is guided by a board-certified family physician with 30 years of clinical experience, using products that require medical oversight to dispense. That is a meaningful distinction.
           </p>
           <a
             href="https://illariaesthetics.zenoti.com/webstoreNew/services/e815a1a1-0210-4e12-bd1b-4cd9d22b34c2"
@@ -84,7 +84,7 @@ export default function SkinCarePage() {
           <h2 className="section-title">A Physician&apos;s Approach to Skin Health</h2>
           <div className="gold-divider" />
           <p className="text-neutral-medium leading-relaxed mb-6 text-lg">
-            When Dr. Chavez examines your skin, he draws on 30+ years of clinical and academic training from Rush University. He evaluates with medical precision, not just aesthetic intuition. Every treatment recommendation is backed by evidence-based medicine and performed with professional-grade products from AlumierMD and Derma Made.
+            When Dr. Chavez examines your skin, he is drawing on 30 years of clinical and academic training, not aesthetic intuition. He sees lesions, pigmentation patterns, and scarring the way a physician does. Every recommendation is backed by that same training, and carried out with AlumierMD and Derma Made, two professional lines not available over the counter.
           </p>
           <blockquote className="border border-gold/20 p-8 mt-10">
             <p className="text-dark-medium font-serif italic text-2xl leading-relaxed">
@@ -158,7 +158,7 @@ export default function SkinCarePage() {
           <h2 className="section-title-white">Medical-Grade Products for Better Results</h2>
           <div className="gold-divider" />
           <p className="text-neutral-light leading-relaxed mb-10">
-            Dr. Chavez uses and recommends AlumierMD and Derma Made, two professional-grade skincare lines not available over the counter. These are the same products used during your in-office treatments, available to continue your results at home.
+            Dr. Chavez uses AlumierMD and Derma Made in every in-office treatment. These are professionally dispensed lines, not available at retail, chosen because they match the clinical standards of the practice. You can continue using them at home through Illari Aesthetics.
           </p>
           <Link href="/products" className="btn-primary">
             Shop Our Products
@@ -179,7 +179,7 @@ export default function SkinCarePage() {
             {[
               {
                 q: "What makes Illari Aesthetics different from other skin care spas in Chicago?",
-                a: "Dr. Chavez is a board-certified family physician with over 30 years of clinical experience. He evaluates your skin with medical precision and uses higher-grade professional products than those available at a typical beauty spa. Every treatment is customized, never templated.",
+                a: "Dr. Chavez is a board-certified family physician with over 30 years of clinical experience, trained at Rush University and retained as faculty. He evaluates your skin the way a physician does and uses products that are not available to non-medical providers. Every plan is built for you, not borrowed from a template.",
               },
               {
                 q: "What skin care treatments do you offer?",
@@ -187,7 +187,7 @@ export default function SkinCarePage() {
               },
               {
                 q: "How do I know which treatment is right for me?",
-                a: "Schedule a Skin Survey with Dr. Chavez. He will perform a full facial assessment and recommend treatment options, a personalized plan, and transparent pricing based on your unique skin type and concerns.",
+                a: "Start with the Skin Survey. Dr. Chavez performs a full facial assessment and walks you through treatment options, a recommended plan, and transparent pricing based on your specific skin and concerns.",
               },
               {
                 q: "Do you use different products than a regular spa?",

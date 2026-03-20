@@ -81,7 +81,7 @@ export default function ProductsPage() {
           </h1>
           <div className="w-16 h-px bg-gold mb-8" />
           <p className="text-white/70 text-lg max-w-2xl leading-relaxed">
-            Illari Aesthetics carries and recommends AlumierMD and Derma Made, two professionally dispensed skincare lines used during in-office treatments and available for your home regimen.
+            The products we use on you in the office are the same ones we recommend for home. AlumierMD and Derma Made are professionally dispensed, meaning you cannot walk into a pharmacy and pick them up. They require a medical provider, and the formulations are built for clinical outcomes.
           </p>
         </div>
       </section>
@@ -93,7 +93,7 @@ export default function ProductsPage() {
           <h2 className="section-title">The Same Products We Use in Office</h2>
           <div className="gold-divider" />
           <p className="text-neutral-medium leading-relaxed mb-6 text-lg">
-            We chose AlumierMD and Derma Made because they are the same products Dr. Chavez and our staff use during your in-office treatments. These professional-grade lines are not available over the counter because they require medical oversight to use correctly and safely.
+            Most skincare products at retail are formulated to be safe for anyone. That is not a criticism. It just means the concentrations stay low. Medical-grade lines like AlumierMD and Derma Made are dispensed through medical providers because the formulations are more potent. You need proper guidance to use them correctly.
           </p>
           <blockquote className="border border-gold/20 p-8 mt-8">
             <p className="text-dark-medium font-serif italic text-xl leading-relaxed">
@@ -104,7 +104,7 @@ export default function ProductsPage() {
             </cite>
           </blockquote>
           <p className="text-neutral-medium leading-relaxed mt-8">
-            We chose these products to complement the services we offer and the recommendations we give. Every product we carry is one we stand behind clinically.
+            We carry what we use. Every product on this page is something Dr. Chavez and the staff have used in the office. Not a lineup assembled for the sake of having a retail section.
           </p>
         </div>
       </section>
@@ -131,7 +131,7 @@ export default function ProductsPage() {
                 A true professionally-dispensed medical-grade skincare brand dedicated to the latest advancements in Clean Science, delivering therapeutic outcomes for patients presenting an array of skin conditions and concerns.
               </p>
               <p className="text-neutral-medium leading-relaxed mb-8">
-                AlumierMD products used at Illari Aesthetics can be purchased online through our physician referral link, ensuring you receive the correct formulas with proper guidance.
+                AlumierMD products used at Illari Aesthetics are available through our physician referral link. Same formulas, same guidance. Not a third-party reseller.
               </p>
               <a
                 href="https://www.alumiermd.com/products?code=44A5EB2P"
@@ -178,10 +178,10 @@ export default function ProductsPage() {
               <h2 className="text-4xl font-serif text-dark-medium mb-4">Derma Made</h2>
               <div className="gold-divider-left" />
               <p className="text-neutral-medium leading-relaxed mb-6">
-                Derma Made is a professional skincare brand with a 94% recommendation rate, trusted by physicians and skincare professionals. Dr. Chavez and the Illari Aesthetics team use and recommend Derma Made products alongside treatments to extend and enhance results.
+                Derma Made carries a 94% recommendation rate among the physicians who use it. Dr. Chavez reaches for it alongside treatments when the clinical profile fits the patient.
               </p>
               <p className="text-neutral-medium leading-relaxed mb-8">
-                Available for purchase in-office at Illari Aesthetics. Ask our staff for personalized recommendations based on your skin type, concerns, and treatment plan.
+                Available in office. The right product depends on your skin type and what treatments you have in progress. Our staff will walk you through it.
               </p>
               <a
                 href="https://illariaesthetics.zenoti.com/webstoreNew/services/e815a1a1-0210-4e12-bd1b-4cd9d22b34c2"
@@ -224,7 +224,7 @@ export default function ProductsPage() {
           <h2 className="section-title-white mb-6">Not Sure Which Products Are Right for You?</h2>
           <div className="gold-divider" />
           <p className="text-neutral-light mb-10 max-w-xl mx-auto leading-relaxed">
-            Dr. Chavez and our team can recommend the right products for your skin type and concerns during a consultation or skin survey. We only recommend what we use and believe in clinically.
+            Book a skin survey or consultation. Dr. Chavez reviews your skin and tells you exactly what to use and in what order. No guesswork involved.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a

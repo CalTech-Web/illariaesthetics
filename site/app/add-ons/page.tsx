@@ -23,7 +23,7 @@ export default function AddOnsPage() {
           <h1 className="text-5xl font-serif text-white mb-6">IV Add-Ons</h1>
           <div className="w-16 h-px bg-gold mx-auto mb-8" />
           <p className="text-neutral-light leading-relaxed text-lg max-w-2xl mx-auto">
-            Customize and enhance any IV infusion with targeted add-ons. Available to complement any drip from our full IV menu.
+            Most infusions work harder with the right add-on. Glutathione, pain relief, anti-nausea, extra saline. Tell us what you need when you book or when you arrive.
           </p>
         </div>
       </section>

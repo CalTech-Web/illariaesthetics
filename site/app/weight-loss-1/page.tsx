@@ -29,7 +29,7 @@ export default function WeightLossPage() {
           </h1>
           <div className="w-16 h-px bg-gold mb-8" />
           <p className="text-white/70 text-lg max-w-2xl leading-relaxed mb-10">
-            The GLP-1 weight loss program at Illari Aesthetics is physician-supervised from start to finish. Dr. Chavez provides personalized medication dosing, monthly check-ins, and ongoing support for sustainable results in Chicago&apos;s Wicker Park.
+            GLP-1 medications work. The clinical evidence is clear. But medication alone is not a program. Dr. Chavez supervises every step, adjusting dosing based on your response and checking in monthly. This is physician-led weight loss in Chicago&apos;s Wicker Park, not a subscription box.
           </p>
           <a
             href="https://illariaesthetics.zenoti.com/webstoreNew/services/e815a1a1-0210-4e12-bd1b-4cd9d22b34c2"
@@ -51,10 +51,10 @@ export default function WeightLossPage() {
               <h2 className="section-title">GLP-1 Weight Loss Program</h2>
               <div className="gold-divider-left" />
               <p className="text-neutral-medium leading-relaxed mb-6">
-                Illari Aesthetics offers a physician-supervised GLP-1 receptor agonist program using tirzepatide and semaglutide, two of the most clinically studied medications for sustained weight loss. Unlike commercial weight loss programs, our approach is guided by Dr. Chavez, a board-certified physician with the medical background to customize your treatment safely and effectively.
+                The program uses tirzepatide and semaglutide, two GLP-1 receptor agonists with strong clinical track records for sustained weight loss. Dr. Chavez is a board-certified family physician, which means he is not just writing the prescription. He is evaluating your response, adjusting dosing, and making decisions informed by your actual medical history.
               </p>
               <p className="text-neutral-medium leading-relaxed mb-8">
-                The program includes monthly provider check-ins, tailored medication regimens based on your individual response, and regular weight assessments to track your progress. Our goal is sustainable, long-term results, not a quick fix.
+                Monthly check-ins, regular weight assessments, and a regimen that changes as you do. The goal is results that hold, not a number you hit and lose again.
               </p>
 
               <div className="grid grid-cols-2 gap-4 mb-8">
@@ -132,19 +132,19 @@ export default function WeightLossPage() {
             {[
               {
                 title: "Targeting Brain and GI Receptors",
-                description: "GLP-1 receptor agonists target receptors in both the brain and gastrointestinal tract, mimicking the natural GLP-1 hormone your body produces. This dual-action approach makes them highly effective for appetite regulation.",
+                description: "GLP-1 receptor agonists mimic the natural GLP-1 hormone your body produces, targeting receptors in both the brain and GI tract. That dual action is what makes them more effective than appetite suppressants that only work on one pathway.",
               },
               {
                 title: "Appetite Regulation",
-                description: "By slowing gastric emptying and promoting feelings of fullness, GLP-1 medications naturally reduce caloric intake without the need for extreme restriction. Many patients notice significant appetite changes within the first few weeks.",
+                description: "The medication slows gastric emptying and promotes fullness, so you eat less without fighting hunger all day. Many patients notice appetite changes within the first few weeks of starting treatment.",
               },
               {
                 title: "Metabolic Benefits",
-                description: "These medications increase energy expenditure and improve insulin sensitivity, supporting not just weight loss but overall metabolic health. The result is gradual, sustainable weight reduction alongside improved wellness markers.",
+                description: "GLP-1 medications also increase energy expenditure and improve insulin sensitivity. The weight loss comes alongside real metabolic improvements, which is why the results tend to be gradual and lasting rather than dramatic and short-lived.",
               },
               {
                 title: "Physician Oversight",
-                description: "Under Dr. Chavez's supervision, your dosage is carefully calibrated to your individual response. Monthly check-ins allow for adjustments that maximize effectiveness while minimizing side effects.",
+                description: "Dr. Chavez adjusts your dosage based on how your body responds, not a fixed schedule. Monthly check-ins exist specifically for this. No two patients follow exactly the same path through the program.",
               },
             ].map((item) => (
               <div key={item.title} className="flex gap-6">
@@ -172,15 +172,15 @@ export default function WeightLossPage() {
             {[
               {
                 q: "Which GLP-1 medications do you offer?",
-                a: "We offer tirzepatide and semaglutide, two of the most clinically studied GLP-1 receptor agonist medications currently available. Dr. Chavez will recommend the most appropriate option based on your medical history, goals, and candidacy.",
+                a: "Tirzepatide and semaglutide, two GLP-1 receptor agonists with strong clinical research behind them. Dr. Chavez will recommend the right one based on your medical history, health profile, and goals.",
               },
               {
                 q: "Am I a candidate for the weight loss program?",
-                a: "GLP-1 programs are suitable for individuals with a BMI of 27 or greater, or those who have struggled with weight loss through diet and exercise alone. Schedule a consultation with Dr. Chavez to determine if the program is right for your health profile.",
+                a: "Generally, GLP-1 programs are appropriate for adults with a BMI of 27 or greater, or people who have tried diet and exercise without lasting results. Schedule a consultation with Dr. Chavez to confirm based on your health profile.",
               },
               {
                 q: "What are the potential side effects?",
-                a: "Common early side effects include nausea, vomiting, and diarrhea, particularly as your body adjusts to the medication. Injection site reactions such as redness or itching may also occur. Most side effects resolve with continued use and proper dosage adjustment, which Dr. Chavez monitors during monthly check-ins.",
+                a: "Nausea, vomiting, and diarrhea are the most common early side effects, particularly as your body adjusts to the medication. Some people experience redness or itching at the injection site. Most of these resolve over time. Dr. Chavez monitors and adjusts dosing at your monthly check-ins to minimize them.",
               },
               {
                 q: "What does the program cost?",
@@ -188,11 +188,11 @@ export default function WeightLossPage() {
               },
               {
                 q: "How quickly will I see results?",
-                a: "Some patients notice appetite changes within the first few weeks of starting treatment. Most see gradual, measurable weight loss over several months. Consistent use combined with a healthy lifestyle and Dr. Chavez's guidance optimizes long-term results.",
+                a: "Some patients notice appetite changes within the first few weeks. Measurable weight loss typically follows over several months with consistent use. Results vary by person, but Dr. Chavez is tracking your progress and adjusting the plan the whole time.",
               },
               {
                 q: "Why choose Illari Aesthetics for my weight loss program?",
-                a: "Unlike commercial weight loss clinics, Illari Aesthetics is led by Dr. Chavez, a board-certified family physician. His clinical background means your program is medically sound, personally supervised, and adjusted based on your ongoing health, not a standardized protocol.",
+                a: "Commercial weight loss clinics scale by standardizing everything. Dr. Chavez does the opposite. He is a board-certified family physician reviewing your actual health at every visit and adjusting your program based on what he sees, not a template.",
               },
             ].map((item) => (
               <details key={item.q} className="border border-neutral-bg group">
@@ -218,7 +218,7 @@ export default function WeightLossPage() {
           <h2 className="section-title-white mb-6">Start Your Weight Loss Journey</h2>
           <div className="gold-divider" />
           <p className="text-neutral-light mb-10 max-w-xl mx-auto leading-relaxed">
-            Schedule a consultation with Dr. Chavez to discuss your goals and determine if our GLP-1 program is right for you.
+            Book a consultation with Dr. Chavez to review your goals and find out if the GLP-1 program is a fit for your health profile.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a

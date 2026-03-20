@@ -21,13 +21,13 @@ export default function AboutPage() {
               </h1>
               <div className="gold-divider-left" />
               <p className="text-neutral-medium leading-relaxed mb-6">
-                Illari Aesthetics is a physician-led medical spa in Chicago&apos;s Wicker Park neighborhood, founded by Dr. Milton Chavez. With over 30 years of clinical experience and academic training at Rush University, Dr. Chavez brings a level of medical expertise rarely found in aesthetic medicine.
+                Dr. Milton Chavez spent years teaching resident physicians at Rush University before he opened his own aesthetics practice. That background is not just a line on a bio. It is the reason Illari Aesthetics approaches skin care the way a clinical practice would.
               </p>
               <p className="text-neutral-medium leading-relaxed mb-6">
-                Our mission is to facilitate the expression of your true desired appearance, enhancing and rejuvenating your natural beauty through evidence-based treatments and medical-grade protocols. Every patient receives a customized plan, not a one-size-fits-all menu.
+                The mission is specific. Facilitate the expression of your true desired appearance. Not alter who you are, not hand you a package deal. Give you a treatment protocol built around your skin and your goals, using products a physician stands behind clinically.
               </p>
               <p className="text-neutral-medium leading-relaxed mb-8">
-                Located in the vibrant Wicker Park community, Illari Aesthetics offers a welcoming and professional environment where patients feel comfortable, confident, and cared for by a physician who truly understands both the art and science of aesthetics.
+                The office is in Wicker Park on North Western Avenue. A practice that feels professional without feeling cold. The kind of place you bring your actual skin concerns, not a Pinterest board.
               </p>
               <a
                 href="https://illariaesthetics.zenoti.com/webstoreNew/services/e815a1a1-0210-4e12-bd1b-4cd9d22b34c2"
@@ -67,10 +67,10 @@ export default function AboutPage() {
 
           <div className="prose prose-lg max-w-none">
             <p className="text-neutral-medium leading-relaxed mb-6 text-lg">
-              Dr. Chavez is a board-certified family physician with over 30 years of clinical and academic experience. He trained at Rush University, then joined the Rush faculty as a teacher and preceptor for resident physicians. In 2010, Dr. Chavez opened a private practice in Family Medicine, medical aesthetics and surgical dermatology.
+              Board-certified in family medicine, trained at Rush University, then kept on as faculty to teach the next generation of physicians. Dr. Chavez has been practicing clinical medicine since the early 1990s. In 2010, he opened a private practice spanning family medicine, medical aesthetics, and surgical dermatology.
             </p>
             <p className="text-neutral-medium leading-relaxed mb-6 text-lg">
-              Dr. Chavez has a special interest and additional training in surgical scar revisions, Ortho biologics, acne and advanced filler technique. His academic credentials and ongoing commitment to evidence-based medicine set Illari Aesthetics apart from typical beauty spas.
+              His additional training covers surgical scar revisions, Ortho biologics, acne treatment, and advanced filler technique. None of that is standard at a beauty spa. It is standard at Illari Aesthetics.
             </p>
 
             <blockquote className="border-l-2 border-gold pl-8 my-10">
@@ -143,32 +143,32 @@ export default function AboutPage() {
             {[
               {
                 title: "Physician-Led Care",
-                description: "Dr. Chavez is a board-certified family physician with 30+ years of experience. This means medical-grade protocols and doctor-level expertise in every treatment.",
+                description: "Dr. Chavez is a board-certified family physician with 30+ years of clinical experience. Every treatment here starts with that level of training behind it.",
                 iconPath: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z",
               },
               {
                 title: "Medical-Grade Products",
-                description: "We use AlumierMD and Derma Made, professional-dispensed brands not available over the counter, for superior, evidence-based results.",
+                description: "AlumierMD and Derma Made are professionally dispensed lines that require medical oversight to use correctly. You will not find them at the drugstore.",
                 iconPath: "M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15M14.25 3.104c.251.023.501.05.75.082M19.8 15a2.25 2.25 0 0 1 .45 1.317C20.25 17.801 18.988 19 17.438 19H6.562C5.012 19 3.75 17.801 3.75 16.317a2.25 2.25 0 0 1 .45-1.317M16.5 3h-9",
               },
               {
                 title: "True Personalization",
-                description: "Each patient receives a customized plan based on individual skin type and aesthetic goals, never a cookie-cutter treatment.",
+                description: "Your treatment plan is built from your skin type, your history, and what you actually want. Not a preset package selected from a menu.",
                 iconPath: "M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75",
               },
               {
                 title: "Academic Credentials",
-                description: "Dr. Chavez trained at Rush University and returned as a faculty member and preceptor for resident physicians.",
+                description: "Dr. Chavez trained at Rush University and was retained as faculty to teach and precept resident physicians. That depth of training is unusual in aesthetics.",
                 iconPath: "M4.26 10.147a60.436 60.436 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.905 59.905 0 0 1 12 3.493a59.902 59.902 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5",
               },
               {
                 title: "Advanced Techniques",
-                description: "Specialization in surgical scar revisions, Ortho biologics, acne treatment, and advanced filler techniques sets Illari apart.",
+                description: "Surgical scar revisions, Ortho biologics, acne treatment, advanced filler technique. Skills that take years of focused training and are rarely found at a med spa.",
                 iconPath: "M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z",
               },
               {
                 title: "Comprehensive Wellness",
-                description: "From skin care and injectables to IV therapy and physician-supervised weight loss, complete wellness under one roof.",
+                description: "Skin care, injectables, IV therapy, and physician-supervised weight loss. One practice, one physician, covering more of what your body actually needs.",
                 iconPath: "M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z",
               },
             ].map((item) => (
@@ -199,7 +199,7 @@ export default function AboutPage() {
           <h2 className="section-title mb-6">Ready to Experience the Illari Difference?</h2>
           <div className="gold-divider" />
           <p className="text-neutral-medium mb-10 max-w-2xl mx-auto leading-relaxed">
-            Schedule a consultation and discover what physician-led aesthetics can do for you.
+            Book a consultation and find out what a physician-led practice looks like in practice.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a

@@ -30,7 +30,7 @@ export default function IVTherapyPage() {
           </h1>
           <div className="w-16 h-px bg-gold mb-8" />
           <p className="text-white/70 text-lg max-w-2xl leading-relaxed mb-10">
-            Deliver concentrated vitamins, minerals, and nutrients directly into your bloodstream, bypassing the digestive system for rapid absorption and optimal cellular function. Physician-supervised for maximum safety and results.
+            When you take a vitamin orally, your digestive system decides how much actually makes it through. For most nutrients, that number is well below the label. IV therapy skips that process. The full dose goes directly into your bloodstream, available to your cells right now. At Illari Aesthetics, every infusion runs under physician supervision in a clinical setting.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
@@ -55,19 +55,19 @@ export default function IVTherapyPage() {
           <h2 className="section-title">Direct Absorption, Maximum Effect</h2>
           <div className="gold-divider" />
           <p className="text-neutral-medium leading-relaxed mb-6 text-lg">
-            When vitamins and nutrients are taken orally, they pass through the digestive system, which significantly reduces what your body actually absorbs. IV therapy delivers a concentrated blend directly into the bloodstream, achieving absorption rates not possible with oral supplements.
+            Oral supplements have to survive your digestive system before any of the active compounds reach your blood. Depending on the vitamin, the form, and what else you have eaten, absorption can be surprisingly low. IV therapy delivers the full blend straight into your bloodstream, bypassing that entirely.
           </p>
           <p className="text-neutral-medium leading-relaxed text-lg">
-            At Illari Aesthetics in Chicago, every IV infusion is administered in a physician-supervised environment, ensuring safety, proper formulation, and optimal results for your specific goals.
+            At Illari Aesthetics in Chicago, every infusion is administered in a physician-supervised setting. Not a spa room. A medical practice in Wicker Park.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 relative">
             {/* Connector line — desktop only */}
             <div className="hidden md:block absolute top-8 left-[16.67%] right-[16.67%] h-px bg-gold/25 z-0" />
             {[
-              { step: "01", title: "Select Your Drip", detail: "Choose from our full menu of infusions targeting beauty, energy, immunity, hydration, and more." },
-              { step: "02", title: "Relax (About 45 Min)", detail: "Sit back in our comfortable treatment room while your IV infusion delivers nutrients directly to your cells." },
-              { step: "03", title: "Feel the Difference", detail: "Many patients notice effects immediately or within hours as nutrients are rapidly absorbed and utilized." },
+              { step: "01", title: "Select Your Drip", detail: "Browse the full menu of targeted infusions. Beauty, energy, immunity, migraine relief, NAD+ anti-aging, plain hydration. Pick based on what you actually need." },
+              { step: "02", title: "Relax (About 45 Min)", detail: "Settle in for about 45 minutes. The drip runs while you sit. Our staff is with you throughout." },
+              { step: "03", title: "Feel the Difference", detail: "Many patients notice effects within hours. Some feel it before they leave. Faster than any supplement schedule." },
             ].map((item) => (
               <div key={item.step} className="text-center relative z-10">
                 <div className="w-16 h-16 rounded-full border-2 border-gold flex items-center justify-center mx-auto mb-6 bg-white">
@@ -153,12 +153,12 @@ export default function IVTherapyPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { name: "Illari", price: "$250", tag: "Beauty", description: "Hydration, powerful antioxidants, and nutrients blended to enhance natural beauty." },
-              { name: "NAD+", price: "$400+", tag: "Anti-Aging", description: "Reverse signs of aging, aid in DNA repair, and support withdrawal symptom management." },
-              { name: "Hangover", price: "$225", tag: "Recovery", description: "Hydration plus essential vitamins to recover after a long night." },
-              { name: "Myers Cocktail", price: "$165", tag: "Wellness", description: "Decreases inflammation, boosts immunity, and supports full-body detox." },
-              { name: "High Dose C", price: "$200", tag: "Immunity", description: "Vitamin C antioxidant to fight free radicals, reduce oxidative stress, and support healthy aging." },
-              { name: "Soothe", price: "$250", tag: "Migraine Relief", description: "Targeted blend for migraine relief and symptom management." },
+              { name: "Illari", price: "$250", tag: "Beauty", description: "Our signature drip. Hydration, antioxidants, and nutrients formulated to support your appearance from the inside out." },
+              { name: "NAD+", price: "$400+", tag: "Anti-Aging", description: "NAD+ is a coenzyme tied to DNA repair and cellular energy. Most people have never had levels this high outside of an IV." },
+              { name: "Hangover", price: "$225", tag: "Recovery", description: "The fastest recovery option after a long night. Fluids and vitamins your body spent processing alcohol." },
+              { name: "Myers Cocktail", price: "$165", tag: "Wellness", description: "The benchmark IV formula developed by Dr. John Myers. Magnesium, B vitamins, calcium, high-dose C. Still one of the most versatile drips available." },
+              { name: "High Dose C", price: "$200", tag: "Immunity", description: "Oral vitamin C tops out at what your gut can process. IV delivery bypasses that ceiling entirely." },
+              { name: "Soothe", price: "$250", tag: "Migraine Relief", description: "Formulated specifically for migraines. Works faster than waiting for a pill to clear your stomach." },
             ].map((drip) => (
               <div key={drip.name} className="border border-neutral-bg p-6 hover:border-gold/30 transition-colors">
                 <div className="flex items-start justify-between mb-3">

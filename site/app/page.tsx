@@ -5,25 +5,25 @@ export default function HomePage() {
   const services = [
     {
       title: "Skin Care",
-      description: "Medical-grade skin treatments including chemical peels, microneedling, cryoablation, and surgical dermatology performed by a board-certified physician.",
+      description: "Chemical peels, microneedling, cryoablation, and surgical dermatology, each guided by a board-certified physician and medical-grade products not available at retail.",
       href: "/skin-care",
       image: "/assets/gallery/skincare-chemical-peel.jpg",
     },
     {
       title: "Injectables",
-      description: "Physician-administered wrinkle relaxers, hyaluronic acid fillers, and PRF treatments for natural, refined results.",
+      description: "Botox, Xeomin, Dysport, hyaluronic acid filler, and PRF, all administered by a board-certified physician trained in advanced filler technique.",
       href: "/injectables",
       image: "/assets/gallery/gallery-4-lip-augmentation.jpg",
     },
     {
       title: "Weight Loss",
-      description: "Physician-supervised GLP-1 program with tirzepatide and semaglutide, personalized dosing, and monthly provider check-ins.",
+      description: "A physician-supervised GLP-1 program using tirzepatide and semaglutide, with monthly check-ins, tailored dosing, and a doctor who knows your chart.",
       href: "/weight-loss-1",
       image: "/assets/gallery/weight-loss-hero.jpg",
     },
     {
       title: "IV Therapy",
-      description: "Concentrated blends of vitamins and nutrients delivered directly into the bloodstream for rapid absorption and optimal wellness.",
+      description: "Vitamins, minerals, and nutrients delivered directly into the bloodstream, bypassing the digestive system entirely. Faster and more complete than anything you can swallow.",
       href: "/iv-infusion-services",
       image: "/assets/gallery/gallery-2-treatment.jpg",
     },
@@ -61,7 +61,7 @@ export default function HomePage() {
             </h1>
             <div className="w-16 h-px bg-gold mb-8" />
             <p className="text-white/80 text-lg leading-relaxed mb-10 max-w-xl">
-              Discover the beauty within. Illari Aesthetics brings board-certified physician expertise to every treatment, delivering medical-grade results in a warm, welcoming environment in Wicker Park.
+              Most med spas are run by estheticians. This one is run by a board-certified physician with 30 years of clinical training. That difference shows up in the products we use, the treatments we recommend, and the results you take home.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
@@ -129,10 +129,10 @@ export default function HomePage() {
               <h2 className="section-title">A Board-Certified Physician,<br />Not Just an Esthetician</h2>
               <div className="gold-divider-left" />
               <p className="text-neutral-medium leading-relaxed mb-6">
-                Illari Aesthetics is led by Dr. Milton Chavez, a board-certified family physician with over 30 years of clinical and academic experience. He trained at Rush University, then joined the Rush faculty as a teacher and preceptor for resident physicians.
+                Dr. Milton Chavez trained at Rush University, then stayed on as faculty to teach resident physicians. That combination of clinical depth and academic rigor is what he brought to Illari Aesthetics when he opened a private aesthetics practice in 2010.
               </p>
               <p className="text-neutral-medium leading-relaxed mb-6">
-                As a doctor, we use higher-grade medical products and evidence-based protocols for better patient results. Every treatment is customized to your individual skin type and goals.
+                When a physician runs your med spa, the products matter more. AlumierMD and Derma Made are professionally dispensed lines, not available over the counter. The treatment approach matters too. Dr. Chavez builds a protocol around your actual skin, not a preset menu you pick from.
               </p>
               <blockquote className="border-l-2 border-gold pl-6 mb-8">
                 <p className="text-dark-medium font-serif italic text-lg leading-relaxed">
@@ -172,7 +172,7 @@ export default function HomePage() {
             <h2 className="section-title">Medical-Grade Services</h2>
             <div className="gold-divider" />
             <p className="text-neutral-medium max-w-2xl mx-auto">
-              From skin care and injectables to physician-supervised weight loss and IV therapy, every service at Illari Aesthetics is rooted in medical expertise and personalized care.
+              Skin care, injectables, weight loss, and IV therapy, all under one roof, all grounded in the medical expertise of a board-certified physician.
             </p>
           </div>
 
@@ -227,22 +227,22 @@ export default function HomePage() {
               {
                 step: "01",
                 title: "Consultation",
-                description: "Book an appointment and receive a personalized facial assessment discussing your goals, skin type, and treatment options.",
+                description: "Dr. Chavez reviews your skin and your history. A full assessment that covers what you see, what you have tried, and what the options actually are.",
               },
               {
                 step: "02",
                 title: "Customized Plan",
-                description: "Dr. Chavez or staff develop a tailored treatment regimen based on your individual needs, medical history, and aesthetic goals.",
+                description: "Your plan is built around your skin type, medical history, and the results you want. Not a one-size menu.",
               },
               {
                 step: "03",
                 title: "Treatment",
-                description: "Medical-grade procedures performed in-office using professional-grade AlumierMD and Derma Made products and advanced techniques.",
+                description: "Medical-grade procedures in-office, using AlumierMD and Derma Made, the same products Dr. Chavez recommends for your home care.",
               },
               {
                 step: "04",
                 title: "Ongoing Care",
-                description: "Follow-up support, ongoing product recommendations, and monthly check-ins for continued wellness and skincare guidance.",
+                description: "Follow-ups, home product guidance, and monthly check-ins for weight loss patients. This is a practice, not a one-time appointment.",
               },
             ].map((item) => (
               <div key={item.step} className="text-center px-4 relative z-10">
@@ -265,7 +265,7 @@ export default function HomePage() {
             <h2 className="section-title">Connect with Illari Aesthetics</h2>
             <div className="gold-divider" />
             <p className="text-neutral-medium max-w-2xl mx-auto">
-              Stay connected for the latest treatments, tips, and behind-the-scenes looks at Illari Aesthetics. Follow us on Instagram, Facebook, and TikTok.
+              Behind-the-scenes treatments, skincare tips, and updates from the team. Find us on Instagram, Facebook, and TikTok.
             </p>
           </div>
 
@@ -330,7 +330,7 @@ export default function HomePage() {
           </h2>
           <div className="w-16 h-px bg-gold mx-auto mb-8" />
           <p className="text-white/70 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Schedule a consultation with Dr. Chavez and discover a personalized treatment plan tailored to your unique skin type and aesthetic goals.
+            A board-certified physician is ready to evaluate your skin and build a real treatment plan. Tailored to you, not templated.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
