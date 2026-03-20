@@ -7,15 +7,15 @@ export const metadata: Metadata = {
 };
 
 const infusions = [
-  { name: "Illari", price: "$250", time: "~45 min", description: "Hydration, powerful antioxidants, and nutrients blended to enhance natural beauty." },
-  { name: "Allergy", price: "$165", time: "~45 min", description: "Treat allergy symptoms and provide relief." },
-  { name: "Hangover", price: "$225", time: "~45 min", description: "Hydration plus essential vitamins to recover after a long night." },
-  { name: "High Dose C", price: "$200", time: "~45 min", description: "Vitamin C antioxidant to fight free radicals, reduce oxidative stress, and support healthy aging." },
-  { name: "Immunity", price: "$165", time: "~45 min", description: "Boost your immune system with powerful antioxidants." },
-  { name: "Modest", price: "$99", time: "~45 min", description: "Plain saline for essential hydration." },
-  { name: "Myers Cocktail", price: "$165", time: "~45 min", description: "Decreases inflammation, boosts immunity, and supports full-body detox." },
-  { name: "NAD+", price: "$400+", time: "~45 min", description: "Reverse signs of aging, aid in DNA repair, and help with withdrawal symptoms." },
-  { name: "Soothe", price: "$250", time: "~45 min", description: "Targeted blend for migraine relief." },
+  { name: "Illari", price: "$250", time: "~45 min", description: "Hydration and antioxidants formulated for skin, hair, and appearance. The Illari house drip." },
+  { name: "Allergy", price: "$165", time: "~45 min", description: "Targets histamine response and inflammation during allergy season or acute flare-ups. Works without the drowsiness of most antihistamines." },
+  { name: "Hangover", price: "$225", time: "~45 min", description: "Replaces the fluids, electrolytes, and B vitamins your body burned through the night before. Faster than sleep." },
+  { name: "High Dose C", price: "$200", time: "~45 min", description: "Oral vitamin C absorbs at a fraction of the labeled dose. This bypasses your gut entirely and delivers directly to your cells." },
+  { name: "Immunity", price: "$165", time: "~45 min", description: "Antioxidants and micronutrients to shore up immune defense and reduce inflammation. Best taken before you get sick." },
+  { name: "Modest", price: "$99", time: "~45 min", description: "Plain saline. No vitamins, no add-ons. The fastest way to rehydrate when that is all you need." },
+  { name: "Myers Cocktail", price: "$165", time: "~45 min", description: "Magnesium, B vitamins, calcium, and high-dose C. Dr. John Myers developed this formula in the 1960s. Still one of the most widely used IV blends available." },
+  { name: "NAD+", price: "$400+", time: "~45 min", description: "NAD+ is a coenzyme tied to cellular energy and DNA repair. Oral forms absorb poorly. IV delivery gets it where your body can actually use it." },
+  { name: "Soothe", price: "$250", time: "~45 min", description: "Formulated for migraines. Works faster than waiting for a pill to clear your stomach." },
 ];
 
 export default function IVInfusionsPage() {

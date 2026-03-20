@@ -7,14 +7,14 @@ export const metadata: Metadata = {
 };
 
 const injections = [
-  { name: "Illari", price: "$35", description: "Boost for hair, skin, and nails." },
-  { name: "Illari Plus", price: "$40", description: "Hair, skin, and nails boost plus an additional antioxidant for enhanced glow." },
-  { name: "Energy", price: "$35", description: "B12 injection to reduce fatigue and provide an energy boost." },
-  { name: "Energy Plus", price: "$40", description: "B12 combined with other B vitamins for energy and immune support." },
+  { name: "Illari", price: "$35", description: "Nutrients for hair, skin, and nails. One shot, 15 minutes." },
+  { name: "Illari Plus", price: "$40", description: "The Illari injection plus a glow antioxidant. Same 15 minutes, wider effect." },
+  { name: "Energy", price: "$35", description: "B12 injected directly into muscle. Cuts fatigue faster than any supplement you can swallow." },
+  { name: "Energy Plus", price: "$40", description: "Full B complex for energy and immune support, not just B12 alone." },
   { name: "Glutathione", price: "$35", description: "Antioxidant to fight free radicals and promote anti-aging." },
-  { name: "Glutathione Plus", price: "$40", description: "Double dose of glutathione antioxidant for enhanced results." },
-  { name: "Immunity", price: "$40", description: "Triple defense to amplify your immune system, decrease inflammation, and fight free radicals." },
-  { name: "Skinny", price: "$40", description: "Weight loss and wellness injection (in conjunction with diet and exercise); may release fat deposits." },
+  { name: "Glutathione Plus", price: "$40", description: "Double the glutathione. Twice the antioxidant load in the same 15-minute window." },
+  { name: "Immunity", price: "$40", description: "Three-part formula targeting immune defense, inflammation reduction, and free radical damage." },
+  { name: "Skinny", price: "$40", description: "Intended to complement diet and exercise. May release stored fat deposits. Not a standalone weight loss solution." },
   { name: "NAD+ 50mg", price: "$75", description: "Reverse aging, support DNA repair, and help with withdrawal symptoms." },
   { name: "NAD+ 100mg", price: "$100", description: "Higher-dose NAD+ for reverse aging, DNA repair, and withdrawal symptom support." },
 ];

@@ -88,3 +88,19 @@ Key changes made:
 - Footer copyright em dash replaced with a period per style rules.
 [2026-03-20 16:44:55] Run #3 finished
 Deployed and live. Run #3 complete.
+Run #3 complete. Here's what changed:
+
+**Schedule page**
+- Hero body: replaced "Book your appointment with... we are open..." with a direct prompt to book or call, naming the Wicker Park location
+- "Book Online" card: cut the procedural how-to; now "See real availability and book any time... Takes about two minutes."
+- "Call Us" card: reframed from "Prefer to speak with someone?" to a concrete reason to call (help picking the right service)
+
+**Contact page**
+- Hero body: now leads with the address, hours, and a practical note about response time, instead of a generic welcome statement
+- "Ready to Book?" CTA: explains the booking system's actual value (live availability) and offers the call alternative for people who need guidance
+
+**Footer**
+- Brand description: swapped "Physician-led medical spa... Board-certified care, medical-grade results" for a line naming Dr. Chavez and his 30 years of training
+- Copyright: removed the em dash (style rule violation), replaced with a period
+[2026-03-20 16:49:14] Run #3 finished
+[2026-03-20 16:49:19] Run #4 starting (model: sonnet)

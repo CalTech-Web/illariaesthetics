@@ -9,32 +9,32 @@ export const metadata: Metadata = {
 const alumierProducts = [
   {
     name: "AluminEye",
-    description: "Advanced eye cream targeting dark circles, puffiness, and fine lines around the delicate eye area.",
+    description: "Eye treatment formulated for the thin skin around the eye, where most creams underperform. Targets dark circles, puffiness, and fine lines.",
     url: "https://us.alumiermd.com/products/alumineye?code=44A5EB2P",
   },
   {
     name: "Retinol Resurfacing Serum 0.5",
-    description: "Medical-grade retinol serum for skin resurfacing, targeting fine lines, uneven texture, and signs of aging.",
+    description: "0.5% medical-grade retinol for resurfacing and renewal. Targets fine lines and uneven texture at a concentration not available over the counter.",
     url: "https://us.alumiermd.com/products/retinol-resurfacing-serum-0-5?code=44A5EB2P",
   },
   {
     name: "HydraDew",
-    description: "Deeply hydrating moisturizer that restores moisture balance for a plump, dewy complexion.",
+    description: "Lightweight moisturizer that rebuilds the skin barrier. Works well alongside retinol or as aftercare following a chemical peel.",
     url: "https://us.alumiermd.com/products/hydradew-11221?code=44A5EB2P",
   },
   {
     name: "Bright & Clear Solution",
-    description: "Brightening treatment targeting uneven skin tone, hyperpigmentation, and dullness for a clearer complexion.",
+    description: "Targets hyperpigmentation and uneven tone. Commonly used after cryoablation or a chemical peel to maintain the results.",
     url: "https://us.alumiermd.com/products?code=44A5EB2P",
   },
   {
     name: "Purifying Gel Cleanser",
-    description: "Medical-grade cleansing gel that removes impurities without stripping the skin's natural moisture barrier.",
+    description: "Cleansing gel that clears the skin without stripping moisture. A clean starting point for any AlumierMD regimen.",
     url: "https://us.alumiermd.com/products/purifying-gel-cleanser?code=44A5EB2P",
   },
   {
     name: "HydraRich",
-    description: "Rich, nourishing moisturizer for dry skin providing intense hydration and barrier repair.",
+    description: "Dense moisturizer for dry or compromised skin. Repairs the barrier without clogging pores.",
     url: "https://us.alumiermd.com/products/hydrarich?code=44A5EB2P",
   },
 ];
@@ -42,19 +42,19 @@ const alumierProducts = [
 const dermaMadeProducts = [
   {
     name: "Derma Made Retinol Serum",
-    description: "Professional-grade retinol formulated to resurface, refine, and renew skin for visible anti-aging results.",
+    description: "Retinol at clinical potency for texture improvement, fine line reduction, and skin renewal.",
   },
   {
     name: "Derma Made Brightening Cream",
-    description: "Targets hyperpigmentation and uneven skin tone with a clinical brightening formula recommended by Dr. Chavez.",
+    description: "Targets hyperpigmentation and uneven tone. Dr. Chavez recommends it alongside pigmentation treatments.",
   },
   {
     name: "Derma Made Hydration Boost",
-    description: "Advanced moisturizing formula for optimal skin hydration and barrier support.",
+    description: "Moisture formula for barrier support and daily hydration. Works across skin types.",
   },
   {
     name: "Derma Made Acne Control",
-    description: "Clinically formulated to reduce acne breakouts and control excess oil production without over-drying.",
+    description: "Reduces breakouts and controls excess oil without stripping the skin. Pairs well with an acne treatment plan.",
   },
 ];
 
