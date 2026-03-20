@@ -30,7 +30,7 @@ export default function SchedulePage() {
           </h1>
           <div className="w-16 h-px bg-gold mb-8" />
           <p className="text-white/70 text-lg max-w-2xl leading-relaxed mb-10">
-            Book your appointment with Dr. Chavez and the Illari Aesthetics team online, or reach us directly by phone. We are open Monday through Friday, 9am to 4pm.
+            Pick a time that works for you and book online, or call and we will help you choose the right service. The practice is in Wicker Park on North Western Avenue, open Monday through Friday, 9am to 4pm.
           </p>
           <a
             href="https://illariaesthetics.zenoti.com/webstoreNew/services/e815a1a1-0210-4e12-bd1b-4cd9d22b34c2"
@@ -61,7 +61,7 @@ export default function SchedulePage() {
               </div>
               <h3 className="font-serif text-2xl text-dark-medium mb-4">Book Online</h3>
               <p className="text-neutral-medium leading-relaxed mb-8 text-sm">
-                Browse available times and book your appointment anytime through our online booking system. Select your service, choose a time that works for you, and confirm.
+                See real availability and book any time, day or night. Pick your service, find a slot, and you are confirmed. Takes about two minutes.
               </p>
               <a
                 href="https://illariaesthetics.zenoti.com/webstoreNew/services/e815a1a1-0210-4e12-bd1b-4cd9d22b34c2"
@@ -81,7 +81,7 @@ export default function SchedulePage() {
               </div>
               <h3 className="font-serif text-2xl text-white mb-4">Call Us</h3>
               <p className="text-neutral-light leading-relaxed mb-8 text-sm">
-                Prefer to speak with someone directly? Our team is available by phone Monday through Friday, 9am to 4pm, to help you select the right service and find an appointment time.
+                Not sure which service fits your goals, or have a question before booking? Call during office hours and someone at Illari will help you sort it out.
               </p>
               <a href="tel:7732190326" className="btn-outline-white">
                 Call 773.219.0326

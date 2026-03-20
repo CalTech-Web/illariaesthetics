@@ -16,7 +16,7 @@ export default function Footer() {
               className="h-14 w-auto mb-6"
             />
             <p className="text-neutral-light text-sm leading-relaxed mb-6">
-              Physician-led medical spa in Chicago&apos;s Wicker Park neighborhood. Board-certified care, medical-grade results.
+              Dr. Milton Chavez is a board-certified family physician with 30 years of clinical training. A medical practice in Wicker Park, Chicago.
             </p>
             {/* Social Links */}
             <div className="flex items-center gap-4">
@@ -115,7 +115,7 @@ export default function Footer() {
       <div className="border-t border-gold/20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-neutral-light text-xs">
-            &copy; 2024 Illari Aesthetics &mdash; All Rights Reserved.
+            &copy; 2024 Illari Aesthetics. All Rights Reserved.
           </p>
           <p className="text-neutral-light text-xs">
             Powered by{" "}

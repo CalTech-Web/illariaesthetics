@@ -16,7 +16,7 @@ export default function ContactPage() {
           <h1 className="text-5xl font-serif text-white mb-6">Contact Us</h1>
           <div className="w-16 h-px bg-gold mx-auto mb-8" />
           <p className="text-neutral-light leading-relaxed text-lg max-w-2xl mx-auto">
-            We are here to answer your questions and help you schedule the right treatment. Reach out by phone, email, or visit us in Wicker Park.
+            Illari Aesthetics is at 1509 N Western Avenue in Wicker Park, open Monday through Friday, 9am to 4pm. The fastest way to get on the schedule is a phone call. Email works too, allow a business day for a response.
           </p>
         </div>
       </section>
@@ -156,7 +156,7 @@ export default function ContactPage() {
               <div className="bg-dark p-8 text-center">
                 <h3 className="font-serif text-2xl text-white mb-4">Ready to Book?</h3>
                 <p className="text-neutral-light text-sm leading-relaxed mb-6">
-                  Schedule your appointment online or call us directly at 773.219.0326.
+                  The online booking system shows live availability. If you want help choosing the right service first, call and we will guide you.
                 </p>
                 <a
                   href="https://illariaesthetics.zenoti.com/webstoreNew/services/e815a1a1-0210-4e12-bd1b-4cd9d22b34c2"
