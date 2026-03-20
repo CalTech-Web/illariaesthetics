@@ -59,3 +59,32 @@ Key changes made:
 - Derma Made intro trimmed to two punchy sentences instead of four generic ones.
 - All menu page heroes sharpened to one concrete sentence each.
 [2026-03-20 16:38:36] Run #2 finished
+Deployed and live. Run #2 complete.
+
+**Pages updated:**
+
+- **IV Therapy hub** (`/iv-infusion-services`) — Hero explains the oral absorption problem before making the IV claim. How It Works drops "optimal" and ends with "Not a spa room. A medical practice." Process steps are specific. Featured drip descriptions now explain the mechanism behind each treatment (NAD+ as a coenzyme, Myers Cocktail history, oral C ceiling, etc.).
+- **Products page** — Hero leads with the professional dispensing fact. "Why These Products" now explains potency vs. safety tradeoff rather than restating the physician claim. Derma Made intro trimmed from four generic sentences to two concrete ones. CTA cuts the hedging.
+- **IV Infusions, Injections, Add-Ons menu pages** — Hero text sharpened to one concrete sentence each.
+[2026-03-20 16:44:50] Run #2 finished
+[2026-03-20 16:44:55] Run #3 starting (model: sonnet)
+
+[2026-03-20] Content Agent Run #3 — Complete
+
+Style applied: Option 2 (Founder memo) for schedule page. Option 1 (Newsroom editor) for contact page. Direct fix for footer.
+
+Pages updated:
+- app/schedule/page.tsx: Hero body text, "Book Online" card description, "Call Us" card description.
+- app/contact/page.tsx: Hero body text, "Ready to Book?" CTA description.
+- components/Footer.tsx: Brand description text, copyright em dash removed.
+
+Key changes made:
+- Schedule hero now tells the visitor what to do and where the practice is, rather than restating that they can book.
+- "Book Online" card drops the instruction manual tone. New copy is direct: real availability, 2 minutes.
+- "Call Us" card reframes from "prefer to speak" to a concrete reason to call (help choosing the right service).
+- Contact hero now leads with the address and hours as hard facts, not a generic welcome statement.
+- "Ready to Book?" CTA explains the online booking system's actual value (live availability) and offers an alternative (call for guidance).
+- Footer brand blurb now names Dr. Chavez and his 30 years of training instead of repeating the "physician-led" phrase already used elsewhere.
+- Footer copyright em dash replaced with a period per style rules.
+[2026-03-20 16:44:55] Run #3 finished
+Deployed and live. Run #3 complete.
