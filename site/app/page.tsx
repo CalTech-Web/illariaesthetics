@@ -87,48 +87,48 @@ export default function HomePage() {
       </section>
 
       {/* ─── ABOUT / PHYSICIAN ─── */}
-      <section className="relative bg-white py-32 linen-texture overflow-hidden">
+      <section className="relative bg-dark linen-texture-dark overflow-hidden">
         <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 items-center">
-            {/* Pull quote side */}
-            <div className="lg:col-span-7 lg:pr-20 order-2 lg:order-1">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 items-stretch min-h-[700px]">
+            {/* Portrait — left on desktop */}
+            <div className="lg:col-span-5 order-1 relative h-[420px] lg:h-auto">
+              <Image
+                src="/assets/team/dr-chavez.jpg"
+                alt="Dr. Milton Chavez, Founder and Medical Director of Illari Aesthetics"
+                fill
+                className="object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-dark/10 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-dark/60" />
+              {/* Typographic stamp */}
+              <div className="absolute bottom-8 left-8 bg-dark/80 backdrop-blur-sm border border-gold/20 px-7 py-5">
+                <p className="font-serif text-gold text-6xl lg:text-8xl leading-none">30+</p>
+                <p className="text-white/40 text-[9px] tracking-[0.25em] uppercase font-sans font-light mt-2">Years of Practice</p>
+              </div>
+            </div>
+
+            {/* Pull quote side — right */}
+            <div className="lg:col-span-7 lg:pl-20 order-2 flex flex-col justify-center py-24 lg:py-32">
               <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Our Difference</p>
 
               <blockquote className="mb-12">
-                <p className="font-serif text-dark text-[clamp(1.8rem,4vw,3.5rem)] leading-[1.15] italic">
+                <p className="font-serif text-white text-[clamp(1.8rem,4vw,3.2rem)] leading-[1.15] italic">
                   &ldquo;Most med spas are run by estheticians. This one is run by a board-certified physician with thirty years of clinical training.&rdquo;
                 </p>
               </blockquote>
 
               <div className="w-12 h-px bg-gold/30 mb-8" />
 
-              <p className="text-dark/50 text-sm font-sans font-light leading-[1.8] mb-8 max-w-lg">
+              <p className="text-white/40 text-sm font-sans font-light leading-[1.8] mb-10 max-w-lg">
                 Dr. Milton Chavez trained at Rush University, then stayed on as faculty to teach resident physicians. That combination of clinical depth and academic rigor is what he brought to Illari Aesthetics when he opened a private practice in 2010. The products are medical-grade. The treatment approach is built around your skin, not a preset menu.
               </p>
 
               <Link
                 href="/about"
-                className="text-gold text-[11px] tracking-[0.25em] uppercase font-sans font-light border-b border-gold/40 pb-1 hover:border-gold transition-colors duration-500"
+                className="text-gold text-[11px] tracking-[0.25em] uppercase font-sans font-light border-b border-gold/40 pb-1 hover:border-gold transition-colors duration-500 self-start"
               >
                 Meet Dr. Chavez
               </Link>
-            </div>
-
-            {/* Portrait */}
-            <div className="lg:col-span-5 order-1 lg:order-2 mb-12 lg:mb-0 relative">
-              <div className="aspect-[3/4] relative overflow-hidden lg:-mr-12">
-                <Image
-                  src="/assets/team/dr-chavez.jpg"
-                  alt="Dr. Milton Chavez, Founder and Medical Director of Illari Aesthetics"
-                  fill
-                  className="object-cover object-center"
-                />
-              </div>
-              {/* Typographic stamp */}
-              <div className="absolute bottom-8 left-8 lg:-left-6 bg-white/85 backdrop-blur-md border border-dark/10 px-7 py-5 shadow-lg">
-                <p className="font-serif text-gold text-6xl lg:text-8xl leading-none">30+</p>
-                <p className="text-dark/40 text-[9px] tracking-[0.25em] uppercase font-sans font-light mt-2">Years of Practice</p>
-              </div>
             </div>
           </div>
         </div>
