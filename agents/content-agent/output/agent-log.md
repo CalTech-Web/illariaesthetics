@@ -138,3 +138,23 @@ Here's what changed across 4 files:
 **Products page** — AlumierMD descriptions now tie products to in-office treatments (Bright & Clear used after cryoablation or peels, HydraDew positioned as peel aftercare, Retinol 0.5 calls out the OTC concentration gap). Derma Made descriptions cut filler phrases and added clinical context.
 [2026-03-20 16:56:11] Run #4 finished
 [2026-03-20 16:56:16] Run #5 starting (model: sonnet)
+
+[2026-03-20] Content Agent Run #5 — Complete
+
+Style applied: Option 3 (Field guide) for add-ons and injections. Option 2 (Founder memo) for products.
+
+Pages updated:
+- app/iv-infusion-services/page.tsx: Fixed "boosters" buzzword in add-ons card; removed "boost" from injections card.
+- app/add-ons/page.tsx: Rewrote all 4 add-on descriptions with clinical specificity.
+- app/injections/page.tsx: Improved Glutathione description; differentiated NAD+ 50mg and 100mg copy.
+- app/products/page.tsx: Replaced AlumierMD PR boilerplate with Dr. Chavez voice and clinical rationale.
+
+Key changes made:
+- "nail boost" and "add-on boosters" removed as buzzword violations; replaced with direct, specific language.
+- Toradol now identified as ketorolac (non-opioid NSAID) with mechanism explained.
+- Zofran now identified as ondansetron with practical context for when it's useful.
+- Glutathione injection: replaced "Antioxidant to fight free radicals" with liver-production mechanism and age-related decline rationale.
+- NAD+ 50mg vs 100mg: now meaningfully differentiated (starter dose vs full therapeutic dose).
+- AlumierMD brand intro: dropped brand PR copy ("delivering therapeutic outcomes for patients presenting an array of skin conditions"); replaced with physician voice explaining clean science rationale.
+[2026-03-20 16:56:16] Run #5 finished
+Deployed and live. Run #5 complete.
