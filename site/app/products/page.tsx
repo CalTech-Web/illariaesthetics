@@ -199,7 +199,7 @@ export default function ProductsPage() {
       </section>
 
       {/* AlumierMD Section */}
-      <section className="py-24 bg-neutral-bg">
+      <section className="py-24 bg-dark linen-texture-dark">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
             <div className="lg:col-span-1">
@@ -208,55 +208,56 @@ export default function ProductsPage() {
                   src="/assets/gallery/gallery-3-alumier.jpg"
                   alt="AlumierMD medical-grade skincare products at Illari Aesthetics"
                   fill
-                  className="object-cover"
+                  className="object-cover opacity-80"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark/60 to-transparent" />
               </div>
             </div>
             <div className="lg:col-span-2 flex flex-col justify-center">
               <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">Brand 01</p>
-              <h2 className="text-4xl font-serif text-dark-medium mb-4">AlumierMD</h2>
-              <div className="gold-divider-left" />
-              <p className="text-neutral-medium leading-relaxed mb-6">
+              <h2 className="text-4xl font-serif text-ivory mb-4">AlumierMD</h2>
+              <div className="w-12 h-px bg-gold/40 mb-6" />
+              <p className="text-ivory/60 leading-relaxed mb-6">
                 AlumierMD is what the industry calls clean science. The formulations are built for clinical use, not general retail. No unnecessary fillers, no preservatives that compromise active ingredients. Dr. Chavez carries it because it holds up to the same standard he applies to everything else in the practice.
               </p>
-              <p className="text-neutral-medium leading-relaxed mb-8">
+              <p className="text-ivory/60 leading-relaxed mb-8">
                 AlumierMD products used at Illari Aesthetics are available through our physician referral link. Same formulas, same guidance. Not a third-party reseller.
               </p>
               <a
                 href="https://www.alumiermd.com/products?code=44A5EB2P"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary self-start"
+                className="text-gold text-[11px] tracking-[0.25em] uppercase font-sans font-light border-b border-gold/40 pb-1 hover:border-gold transition-colors duration-500 self-start"
               >
                 Shop All AlumierMD Products
               </a>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-gold/10">
             {alumierProducts.map((product) => (
-              <div key={product.name} className="bg-white hover:shadow-lg transition-shadow group flex flex-col overflow-hidden">
-                <div className="aspect-square relative bg-neutral-bg flex items-center justify-center p-4">
+              <div key={product.name} className="bg-dark group flex flex-col overflow-hidden hover:bg-[#1e1e1c] transition-colors duration-500">
+                <div className="aspect-square relative bg-[#121210] flex items-center justify-center">
                   <Image
                     src={product.image}
                     alt={product.name}
                     fill
-                    className="object-contain p-6"
+                    className="object-contain p-8 group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
-                <div className="p-6 flex flex-col flex-1">
-                  <h3 className="font-serif text-xl text-dark-medium mb-3 group-hover:text-gold transition-colors">{product.name}</h3>
-                  <div className="w-6 h-px bg-gold mb-4" />
-                  <p className="text-neutral-medium text-sm leading-relaxed mb-6 flex-1">
+                <div className="p-6 flex flex-col flex-1 border-t border-gold/10">
+                  <h3 className="font-serif text-lg text-ivory mb-3 group-hover:text-gold transition-colors duration-500">{product.name}</h3>
+                  <div className="w-6 h-px bg-gold/30 mb-4" />
+                  <p className="text-ivory/40 text-sm leading-relaxed mb-6 flex-1">
                     {product.description}
                   </p>
                   <a
                     href={product.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-outline text-xs self-start"
+                    className="text-gold text-[10px] tracking-[0.2em] uppercase font-sans font-light border-b border-gold/30 pb-0.5 hover:border-gold transition-colors duration-500 self-start"
                   >
-                    Purchase
+                    Purchase from Illari Aesthetics
                   </a>
                 </div>
               </div>
