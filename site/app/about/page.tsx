@@ -120,85 +120,90 @@ export default function AboutPage() {
       </section>
 
       {/* Dr. Chavez Bio */}
-      <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">Leadership</p>
-            <h2 className="section-title">Meet Dr. Chavez</h2>
-            <div className="gold-divider" />
-          </div>
+      <section className="py-32 bg-marble-stone linen-texture">
+        <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
 
-          <div className="prose prose-lg max-w-none">
-            <p className="text-neutral-medium leading-relaxed mb-6 text-lg">
-              Board-certified in family medicine, trained at Rush University, then kept on as faculty to teach the next generation of physicians. Dr. Chavez has been practicing clinical medicine since the early 1990s. In 2010, he opened a private practice spanning family medicine, medical aesthetics, and surgical dermatology.
-            </p>
-            <p className="text-neutral-medium leading-relaxed mb-6 text-lg">
-              His additional training covers surgical scar revisions, Ortho biologics, acne treatment, and advanced filler technique. None of that is standard at a beauty spa. It is standard at Illari Aesthetics.
-            </p>
+            {/* Left — editorial bio */}
+            <div className="lg:col-span-5 lg:pr-8">
+              <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-6">Leadership</p>
+              <h2 className="font-serif text-dark text-[clamp(2rem,4vw,3.5rem)] leading-[1.05] mb-8">
+                Meet<br /><span className="italic">Dr. Chavez</span>
+              </h2>
+              <div className="w-12 h-px bg-gold/30 mb-10" />
 
-            <blockquote className="border-l-2 border-gold pl-8 my-10">
-              <p className="text-dark-medium font-serif italic text-2xl leading-relaxed">
-                &ldquo;The mission is specific. Facilitate the expression of your true desired appearance.&rdquo;
+              <p className="text-dark/50 text-sm font-sans font-light leading-[1.8] mb-6">
+                Board-certified in family medicine, trained at Rush University, then kept on as faculty to teach the next generation of physicians. Dr. Chavez has been practicing clinical medicine since the early 1990s. In 2010, he opened a private practice spanning family medicine, medical aesthetics, and surgical dermatology.
               </p>
-              <cite className="text-neutral-medium text-sm mt-4 block not-italic font-sans tracking-wider">
-                Dr. Milton Chavez
-              </cite>
-            </blockquote>
-          </div>
+              <p className="text-dark/50 text-sm font-sans font-light leading-[1.8] mb-10">
+                His additional training covers surgical scar revisions, Ortho biologics, acne treatment, and advanced filler technique. None of that is standard at a beauty spa. It is standard at Illari Aesthetics.
+              </p>
 
-          {/* Credentials */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
-            {[
-              {
-                title: "Board Certification",
-                detail: "Board-Certified Family Physician",
-                iconPath: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z",
-              },
-              {
-                title: "Academic Training",
-                detail: "Rush University, Faculty Member and Preceptor",
-                iconPath: "M4.26 10.147a60.436 60.436 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.905 59.905 0 0 1 12 3.493a59.902 59.902 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5",
-              },
-              {
-                title: "Private Practice",
-                detail: "Opened in 2010, Family Medicine, Medical Aesthetics, and Surgical Dermatology",
-                iconPath: "M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21",
-              },
-              {
-                title: "Specialties",
-                detail: "Surgical Scar Revisions, Ortho Biologics, Acne Treatment, Advanced Filler Technique",
-                iconPath: "M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z",
-              },
-            ].map((item) => (
-              <div key={item.title} className="border border-gold/20 p-6 flex gap-4">
-                <svg
-                  className="w-8 h-8 text-gold flex-shrink-0 mt-0.5"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path d={item.iconPath} />
-                </svg>
-                <div>
-                  <h3 className="font-serif text-gold text-lg mb-2">{item.title}</h3>
-                  <p className="text-neutral-medium text-sm leading-relaxed">{item.detail}</p>
-                </div>
+              <blockquote className="border-l border-gold/40 pl-8 mb-2">
+                <p className="font-serif text-dark italic text-[clamp(1.2rem,2vw,1.6rem)] leading-[1.4]">
+                  &ldquo;The mission is specific. Facilitate the expression of your true desired appearance.&rdquo;
+                </p>
+                <cite className="text-dark/30 text-[10px] tracking-[0.25em] uppercase font-sans font-light mt-4 block not-italic">
+                  Dr. Milton Chavez
+                </cite>
+              </blockquote>
+            </div>
+
+            {/* Right — credentials mosaic */}
+            <div className="lg:col-span-7">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-gold/10">
+                {[
+                  {
+                    title: "Board Certification",
+                    detail: "Board-Certified Family Physician",
+                    iconPath: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z",
+                  },
+                  {
+                    title: "Academic Training",
+                    detail: "Rush University, Faculty Member and Preceptor",
+                    iconPath: "M4.26 10.147a60.436 60.436 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.905 59.905 0 0 1 12 3.493a59.902 59.902 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5",
+                  },
+                  {
+                    title: "Private Practice",
+                    detail: "Opened in 2010, Family Medicine, Medical Aesthetics, and Surgical Dermatology",
+                    iconPath: "M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21",
+                  },
+                  {
+                    title: "Specialties",
+                    detail: "Surgical Scar Revisions, Ortho Biologics, Acne Treatment, Advanced Filler Technique",
+                    iconPath: "M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z",
+                  },
+                ].map((item) => (
+                  <div key={item.title} className="bg-marble-stone p-8">
+                    <svg
+                      className="w-8 h-8 text-gold mb-5"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path d={item.iconPath} />
+                    </svg>
+                    <h3 className="font-serif text-dark text-xl mb-3">{item.title}</h3>
+                    <p className="text-dark/40 text-sm font-sans font-light leading-[1.7]">{item.detail}</p>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+
           </div>
         </div>
       </section>
 
       {/* Differentiators */}
-      <section className="py-24 bg-dark">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="py-24 bg-dark linen-texture-dark">
+        <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
           <div className="text-center mb-16">
-            <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">Why Choose Us</p>
-            <h2 className="section-title-white">What Sets Us Apart</h2>
+            <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-4">Why Choose Us</p>
+            <h2 className="font-serif text-white text-[clamp(2rem,4vw,3rem)] leading-[1.05] mb-4">What Sets Us Apart</h2>
             <div className="gold-divider" />
           </div>
 
