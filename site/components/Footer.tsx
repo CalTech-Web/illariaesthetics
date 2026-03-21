@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-dark linen-texture">
+    <footer className="bg-marble-stone linen-texture">
       <div className="hairline-t" />
       <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
@@ -14,16 +14,16 @@ export default function Footer() {
               alt="Illari Aesthetics"
               width={140}
               height={95}
-              className="h-10 w-auto opacity-50 mb-6"
+              className="h-10 w-auto opacity-40 mb-6"
             />
-            <p className="text-ivory/30 text-xs font-sans font-light leading-[1.8]">
+            <p className="text-dark/30 text-xs font-sans font-light leading-[1.8]">
               A physician-led medical practice in Chicago&apos;s Wicker Park. Board-certified care, medical-grade products, real results.
             </p>
           </div>
 
           {/* Services */}
           <div>
-            <p className="text-ivory/30 text-[10px] tracking-[0.25em] uppercase font-sans font-light mb-6">Services</p>
+            <p className="text-dark/30 text-[10px] tracking-[0.25em] uppercase font-sans font-light mb-6">Services</p>
             <ul className="space-y-3">
               {[
                 { label: "Skin Care", href: "/skin-care" },
@@ -33,7 +33,7 @@ export default function Footer() {
                 { label: "Products", href: "/products" },
               ].map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-ivory/40 hover:text-gold text-xs font-sans font-light tracking-wider transition-colors duration-300">
+                  <Link href={link.href} className="text-dark/40 hover:text-gold text-xs font-sans font-light tracking-wider transition-colors duration-300">
                     {link.label}
                   </Link>
                 </li>
@@ -43,7 +43,7 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <p className="text-ivory/30 text-[10px] tracking-[0.25em] uppercase font-sans font-light mb-6">Company</p>
+            <p className="text-dark/30 text-[10px] tracking-[0.25em] uppercase font-sans font-light mb-6">Company</p>
             <ul className="space-y-3">
               {[
                 { label: "About", href: "/about" },
@@ -51,7 +51,7 @@ export default function Footer() {
                 { label: "Contact", href: "/contact" },
               ].map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-ivory/40 hover:text-gold text-xs font-sans font-light tracking-wider transition-colors duration-300">
+                  <Link href={link.href} className="text-dark/40 hover:text-gold text-xs font-sans font-light tracking-wider transition-colors duration-300">
                     {link.label}
                   </Link>
                 </li>
@@ -61,16 +61,16 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <p className="text-ivory/30 text-[10px] tracking-[0.25em] uppercase font-sans font-light mb-6">Visit</p>
+            <p className="text-dark/30 text-[10px] tracking-[0.25em] uppercase font-sans font-light mb-6">Visit</p>
             <div className="space-y-4">
-              <p className="text-ivory/40 text-xs font-sans font-light leading-[1.8]">
+              <p className="text-dark/40 text-xs font-sans font-light leading-[1.8]">
                 1509 North Western Avenue, Unit B<br />
                 Chicago, IL 60622
               </p>
-              <a href="tel:7732190326" className="block text-gold/60 hover:text-gold text-xs font-mono tracking-widest transition-colors duration-300">
+              <a href="tel:7732190326" className="block text-gold/70 hover:text-gold text-xs font-mono tracking-widest transition-colors duration-300">
                 773.219.0326
               </a>
-              <a href="mailto:info@illariaesthetics.com" className="block text-ivory/40 hover:text-gold text-xs font-sans font-light tracking-wider transition-colors duration-300">
+              <a href="mailto:info@illariaesthetics.com" className="block text-dark/40 hover:text-gold text-xs font-sans font-light tracking-wider transition-colors duration-300">
                 info@illariaesthetics.com
               </a>
               <div className="flex items-center gap-5 pt-2">
@@ -84,7 +84,7 @@ export default function Footer() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-ivory/20 hover:text-gold/60 transition-colors duration-300"
+                    className="text-dark/20 hover:text-gold/70 transition-colors duration-300"
                     aria-label={social.label}
                   >
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -101,12 +101,12 @@ export default function Footer() {
       {/* Bottom */}
       <div className="hairline-t">
         <div className="max-w-[1400px] mx-auto px-8 lg:px-12 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-ivory/20 text-[10px] font-mono tracking-wider">
+          <p className="text-dark/20 text-[10px] font-mono tracking-wider">
             &copy; 2024 Illari Aesthetics
           </p>
-          <p className="text-ivory/20 text-[10px] font-mono tracking-wider">
+          <p className="text-dark/20 text-[10px] font-mono tracking-wider">
             Built by{" "}
-            <a href="https://caltechweb.com" target="_blank" rel="noopener noreferrer" className="hover:text-gold/40 transition-colors duration-300">
+            <a href="https://caltechweb.com" target="_blank" rel="noopener noreferrer" className="hover:text-gold/50 transition-colors duration-300">
               CalTech Web
             </a>
           </p>

@@ -150,73 +150,71 @@ export default function InjectablesPage() {
       </section>
 
       {/* Services */}
-      <section className="py-24 bg-neutral-bg">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">Our Services</p>
-            <h2 className="section-title">Injectable Treatments</h2>
-            <div className="gold-divider" />
+      <section className="py-32 bg-dark linen-texture-dark">
+        <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
+          <div className="mb-20">
+            <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-6">Our Services</p>
+            <h2 className="font-serif text-ivory text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05]">
+              Injectable<br />Treatments
+            </h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-1">
             {/* Wrinkle Relaxers */}
-            <div className="bg-white p-8">
-              <div className="aspect-[4/3] relative overflow-hidden mb-6">
-                <Image
-                  src="/assets/gallery/gallery-1-injections.jpg"
-                  alt="Wrinkle relaxer injections Chicago"
-                  fill
-                  className="object-cover"
-                />
+            <div className="ken-burns group relative aspect-[3/4] overflow-hidden">
+              <Image
+                src="/assets/gallery/gallery-1-injections.jpg"
+                alt="Wrinkle relaxer injections Chicago"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-dark/95 via-dark/40 to-dark/10" />
+              <div className="absolute bottom-0 left-0 right-0 p-10">
+                <p className="text-gold text-[10px] tracking-[0.25em] uppercase font-sans font-light mb-4">Botox · Xeomin · Dysport</p>
+                <h3 className="font-serif text-ivory text-3xl lg:text-4xl mb-4 translate-y-1 group-hover:translate-y-0 transition-transform duration-700">Wrinkle Relaxers</h3>
+                <div className="w-8 h-px bg-gold/40 mb-4" />
+                <p className="text-ivory/50 text-sm font-sans font-light leading-[1.8] max-w-xs opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500 delay-100">
+                  Relax the muscles that create fine lines and wrinkles. Calibrated dosing and placement so results read as refreshed, not frozen.
+                </p>
               </div>
-              <h3 className="font-serif text-2xl text-dark-medium mb-4">Wrinkle Relaxers</h3>
-              <div className="w-8 h-px bg-gold mb-4" />
-              <p className="text-neutral-medium leading-relaxed mb-4">
-                Relax the muscles that create fine lines and wrinkles. Dr. Chavez calibrates dosing and placement to your face and your natural expressions, so results read as refreshed, not frozen.
-              </p>
-              <p className="text-sm text-neutral-medium font-sans">
-                <span className="text-gold font-medium">Brands used:</span> Botox, Xeomin, and Dysport
-              </p>
             </div>
 
             {/* Filler */}
-            <div className="bg-white p-8">
-              <div className="aspect-[4/3] relative overflow-hidden mb-6">
-                <Image
-                  src="/assets/gallery/gallery-4-lip-augmentation.jpg"
-                  alt="Dermal filler lip augmentation Chicago"
-                  fill
-                  className="object-cover"
-                />
+            <div className="ken-burns group relative aspect-[3/4] overflow-hidden">
+              <Image
+                src="/assets/gallery/gallery-4-lip-augmentation.jpg"
+                alt="Dermal filler lip augmentation Chicago"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-dark/95 via-dark/40 to-dark/10" />
+              <div className="absolute bottom-0 left-0 right-0 p-10">
+                <p className="text-gold text-[10px] tracking-[0.25em] uppercase font-sans font-light mb-4">Hyaluronic Acid</p>
+                <h3 className="font-serif text-ivory text-3xl lg:text-4xl mb-4 translate-y-1 group-hover:translate-y-0 transition-transform duration-700">Lip Filler &amp; Dermal Filler</h3>
+                <div className="w-8 h-px bg-gold/40 mb-4" />
+                <p className="text-ivory/50 text-sm font-sans font-light leading-[1.8] max-w-xs opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500 delay-100">
+                  Restores volume, smooths lines, and creates fuller, more defined lips. Advanced filler technique with conservative dosing for natural results.
+                </p>
               </div>
-              <h3 className="font-serif text-2xl text-dark-medium mb-4">Lip Filler & Dermal Filler</h3>
-              <div className="w-8 h-px bg-gold mb-4" />
-              <p className="text-neutral-medium leading-relaxed mb-4">
-                Hyaluronic acid filler restores volume, smooths lines, and creates fuller, more defined lips. Dr. Chavez trained specifically in advanced filler technique. Lip injections are customized to your anatomy, with conservative dosing that looks natural, not overdone.
-              </p>
-              <p className="text-sm text-neutral-medium font-sans">
-                <span className="text-gold font-medium">Product type:</span> Hyaluronic Acid
-              </p>
             </div>
 
             {/* PRF */}
-            <div className="bg-white p-8">
-              <div className="aspect-[4/3] relative overflow-hidden mb-6">
-                <Image
-                  src="/assets/gallery/gallery-9-syringe.jpg"
-                  alt="PRF platelet rich fibrinogen treatment Chicago"
-                  fill
-                  className="object-cover"
-                />
+            <div className="ken-burns group relative aspect-[3/4] overflow-hidden">
+              <Image
+                src="/assets/gallery/gallery-9-syringe.jpg"
+                alt="PRF platelet rich fibrinogen treatment Chicago"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-dark/95 via-dark/40 to-dark/10" />
+              <div className="absolute bottom-0 left-0 right-0 p-10">
+                <p className="text-gold text-[10px] tracking-[0.25em] uppercase font-sans font-light mb-4">100% Natural · Your Own Blood</p>
+                <h3 className="font-serif text-ivory text-3xl lg:text-4xl mb-4 translate-y-1 group-hover:translate-y-0 transition-transform duration-700">PRF Treatment</h3>
+                <div className="w-8 h-px bg-gold/40 mb-4" />
+                <p className="text-ivory/50 text-sm font-sans font-light leading-[1.8] max-w-xs opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500 delay-100">
+                  Derived entirely from your own blood. Used for skin rejuvenation, hair growth support, and wound healing. Nothing foreign introduced.
+                </p>
               </div>
-              <h3 className="font-serif text-2xl text-dark-medium mb-4">PRF (Platelet Rich Fibrinogen)</h3>
-              <div className="w-8 h-px bg-gold mb-4" />
-              <p className="text-neutral-medium leading-relaxed mb-4">
-                Derived entirely from your own blood. One to two vials are drawn, spun at lower speed to separate PRF from red blood cells, and injected back into the treatment area. Used for skin rejuvenation, hair growth support, and wound healing. Nothing foreign introduced.
-              </p>
-              <p className="text-sm text-neutral-medium font-sans">
-                <span className="text-gold font-medium">Source:</span> Your own blood, 100% natural
-              </p>
             </div>
           </div>
         </div>

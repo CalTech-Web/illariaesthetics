@@ -66,3 +66,15 @@ The layout shifts from stacked title+text to a flex row with icon+content, match
 [2026-03-21 08:59:09] Max loops: 5 (0=infinite)
 [2026-03-21 08:59:09] ==========================================
 [2026-03-21 08:59:09] Run #1 starting (model: sonnet)
+Deployed successfully. Here's what was done:
+
+**Visual upgrade: Scroll-reveal animations**
+
+The site already had `.reveal` / `.visible` CSS classes defined (opacity + translateY transitions) but no JavaScript to trigger them. I added:
+
+- `ScrollReveal.tsx` — a client component using `IntersectionObserver` that watches for `.reveal` elements entering the viewport and adds `.visible` to trigger the fade-up animation
+- Applied staggered `reveal` + `reveal-delay-1/2/3` classes across all key homepage sections: the physician bio, services grid, process steps, social proof quote, and footer CTA
+
+Each section now gracefully fades up as the visitor scrolls, giving the page the polished, luxury feel expected by high-end clientele.
+[2026-03-21 09:03:30] Run #1 finished
+[2026-03-21 09:03:35] Run #2 starting (model: sonnet)
