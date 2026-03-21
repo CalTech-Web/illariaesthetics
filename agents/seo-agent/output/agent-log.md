@@ -146,3 +146,73 @@ New zero-difficulty keyword opportunities discovered:
 ### Deployment
 - Commit: `126d0b6`
 - Deployed to Vercel production — Ready in 21s
+**SEO Agent Run #4 complete.** Deployed to production (commit `126d0b6`, Ready in 21s).
+
+---
+
+**Ahrefs research surfaced 6 zero-difficulty keywords not yet targeted:**
+- `lip filler chicago` — 500 vol, KD 0
+- `lip injections chicago` — 450 vol, KD 0
+- `xeomin chicago` / `dysport chicago` — 200 vol each, KD 0 (Illari uses both)
+- `myers cocktail chicago` — 90 vol, KD 0
+- `nad iv therapy chicago` — 100 vol, KD 0
+
+**Changes shipped (`126d0b6`):**
+- **Injectables title** updated to "Botox, Lip Filler & Dermal Fillers Chicago" — captures 950 combined vol of untapped KD 0 lip filler demand
+- **Filler card h3** renamed to "Lip Filler & Dermal Filler" — natural keyword presence without stuffing
+- **New FAQ entry** added to injectables page (visible + JSON-LD schema) — "Do you offer lip filler in Chicago?" — Google can now surface this as a rich snippet
+- **IV therapy title** updated to "Myers Cocktail & NAD+ IV Therapy Chicago" — leads with two KD 0 terms
+- **BreadcrumbList JSON-LD** added to all 5 service pages — enables breadcrumb navigation in Google SERPs
+- **Global layout keywords** expanded with 6 new Chicago-local terms
+[2026-03-20 17:28:24] Run #4 finished
+[2026-03-20 17:28:29] Run #5 starting (model: sonnet)
+
+## Run #5 — 2026-03-20
+
+### Ahrefs Keyword Research Findings
+New zero-difficulty keyword opportunities discovered:
+- `ozempic chicago` — 150 vol, KD 0, TP 450 (semaglutide is Ozempic's active ingredient; Illari offers semaglutide)
+- `hair loss treatment chicago` — 200 vol, KD 1, TP 150 (Illari offers PRF for hair growth)
+- `cryotherapy chicago` — 200 vol, KD 0 (Illari offers cryoablation, a medical-grade skin lesion treatment)
+- `scar removal chicago` — 100 vol, KD 0 (surgical dermatology at Illari)
+- `prp treatment chicago` — 150 vol, KD 0, TP 250 (Illari offers PRF, an evolved form of PRP)
+- `mole removal chicago` — 70 vol, KD 0 (surgical dermatology at Illari)
+- `wart removal chicago` — 50 vol, KD 0, TP 200 (surgical dermatology at Illari)
+- `hangover iv chicago` — 50 vol, KD 0, TP 100 (Illari's Hangover IV drip, $225)
+- `glutathione injection chicago` — 40 vol, KD 0 (Illari offers this exact service)
+
+### Changes Made
+1. **Updated weight-loss page title** — "Semaglutide & Ozempic Chicago | Medical Weight Loss by Dr. Chavez" adds ozempic chicago (150 vol, KD 0, TP 450); semaglutide is the active ingredient in Ozempic/Wegovy
+2. **Added Ozempic FAQ** to weight-loss page (visible + JSON-LD) — "Do you offer Ozempic or Wegovy in Chicago?" enables rich snippet for high-intent search
+3. **Added PRF hair loss FAQ** to injectables page (visible + JSON-LD) — "Do you offer PRF for hair loss in Chicago?" targets hair loss treatment chicago (200 vol, KD 1, TP 150) and prp hair restoration chicago (80 vol)
+4. **Added 4 surgical dermatology FAQs** to skin-care page (visible + JSON-LD) — mole removal chicago (70 vol), scar removal chicago (100 vol), wart removal chicago (50 vol), and cryoablation vs cryotherapy (200 vol); 420 combined KD-0 search volume now eligible for FAQ rich snippets
+5. **Added FAQPage JSON-LD** to injections page — page previously had no FAQ schema; added 3 Q&As (glutathione injections, B12 injections, full vitamin menu) covering glutathione injection chicago (40 vol, KD 0)
+6. **Added visible FAQ section** to injections page — complements the new schema with user-facing Q&As
+7. **Added hangover IV FAQ** to IV therapy page (visible + JSON-LD) — "Do you offer hangover IV therapy in Chicago?" targets hangover iv chicago (50 vol, KD 0, TP 100)
+8. **Updated global layout keywords** — added ozempic chicago, scar removal chicago, mole removal chicago, hair loss treatment chicago, hangover iv chicago, cryotherapy chicago
+
+### Deployment
+- Commit: `8fb66da`
+- Deployed to Vercel production — Ready in 25s
+**SEO Agent Run #5 complete.** Deployed to production (commit `8fb66da`, Ready in 25s).
+
+---
+
+**Ahrefs research surfaced 9 zero/near-zero-difficulty keywords not yet targeted:**
+- `ozempic chicago` — 150 vol, KD 0, TP 450 (biggest win: weight-loss title update + FAQ)
+- `hair loss treatment chicago` — 200 vol, KD 1, TP 150 (PRF hair FAQ on injectables page)
+- `cryotherapy chicago` — 200 vol, KD 0 (cryoablation FAQ on skin-care page)
+- `scar removal chicago` — 100 vol, KD 0 (surgical dermatology FAQ)
+- `mole removal chicago` — 70 vol, KD 0 (surgical dermatology FAQ)
+- `wart removal chicago` — 50 vol, KD 0, TP 200 (surgical dermatology FAQ)
+- `hangover iv chicago` — 50 vol, KD 0, TP 100 (IV therapy FAQ)
+- `glutathione injection chicago` — 40 vol, KD 0 (new FAQPage schema on injections page)
+
+**Changes shipped (`8fb66da`):**
+- **Weight-loss title** updated to "Semaglutide & Ozempic Chicago" — Ozempic is the most-searched GLP-1 brand name; semaglutide is the active ingredient Illari prescribes
+- **4 surgical dermatology FAQs** added to skin-care page — mole removal, scar removal, wart removal, and cryoablation vs cryotherapy; 420 combined vol, all KD 0
+- **PRF hair loss FAQ** added to injectables page — captures PRF/PRP hair restoration searches (280 vol combined, KD 0-1)
+- **FAQPage JSON-LD + visible FAQ section** added to injections page — first FAQ schema on that page; targets glutathione injection chicago (40 vol, KD 0) and B12 injection Chicago
+- **Hangover IV FAQ** added to IV therapy page — targets hangover iv chicago (50 vol, KD 0, TP 100)
+- **Global keywords** expanded with 6 new Chicago-local terms
+[2026-03-20 17:45:00] Run #5 finished
