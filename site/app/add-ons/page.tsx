@@ -32,32 +32,55 @@ export default function AddOnsPage() {
         </div>
       </section>
 
-      {/* Add-Ons */}
-      <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <div className="space-y-4">
-            {addOns.map((item) => (
-              <div key={item.name} className="border border-neutral-bg p-6 flex items-start justify-between gap-6 hover:border-gold/30 transition-colors group">
-                <div className="flex-1">
-                  <h3 className="font-serif text-xl text-dark-medium mb-2 group-hover:text-gold transition-colors">{item.name}</h3>
-                  <p className="text-neutral-medium text-sm leading-relaxed">{item.description}</p>
+      {/* Add-Ons Menu */}
+      <section className="py-24 bg-dark linen-texture-dark">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+          <div className="divide-y divide-gold/10">
+            {addOns.map((item, index) => (
+              <div
+                key={item.name}
+                className="group flex items-start justify-between gap-8 py-8 hover:bg-white/[0.02] transition-colors duration-500 px-2"
+              >
+                <div className="flex items-start gap-6 flex-1 min-w-0">
+                  <span className="stroke-numeral font-serif text-3xl leading-none mt-1 flex-shrink-0 w-8 text-right opacity-50">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-serif text-ivory text-2xl group-hover:text-gold transition-colors duration-500 mb-2">
+                      {item.name}
+                    </h3>
+                    <p className="text-neutral-light/60 text-sm leading-relaxed font-sans font-light max-w-xl">
+                      {item.description}
+                    </p>
+                  </div>
                 </div>
-                <div className="text-right flex-shrink-0">
-                  <p className="text-gold font-sans font-medium text-lg">{item.price}</p>
+                <div className="flex-shrink-0 text-right pt-1">
+                  <p className="font-serif text-gold text-2xl">{item.price}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="mt-12 p-6 bg-neutral-bg border-l-2 border-gold">
-            <p className="text-neutral-medium text-sm leading-relaxed">
-              <span className="text-dark-medium font-medium">How to add:</span> Simply mention your desired add-ons when booking or when you arrive at Illari Aesthetics. Our staff will confirm compatibility with your chosen infusion.
+          <div className="mt-12 border border-gold/15 p-6">
+            <p className="text-neutral-light/50 text-xs font-sans font-light leading-relaxed tracking-wide">
+              <span className="text-neutral-light/70 font-normal">How to add:</span> Simply mention your desired add-ons when booking or when you arrive at Illari Aesthetics. Our staff will confirm compatibility with your chosen infusion.
             </p>
           </div>
 
           <div className="flex flex-wrap gap-4 mt-8">
-            <Link href="/iv-infusions" className="btn-outline">View IV Infusions</Link>
-            <Link href="/injections" className="btn-outline">View Injections</Link>
+            <Link
+              href="/iv-infusions"
+              className="text-gold text-[11px] tracking-[0.25em] uppercase font-sans font-light border-b border-gold/40 pb-1 hover:border-gold transition-colors duration-500"
+            >
+              View IV Infusions
+            </Link>
+            <span className="text-gold/20 self-end pb-1">·</span>
+            <Link
+              href="/injections"
+              className="text-gold text-[11px] tracking-[0.25em] uppercase font-sans font-light border-b border-gold/40 pb-1 hover:border-gold transition-colors duration-500"
+            >
+              View Injections
+            </Link>
           </div>
         </div>
       </section>
@@ -65,7 +88,7 @@ export default function AddOnsPage() {
       {/* CTA */}
       <section className="py-20 bg-dark">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="section-title-white mb-6">Book Your IV Session</h2>
+          <h2 className="font-serif text-ivory text-3xl md:text-4xl mb-6">Book Your IV Session</h2>
           <div className="gold-divider" />
           <p className="text-neutral-light mb-10 leading-relaxed">
             Book online or call us at 773.219.0326. Open Monday through Friday, 9am to 4pm, in Wicker Park, Chicago.
