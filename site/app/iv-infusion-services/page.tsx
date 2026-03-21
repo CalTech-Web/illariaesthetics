@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IV Therapy Chicago | Vitamin Drips & Infusions by Dr. Chavez",
-  description: "IV therapy and vitamin injections in Chicago's Wicker Park. Physician-supervised IV hydration, NAD+, immunity, beauty drips, and more. Starting at $99.",
+  title: "Myers Cocktail & NAD+ IV Therapy Chicago | Vitamin Drips by Dr. Chavez",
+  description: "Physician-supervised IV therapy in Chicago's Wicker Park. Myers Cocktail, NAD+ infusions, hydration, immunity, beauty drips, and more. Starting at $99.",
   alternates: { canonical: "https://illariaesthetics.com/iv-infusion-services" },
   openGraph: {
     url: "https://illariaesthetics.com/iv-infusion-services",
@@ -66,12 +66,25 @@ const faqJsonLd = {
   ],
 };
 
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://illariaesthetics.com" },
+    { "@type": "ListItem", position: 2, name: "IV Therapy", item: "https://illariaesthetics.com/iv-infusion-services" },
+  ],
+};
+
 export default function IVTherapyPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       {/* Hero */}
       <section className="relative py-32 bg-dark overflow-hidden">

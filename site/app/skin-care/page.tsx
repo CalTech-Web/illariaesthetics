@@ -92,12 +92,25 @@ const treatments = [
   },
 ];
 
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://illariaesthetics.com" },
+    { "@type": "ListItem", position: 2, name: "Skin Care", item: "https://illariaesthetics.com/skin-care" },
+  ],
+};
+
 export default function SkinCarePage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       {/* Hero */}
       <section className="relative py-32 bg-dark overflow-hidden">

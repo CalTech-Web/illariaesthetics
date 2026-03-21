@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Botox & Dermal Fillers Chicago | Injectables by Dr. Chavez",
-  description: "Physician-administered Botox and dermal fillers in Chicago's Wicker Park. Dr. Chavez offers Botox, Xeomin, Dysport, hyaluronic acid fillers, and PRF treatments for natural, refined results.",
+  title: "Botox, Lip Filler & Dermal Fillers Chicago | Injectables by Dr. Chavez",
+  description: "Physician-administered Botox, lip filler, and dermal fillers in Chicago's Wicker Park. Dr. Chavez offers Botox, Xeomin, Dysport, hyaluronic acid lip injections, and PRF for natural, refined results.",
   alternates: { canonical: "https://illariaesthetics.com/injectables" },
   openGraph: {
     url: "https://illariaesthetics.com/injectables",
-    title: "Botox & Dermal Fillers Chicago | Physician-Administered Injectables by Dr. Chavez",
-    description: "Botox, Xeomin, Dysport, hyaluronic acid dermal fillers, and PRF administered by a board-certified physician in Chicago's Wicker Park. Not an esthetician. A doctor.",
+    title: "Botox, Lip Filler & Dermal Fillers Chicago | Physician-Administered Injectables by Dr. Chavez",
+    description: "Botox, Xeomin, Dysport, lip filler, hyaluronic acid dermal fillers, and PRF administered by a board-certified physician in Chicago's Wicker Park. Not an esthetician. A doctor.",
     images: [
       {
         url: "/assets/gallery/gallery-6-lip-fillers.jpg",
@@ -62,6 +62,23 @@ const faqJsonLd = {
         text: "Yes. PRF comes entirely from your own blood, so there is no risk of allergic reaction to a foreign substance. As a physician, Dr. Chavez follows strict clinical protocols for every step of the draw and processing.",
       },
     },
+    {
+      "@type": "Question",
+      name: "Do you offer lip filler in Chicago?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Dr. Chavez offers hyaluronic acid lip filler at Illari Aesthetics in Chicago's Wicker Park. Lip injections are customized to your anatomy and goals, with conservative dosing for results that look natural, not overdone. Dr. Chavez has advanced training in filler technique, which makes a meaningful difference in lip work specifically.",
+      },
+    },
+  ],
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://illariaesthetics.com" },
+    { "@type": "ListItem", position: 2, name: "Injectables", item: "https://illariaesthetics.com/injectables" },
   ],
 };
 
@@ -71,6 +88,10 @@ export default function InjectablesPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       {/* Hero */}
       <section className="relative py-32 bg-dark overflow-hidden">
@@ -160,10 +181,10 @@ export default function InjectablesPage() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="font-serif text-2xl text-dark-medium mb-4">Filler</h3>
+              <h3 className="font-serif text-2xl text-dark-medium mb-4">Lip Filler & Dermal Filler</h3>
               <div className="w-8 h-px bg-gold mb-4" />
               <p className="text-neutral-medium leading-relaxed mb-4">
-                Hyaluronic acid filler restores volume, smooths lines, and enhances lips. Dr. Chavez trained specifically in advanced filler technique. Precise placement and conservative dosing mean results that hold up and look like you, not a filter.
+                Hyaluronic acid filler restores volume, smooths lines, and creates fuller, more defined lips. Dr. Chavez trained specifically in advanced filler technique. Lip injections are customized to your anatomy, with conservative dosing that looks natural, not overdone.
               </p>
               <p className="text-sm text-neutral-medium font-sans">
                 <span className="text-gold font-medium">Product type:</span> Hyaluronic Acid
@@ -248,6 +269,10 @@ export default function InjectablesPage() {
               {
                 q: "Is PRF safe?",
                 a: "Yes. PRF comes entirely from your own blood, so there is no risk of allergic reaction to a foreign substance. As a physician, Dr. Chavez follows strict clinical protocols for every step of the draw and processing.",
+              },
+              {
+                q: "Do you offer lip filler in Chicago?",
+                a: "Yes. Dr. Chavez offers hyaluronic acid lip filler at Illari Aesthetics in Chicago's Wicker Park. Lip injections are customized to your anatomy and goals, with conservative dosing for results that look natural, not overdone. Dr. Chavez has advanced training in filler technique, which makes a meaningful difference in lip work specifically.",
               },
             ].map((item) => (
               <details key={item.q} className="border border-neutral-bg bg-white group">
