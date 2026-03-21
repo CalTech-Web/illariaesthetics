@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
 import { Analytics } from "@vercel/analytics/react";
 
 const cormorant = Cormorant_Garamond({
@@ -139,6 +140,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${cormorant.variable} ${inter.variable}`}>
+        <ScrollReveal />
         <Navigation />
         <main>
           {children}

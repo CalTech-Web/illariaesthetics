@@ -91,30 +91,30 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 items-center">
             {/* Pull quote side */}
             <div className="lg:col-span-7 lg:pr-20 order-2 lg:order-1">
-              <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Our Difference</p>
+              <p className="reveal text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Our Difference</p>
 
-              <blockquote className="mb-12">
+              <blockquote className="mb-12 reveal reveal-delay-1">
                 <p className="font-serif text-ivory text-[clamp(1.8rem,4vw,3.5rem)] leading-[1.15] italic">
                   &ldquo;Most med spas are run by estheticians. This one is run by a board-certified physician with thirty years of clinical training.&rdquo;
                 </p>
               </blockquote>
 
-              <div className="w-12 h-px bg-gold/30 mb-8" />
+              <div className="w-12 h-px bg-gold/30 mb-8 reveal reveal-delay-2" />
 
-              <p className="text-ivory/50 text-sm font-sans font-light leading-[1.8] mb-8 max-w-lg">
+              <p className="reveal reveal-delay-2 text-ivory/50 text-sm font-sans font-light leading-[1.8] mb-8 max-w-lg">
                 Dr. Milton Chavez trained at Rush University, then stayed on as faculty to teach resident physicians. That combination of clinical depth and academic rigor is what he brought to Illari Aesthetics when he opened a private practice in 2010. The products are medical-grade. The treatment approach is built around your skin, not a preset menu.
               </p>
 
               <Link
                 href="/about"
-                className="text-gold text-[11px] tracking-[0.25em] uppercase font-sans font-light border-b border-gold/40 pb-1 hover:border-gold transition-colors duration-500"
+                className="reveal reveal-delay-3 text-gold text-[11px] tracking-[0.25em] uppercase font-sans font-light border-b border-gold/40 pb-1 hover:border-gold transition-colors duration-500"
               >
                 Meet Dr. Chavez
               </Link>
             </div>
 
             {/* Portrait — bleeds off-frame */}
-            <div className="lg:col-span-5 order-1 lg:order-2 mb-12 lg:mb-0 relative">
+            <div className="lg:col-span-5 order-1 lg:order-2 mb-12 lg:mb-0 relative reveal reveal-delay-1">
               <div className="aspect-[3/4] relative overflow-hidden lg:-mr-12">
                 <Image
                   src="/assets/team/dr-chavez.jpg"
@@ -137,13 +137,13 @@ export default function HomePage() {
       <section className="bg-dark-medium py-32 linen-texture">
         <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12">
           <div className="mb-20">
-            <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-6">What We Offer</p>
-            <h2 className="font-serif text-ivory text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05]">
+            <p className="reveal text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-6">What We Offer</p>
+            <h2 className="reveal reveal-delay-1 font-serif text-ivory text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05]">
               Medical-Grade<br />Services
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 reveal reveal-delay-2">
             {/* Large tile — left */}
             <Link href="/skin-care" className="ken-burns group relative aspect-[3/4] overflow-hidden block">
               <Image
@@ -230,8 +230,8 @@ export default function HomePage() {
       <section className="bg-dark py-32 linen-texture">
         <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12">
           <div className="mb-20">
-            <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-6">How It Works</p>
-            <h2 className="font-serif text-ivory text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05]">
+            <p className="reveal text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-6">How It Works</p>
+            <h2 className="reveal reveal-delay-1 font-serif text-ivory text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05]">
               Your Path to<br />Elevated Beauty
             </h2>
           </div>
@@ -245,24 +245,28 @@ export default function HomePage() {
                 step: "01",
                 title: "Consultation",
                 description: "Dr. Chavez reviews your skin and your history, covering what you see, what you have tried, and what the options actually are.",
+                delay: "",
               },
               {
                 step: "02",
                 title: "Customized Plan",
                 description: "Your plan is built around your skin type, medical history, and the results you want. Not a one-size menu.",
+                delay: "reveal-delay-1",
               },
               {
                 step: "03",
                 title: "Treatment",
                 description: "Medical-grade procedures in-office, using AlumierMD and Derma Made, the same products Dr. Chavez recommends for home care.",
+                delay: "reveal-delay-2",
               },
               {
                 step: "04",
                 title: "Ongoing Care",
                 description: "Follow-ups, product guidance, and monthly check-ins. This is a practice, not a one-time appointment.",
+                delay: "reveal-delay-3",
               },
             ].map((item) => (
-              <div key={item.step} className="relative">
+              <div key={item.step} className={`relative reveal ${item.delay}`}>
                 <p className="stroke-numeral font-serif text-6xl lg:text-7xl mb-6">{item.step}</p>
                 <h3 className="font-serif text-ivory text-xl mb-3">{item.title}</h3>
                 <p className="text-ivory/40 text-sm font-sans font-light leading-[1.8]">{item.description}</p>
@@ -287,20 +291,20 @@ export default function HomePage() {
 
         <div className="relative z-10 max-w-[1000px] mx-auto px-8 lg:px-12 text-center">
           {/* Large decorative quote mark */}
-          <svg className="w-16 h-16 text-gold/10 mx-auto mb-10" fill="currentColor" viewBox="0 0 24 24">
+          <svg className="reveal w-16 h-16 text-gold/10 mx-auto mb-10" fill="currentColor" viewBox="0 0 24 24">
             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11H10v10H0z" />
           </svg>
 
-          <blockquote className="mb-12">
+          <blockquote className="mb-12 reveal reveal-delay-1">
             <p className="font-serif text-ivory italic text-[clamp(1.6rem,3.5vw,2.8rem)] leading-[1.25]">
               &ldquo;The difference between Dr. Chavez and every other med spa I have tried is that he actually listens, builds a plan around my skin, and uses products I cannot find anywhere else. I will never go back to a chain.&rdquo;
             </p>
           </blockquote>
 
-          <div className="w-12 h-px bg-gold/20 mx-auto mb-8" />
+          <div className="w-12 h-px bg-gold/20 mx-auto mb-8 reveal reveal-delay-2" />
 
           {/* Star rating + Google badge */}
-          <div className="inline-flex items-center gap-4 bg-ivory/[0.03] border border-ivory/5 backdrop-blur-sm px-8 py-4 mb-10">
+          <div className="reveal reveal-delay-2 inline-flex items-center gap-4 bg-ivory/[0.03] border border-ivory/5 backdrop-blur-sm px-8 py-4 mb-10">
             <div className="flex gap-1">
               {[1, 2, 3, 4, 5].map((i) => (
                 <svg key={i} className="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 24 24">
@@ -389,15 +393,15 @@ export default function HomePage() {
 
             {/* Right — CTA content */}
             <div className="flex flex-col justify-center py-28 lg:py-0 lg:pl-16">
-              <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Ready to Begin?</p>
-              <h2 className="font-serif text-ivory text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05] mb-6">
+              <p className="reveal text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Ready to Begin?</p>
+              <h2 className="reveal reveal-delay-1 font-serif text-ivory text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05] mb-6">
                 Your Transformation<br />Starts Here
               </h2>
-              <div className="w-12 h-px bg-gold/30 mb-8" />
-              <p className="text-ivory/40 text-sm font-sans font-light leading-[1.8] mb-12 max-w-md">
+              <div className="w-12 h-px bg-gold/30 mb-8 reveal reveal-delay-2" />
+              <p className="reveal reveal-delay-2 text-ivory/40 text-sm font-sans font-light leading-[1.8] mb-12 max-w-md">
                 A board-certified physician is ready to evaluate your skin and build a real treatment plan. Tailored to you, not templated.
               </p>
-              <div className="flex flex-col sm:flex-row items-start gap-6">
+              <div className="reveal reveal-delay-3 flex flex-col sm:flex-row items-start gap-6">
                 <a
                   href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
                   target="_blank"

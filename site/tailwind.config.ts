@@ -21,6 +21,11 @@ const config: Config = {
           DEFAULT: "#f5f0e8",
           dark: "#e8e0d4",
         },
+        marble: {
+          DEFAULT: "#faf9f7",
+          stone: "#f2ece4",
+          warm: "#e8e0d4",
+        },
         neutral: {
           medium: "#8a8578",
           light: "#b0a99c",
