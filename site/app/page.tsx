@@ -30,7 +30,7 @@ export default function HomePage() {
             src="/assets/team/dr-chavez.jpg"
             alt="Illari Aesthetics"
             fill
-            className="object-cover object-top"
+            className="object-cover object-[center_30%]"
             priority
             fetchPriority="high"
           />
@@ -41,9 +41,8 @@ export default function HomePage() {
           <p className="text-gold text-[11px] tracking-[0.3em] uppercase font-sans font-light mb-10 animate-fade-up">
             Physician-Led Medical Spa &mdash; Chicago
           </p>
-          <h1 className="font-serif text-ivory leading-[0.9] mb-10">
-            <span className="block text-[clamp(3rem,10vw,8rem)] animate-fade-up">Elevate</span>
-            <span className="block text-[clamp(3rem,10vw,8rem)] italic ml-[10vw] animate-fade-up-1">Your Beauty</span>
+          <h1 className="font-serif text-ivory text-[clamp(3rem,10vw,8rem)] leading-[0.9] mb-10 animate-fade-up">
+            Elevate <span className="italic">Your Beauty</span>
           </h1>
           <div className="animate-fade-up-2">
             <a
@@ -125,9 +124,9 @@ export default function HomePage() {
                 />
               </div>
               {/* Typographic stamp */}
-              <div className="absolute bottom-8 left-8 lg:-left-6">
+              <div className="absolute bottom-8 left-8 lg:-left-6 bg-dark/40 backdrop-blur-md border border-ivory/10 px-7 py-5 shadow-2xl shadow-dark/50">
                 <p className="font-serif text-gold text-6xl lg:text-8xl leading-none">30+</p>
-                <p className="text-ivory/40 text-[9px] tracking-[0.25em] uppercase font-sans font-light mt-2">Years of Practice</p>
+                <p className="text-ivory/50 text-[9px] tracking-[0.25em] uppercase font-sans font-light mt-2">Years of Practice</p>
               </div>
             </div>
           </div>
@@ -273,34 +272,56 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── SOCIAL PROOF — SINGLE TESTIMONIAL ─── */}
-      <section className="bg-dark-medium py-32 linen-texture hairline-t hairline-b">
-        <div className="relative z-10 max-w-[900px] mx-auto px-8 lg:px-12 text-center">
-          {/* Star rating as custom line */}
-          <div className="flex justify-center gap-1 mb-8">
-            {[1, 2, 3, 4, 5].map((i) => (
-              <svg key={i} className="w-4 h-4 text-gold/60" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-              </svg>
-            ))}
-          </div>
+      {/* ─── SOCIAL PROOF ─── */}
+      <section className="relative py-36 linen-texture overflow-hidden">
+        {/* Background image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/assets/gallery/gallery-3-alumier.jpg"
+            alt="Illari Aesthetics"
+            fill
+            className="object-cover opacity-10"
+          />
+          <div className="absolute inset-0 bg-dark-medium/95" />
+        </div>
 
-          <blockquote className="mb-10">
-            <p className="font-serif text-ivory italic text-[clamp(1.5rem,3.5vw,2.5rem)] leading-[1.3]">
+        <div className="relative z-10 max-w-[1000px] mx-auto px-8 lg:px-12 text-center">
+          {/* Large decorative quote mark */}
+          <svg className="w-16 h-16 text-gold/10 mx-auto mb-10" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11H10v10H0z" />
+          </svg>
+
+          <blockquote className="mb-12">
+            <p className="font-serif text-ivory italic text-[clamp(1.6rem,3.5vw,2.8rem)] leading-[1.25]">
               &ldquo;The difference between Dr. Chavez and every other med spa I have tried is that he actually listens, builds a plan around my skin, and uses products I cannot find anywhere else. I will never go back to a chain.&rdquo;
             </p>
           </blockquote>
 
-          <p className="text-ivory/30 text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">5.0 Stars on Google</p>
+          <div className="w-12 h-px bg-gold/20 mx-auto mb-8" />
 
-          <a
-            href="https://www.google.com/maps/place/Illari+Aesthetics"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gold/50 text-[11px] tracking-[0.2em] uppercase font-sans font-light border-b border-gold/20 pb-1 hover:text-gold hover:border-gold/50 transition-colors duration-500"
-          >
-            Read All Reviews
-          </a>
+          {/* Star rating + Google badge */}
+          <div className="inline-flex items-center gap-4 bg-ivory/[0.03] border border-ivory/5 backdrop-blur-sm px-8 py-4 mb-10">
+            <div className="flex gap-1">
+              {[1, 2, 3, 4, 5].map((i) => (
+                <svg key={i} className="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              ))}
+            </div>
+            <div className="w-px h-5 bg-ivory/10" />
+            <p className="text-ivory/50 text-[11px] tracking-[0.15em] uppercase font-sans font-light">5.0 on Google</p>
+          </div>
+
+          <div className="block">
+            <a
+              href="https://www.google.com/maps/place/Illari+Aesthetics"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold text-[11px] tracking-[0.25em] uppercase font-sans font-light border-b border-gold/40 pb-1 hover:border-gold transition-colors duration-500"
+            >
+              Read All Reviews
+            </a>
+          </div>
         </div>
       </section>
 
@@ -338,32 +359,58 @@ export default function HomePage() {
       </section>
 
       {/* ─── FOOTER CTA ─── */}
-      <section className="relative py-40 linen-texture hairline-t overflow-hidden">
+      <section className="relative linen-texture hairline-t overflow-hidden">
+        {/* Background — same image, mirrored, subtle */}
         <div className="absolute inset-0">
           <Image
-            src="/assets/gallery/gallery-2-treatment.jpg"
+            src="/assets/gallery/gallery-8-profile.jpg"
             alt="Treatment"
             fill
-            className="object-cover opacity-20"
+            className="object-cover opacity-[0.07] scale-x-[-1]"
           />
-          <div className="absolute inset-0 bg-dark/90" />
+          <div className="absolute inset-0 bg-dark/95" />
         </div>
-        <div className="relative z-10 max-w-[900px] mx-auto px-8 lg:px-12 text-center">
-          <h2 className="font-serif text-ivory text-[clamp(2.5rem,6vw,5rem)] leading-[1.05] mb-10">
-            Your Transformation<br />Starts Here
-          </h2>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
-            <a
-              href="https://illariaesthetics.zenoti.com/webstoreNew/services/e815a1a1-0210-4e12-bd1b-4cd9d22b34c2"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-gold/40 text-gold px-10 py-3.5 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light hover:bg-gold/10 hover:border-gold transition-all duration-500"
-            >
-              Schedule Your Appointment
-            </a>
-            <a href="tel:7732190326" className="text-ivory/40 text-sm font-mono tracking-widest hover:text-ivory/70 transition-colors duration-500">
-              773.219.0326
-            </a>
+
+        <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch min-h-[600px]">
+            {/* Left — Portrait with blending */}
+            <div className="relative hidden lg:block">
+              <Image
+                src="/assets/gallery/gallery-8-profile.jpg"
+                alt="Patient consultation at Illari Aesthetics"
+                fill
+                className="object-cover object-center"
+              />
+              {/* Blend into dark right side */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-dark" />
+              {/* Blend top and bottom */}
+              <div className="absolute inset-0 bg-gradient-to-b from-dark via-transparent to-dark opacity-60" />
+            </div>
+
+            {/* Right — CTA content */}
+            <div className="flex flex-col justify-center py-28 lg:py-0 lg:pl-16">
+              <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Ready to Begin?</p>
+              <h2 className="font-serif text-ivory text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05] mb-6">
+                Your Transformation<br />Starts Here
+              </h2>
+              <div className="w-12 h-px bg-gold/30 mb-8" />
+              <p className="text-ivory/40 text-sm font-sans font-light leading-[1.8] mb-12 max-w-md">
+                A board-certified physician is ready to evaluate your skin and build a real treatment plan. Tailored to you, not templated.
+              </p>
+              <div className="flex flex-col sm:flex-row items-start gap-6">
+                <a
+                  href="https://illariaesthetics.zenoti.com/webstoreNew/services/e815a1a1-0210-4e12-bd1b-4cd9d22b34c2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-gold/40 text-gold px-10 py-3.5 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light hover:bg-gold/10 hover:border-gold transition-all duration-500"
+                >
+                  Schedule Your Appointment
+                </a>
+                <a href="tel:7732190326" className="text-ivory/40 text-sm font-mono tracking-widest hover:text-ivory/70 transition-colors duration-500 py-3.5">
+                  773.219.0326
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
