@@ -74,3 +74,37 @@ New zero-difficulty keyword opportunities discovered:
 ### Deployment
 - Commit: `0775550`
 - Deployed to Vercel production — Ready in 19s
+**SEO Agent Run #2 complete.** Here's what was done:
+
+**Ahrefs research surfaced 4 zero-difficulty keywords not yet targeted:**
+- `microneedling chicago` — 1,700 vol, KD 0 (same search volume as botox, completely untapped)
+- `semaglutide chicago` — 600 vol, KD 0
+- `dermal fillers chicago` — 500 vol, KD 0
+- `chemical peel chicago` — 400 vol, KD 0
+
+**Changes shipped (`0775550`):**
+- **4 title tag updates** — each service page now leads with its highest-volume, lowest-difficulty keyword: microneedling chicago, semaglutide chicago, botox + dermal fillers chicago, iv therapy chicago
+- **FAQPage JSON-LD** added to all 4 service pages — pages had FAQ content but no schema; Google can now show rich FAQ accordion snippets in SERPs, improving CTR
+- **FAQ section added** to IV therapy page — the only service page missing one; matches the FAQ schema now present in the structured data
+[2026-03-20 17:15:44] Run #2 finished
+[2026-03-20 17:15:49] Run #3 starting (model: sonnet)
+
+## Run #3 — 2026-03-20
+
+### Ahrefs Keyword Research Findings
+New zero-difficulty keyword opportunities discovered:
+- `dermaplaning chicago` — 1,500 vol, KD 0 (same scale as microneedling/botox, completely untapped)
+- `tirzepatide chicago` — 200 vol, KD 0 (weight loss page was only targeting semaglutide)
+- `weight loss clinic chicago` — 300 vol, KD 11, TP 450
+
+### Changes Made
+1. **Updated skin-care page title** — "Microneedling & Dermaplaning Chicago | Medical Skin Care by Dr. Chavez" adds dermaplaning chicago (1,500 vol, KD 0); page now co-targets two KD=0 keywords with combined 3,200 search volume
+2. **Updated weight-loss page title** — "Tirzepatide & Semaglutide Chicago | Medical Weight Loss by Dr. Chavez" leads with tirzepatide (200 vol, KD 0), the newer and larger GLP-1 drug
+3. **Added Person JSON-LD** to about page for Dr. Milton Chavez — includes credentials, Rush University alumni, board certification, specialties, sameAs social links; strengthens E-E-A-T signals and Google Knowledge Graph eligibility
+4. **Added ItemList JSON-LD** to iv-infusions page — 9 IV drip items with names, descriptions, prices; enables Google rich results for the menu
+5. **Added ItemList JSON-LD** to injections page — 10 injection items; same rich result eligibility
+6. **Added ItemList JSON-LD** to products page — 6 AlumierMD products with names, descriptions, and external URLs
+
+### Deployment
+- Commit: `4923eca`
+- Deployed to Vercel production — Ready in 19s
