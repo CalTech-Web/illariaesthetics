@@ -66,6 +66,7 @@ export default function HomePage() {
             fill
             className="object-cover object-top"
             priority
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-dark/90 via-dark/70 to-dark/30" />
         </div>
