@@ -23,13 +23,13 @@ export default function Navigation() {
     return pathname.startsWith(href);
   };
 
-  const linkColor = scrolled ? "text-dark/60 hover:text-dark" : "text-white/80 hover:text-white";
+  const linkColor = scrolled ? "text-ivory/55 hover:text-ivory" : "text-white/80 hover:text-white";
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-white/95 backdrop-blur-sm shadow-[0_1px_0_rgba(26,26,24,0.06)]"
+          ? "bg-dark/97 backdrop-blur-sm shadow-[0_1px_0_rgba(245,240,232,0.04)]"
           : "bg-transparent"
       }`}
     >
@@ -69,7 +69,7 @@ export default function Navigation() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              <div className="absolute top-full left-0 mt-4 w-52 bg-white/97 backdrop-blur-sm border border-dark/5 shadow-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2">
+              <div className="absolute top-full left-0 mt-4 w-52 bg-dark/97 backdrop-blur-sm border border-ivory/5 shadow-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2">
                 {[
                   { label: "Skin Care", href: "/skin-care" },
                   { label: "Injectables", href: "/injectables" },
@@ -79,7 +79,7 @@ export default function Navigation() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="block px-6 py-2.5 text-[11px] tracking-[0.15em] uppercase font-sans font-light text-dark/50 hover:text-gold transition-colors"
+                    className="block px-6 py-2.5 text-[11px] tracking-[0.15em] uppercase font-sans font-light text-ivory/40 hover:text-gold transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -115,7 +115,7 @@ export default function Navigation() {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className={`lg:hidden p-2 transition-colors ${scrolled ? "text-dark/70" : "text-white/80"}`}
+            className={`lg:hidden p-2 transition-colors ${scrolled ? "text-ivory/70" : "text-white/80"}`}
             aria-label="Toggle menu"
           >
             {isOpen ? (
@@ -132,7 +132,7 @@ export default function Navigation() {
       </div>
 
       {isOpen && (
-        <div className="lg:hidden bg-white/98 backdrop-blur-sm border-t border-dark/5">
+        <div className="lg:hidden bg-dark/97 backdrop-blur-sm border-t border-ivory/[0.06]">
           <div className="px-8 py-8 space-y-1">
             {[
               { label: "Home", href: "/" },
@@ -149,12 +149,12 @@ export default function Navigation() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block py-3 text-[11px] tracking-[0.2em] uppercase font-sans font-light text-dark/50 hover:text-gold transition-colors"
+                className="block py-3 text-[11px] tracking-[0.2em] uppercase font-sans font-light text-ivory/45 hover:text-gold transition-colors"
               >
                 {link.label}
               </Link>
             ))}
-            <div className="pt-4">
+            <div className="pt-4 border-t border-ivory/[0.06]">
               <a
                 href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
                 target="_blank"
