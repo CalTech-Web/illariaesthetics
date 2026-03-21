@@ -100,34 +100,59 @@ export default function InjectionsPage() {
       </section>
 
       {/* Menu */}
-      <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <div className="space-y-4">
-            {injections.map((item) => (
-              <div key={item.name} className="border border-neutral-bg p-6 flex items-start justify-between gap-6 hover:border-gold/30 transition-colors group">
-                <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-2">
-                    <h3 className="font-serif text-xl text-dark-medium group-hover:text-gold transition-colors">{item.name}</h3>
-                    <span className="text-xs text-neutral-medium font-sans">~15 min</span>
+      <section className="py-24 bg-dark linen-texture-dark">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+          <div className="divide-y divide-gold/10">
+            {injections.map((item, index) => (
+              <div
+                key={item.name}
+                className="group flex items-start justify-between gap-8 py-8 hover:bg-white/[0.02] transition-colors duration-500 px-2"
+              >
+                <div className="flex items-start gap-6 flex-1 min-w-0">
+                  <span className="stroke-numeral font-serif text-3xl leading-none mt-1 flex-shrink-0 w-8 text-right opacity-50">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-baseline gap-3 mb-2 flex-wrap">
+                      <h3 className="font-serif text-ivory text-2xl group-hover:text-gold transition-colors duration-500">
+                        {item.name}
+                      </h3>
+                      <span className="text-gold/40 text-[10px] tracking-[0.2em] uppercase font-sans font-light border border-gold/20 px-2 py-0.5">
+                        ~15 min
+                      </span>
+                    </div>
+                    <p className="text-neutral-light/60 text-sm leading-relaxed font-sans font-light max-w-xl">
+                      {item.description}
+                    </p>
                   </div>
-                  <p className="text-neutral-medium text-sm leading-relaxed">{item.description}</p>
                 </div>
-                <div className="text-right flex-shrink-0">
-                  <p className="text-gold font-sans font-medium text-lg">{item.price}</p>
+                <div className="flex-shrink-0 text-right pt-1">
+                  <p className="font-serif text-gold text-2xl">{item.price}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="mt-12 p-6 bg-neutral-bg border-l-2 border-gold">
-            <p className="text-neutral-medium text-sm leading-relaxed">
-              <span className="text-dark-medium font-medium">Note:</span> All injections are administered at Illari Aesthetics in Wicker Park, Chicago, under physician-supervised protocols. Skinny injection is intended to complement a healthy diet and exercise plan, not as a standalone weight loss solution.
+          <div className="mt-12 border border-gold/15 p-6">
+            <p className="text-neutral-light/50 text-xs font-sans font-light leading-relaxed tracking-wide">
+              All injections are administered at Illari Aesthetics in Wicker Park, Chicago, under physician-supervised protocols. Skinny injection is intended to complement a healthy diet and exercise plan, not as a standalone weight loss solution.
             </p>
           </div>
 
           <div className="flex flex-wrap gap-4 mt-8">
-            <Link href="/iv-infusions" className="btn-outline">View IV Infusions</Link>
-            <Link href="/add-ons" className="btn-outline">View Add-Ons</Link>
+            <Link
+              href="/iv-infusions"
+              className="text-gold text-[11px] tracking-[0.25em] uppercase font-sans font-light border-b border-gold/40 pb-1 hover:border-gold transition-colors duration-500"
+            >
+              View IV Infusions
+            </Link>
+            <span className="text-gold/20 self-end pb-1">·</span>
+            <Link
+              href="/add-ons"
+              className="text-gold text-[11px] tracking-[0.25em] uppercase font-sans font-light border-b border-gold/40 pb-1 hover:border-gold transition-colors duration-500"
+            >
+              View Add-Ons
+            </Link>
           </div>
         </div>
       </section>
