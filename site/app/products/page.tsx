@@ -176,25 +176,34 @@ export default function ProductsPage() {
       </section>
 
       {/* Why These Products */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">Our Philosophy</p>
-          <h2 className="section-title">The Same Products We Use in Office</h2>
-          <div className="gold-divider" />
-          <p className="text-neutral-medium leading-relaxed mb-6 text-lg">
-            Most skincare products at retail are formulated to be safe for anyone. That is not a criticism. It just means the concentrations stay low. Medical-grade lines like AlumierMD and Derma Made are dispensed through medical providers because the formulations are more potent. You need proper guidance to use them correctly.
-          </p>
-          <blockquote className="border border-gold/20 p-8 mt-8">
-            <p className="text-dark-medium font-serif italic text-xl leading-relaxed">
-              &ldquo;We carry what we use. Every product we recommend is one we have used in the office.&rdquo;
-            </p>
-            <cite className="text-neutral-medium text-sm mt-4 block not-italic font-sans tracking-wider">
-              Dr. Milton Chavez, Founder and Medical Director
-            </cite>
-          </blockquote>
-          <p className="text-neutral-medium leading-relaxed mt-8">
-            We carry what we use. Every product on this page is something Dr. Chavez and the staff have used in the office. Not a lineup assembled for the sake of having a retail section.
-          </p>
+      <section className="py-24 bg-marble-stone linen-texture">
+        <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            <div>
+              <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-6">Our Philosophy</p>
+              <h2 className="font-serif text-dark text-[clamp(2.2rem,4vw,3.5rem)] leading-[1.1] mb-8">
+                The Same Products<br />We Use in Office
+              </h2>
+              <div className="w-12 h-px bg-gold/30 mb-8" />
+              <p className="text-dark/50 text-sm font-sans font-light leading-[1.8] mb-6">
+                Most skincare products at retail are formulated to be safe for anyone. That is not a criticism. It just means the concentrations stay low. Medical-grade lines like AlumierMD and Derma Made are dispensed through medical providers because the formulations are more potent. You need proper guidance to use them correctly.
+              </p>
+              <p className="text-dark/50 text-sm font-sans font-light leading-[1.8]">
+                We carry what we use. Every product on this page is something Dr. Chavez and the staff have used in the office. Not a lineup assembled for the sake of having a retail section.
+              </p>
+            </div>
+            <div>
+              <blockquote className="border-l-2 border-gold pl-8 py-4">
+                <p className="font-serif text-dark italic text-[clamp(1.5rem,2.5vw,2.2rem)] leading-[1.4] mb-6">
+                  &ldquo;We carry what we use. Every product we recommend is one we have used in the office.&rdquo;
+                </p>
+                <div className="w-8 h-px bg-gold/30 mb-4" />
+                <cite className="text-dark/30 text-[10px] tracking-[0.2em] uppercase font-sans font-light not-italic">
+                  Dr. Milton Chavez, Founder and Medical Director
+                </cite>
+              </blockquote>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -267,47 +276,48 @@ export default function ProductsPage() {
       </section>
 
       {/* Derma Made Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
-            <div className="lg:col-span-2 flex flex-col justify-center">
-              <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">Brand 02</p>
-              <h2 className="text-4xl font-serif text-dark-medium mb-4">Derma Made</h2>
-              <div className="gold-divider-left" />
-              <p className="text-neutral-medium leading-relaxed mb-6">
+      <section className="py-24 bg-marble linen-texture">
+        <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16 items-center">
+            <div className="lg:col-span-7 lg:pr-12 flex flex-col justify-center">
+              <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-6">Brand 02</p>
+              <h2 className="font-serif text-dark text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] mb-6">Derma Made</h2>
+              <div className="w-12 h-px bg-gold/30 mb-8" />
+              <p className="text-dark/50 text-sm font-sans font-light leading-[1.8] mb-4">
                 Derma Made carries a 94% recommendation rate among the physicians who use it. Dr. Chavez reaches for it alongside treatments when the clinical profile fits the patient.
               </p>
-              <p className="text-neutral-medium leading-relaxed mb-8">
+              <p className="text-dark/50 text-sm font-sans font-light leading-[1.8] mb-10">
                 Available in office. The right product depends on your skin type and what treatments you have in progress. Our staff will walk you through it.
               </p>
               <a
                 href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary self-start"
+                className="border border-gold/60 text-gold px-10 py-3.5 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light hover:bg-gold/10 hover:border-gold transition-all duration-500 self-start"
               >
                 Ask Us In Office
               </a>
             </div>
-            <div className="lg:col-span-1">
-              <div className="aspect-square relative overflow-hidden">
+            <div className="lg:col-span-5">
+              <div className="aspect-[3/4] relative overflow-hidden">
                 <Image
                   src="/assets/gallery/skincare-chemical-peel.jpg"
                   alt="Derma Made professional skincare products at Illari Aesthetics Chicago"
                   fill
                   className="object-cover"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark/20 to-transparent" />
               </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-gold/10">
             {dermaMadeProducts.map((product) => (
-              <div key={product.name} className="border border-neutral-bg p-6 hover:border-gold/30 transition-colors">
-                <h3 className="font-serif text-lg text-dark-medium mb-3">{product.name}</h3>
-                <div className="w-6 h-px bg-gold mb-4" />
-                <p className="text-neutral-medium text-sm leading-relaxed mb-4">{product.description}</p>
-                <p className="text-gold text-xs font-sans tracking-wider uppercase">Available in office</p>
+              <div key={product.name} className="bg-marble-stone p-8 hover:bg-marble-warm transition-colors duration-500">
+                <h3 className="font-serif text-dark text-lg mb-4">{product.name}</h3>
+                <div className="w-8 h-px bg-gold/40 mb-4" />
+                <p className="text-dark/45 text-sm font-sans font-light leading-[1.8] mb-4">{product.description}</p>
+                <p className="text-gold text-[10px] tracking-[0.2em] uppercase font-sans font-light">Available in office</p>
               </div>
             ))}
           </div>
@@ -315,25 +325,27 @@ export default function ProductsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-dark">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">Expert Guidance</p>
-          <h2 className="section-title-white mb-6">Not Sure Which Products Are Right for You?</h2>
-          <div className="gold-divider" />
-          <p className="text-neutral-light mb-10 max-w-xl mx-auto leading-relaxed">
+      <section className="py-24 bg-dark linen-texture-dark">
+        <div className="max-w-[1000px] mx-auto px-8 lg:px-12 text-center">
+          <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Expert Guidance</p>
+          <h2 className="font-serif text-ivory text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] mb-8">
+            Not Sure Which Products<br />Are Right for You?
+          </h2>
+          <div className="w-12 h-px bg-gold/30 mx-auto mb-8" />
+          <p className="text-ivory/40 text-sm font-sans font-light leading-[1.8] mb-12 max-w-xl mx-auto">
             Book a skin survey or consultation. Dr. Chavez reviews your skin and tells you exactly what to use and in what order. No guesswork involved.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <a
               href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary"
+              className="border border-gold/60 text-gold px-10 py-3.5 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light hover:bg-gold/10 hover:border-gold transition-all duration-500"
             >
               Book a Skin Survey
             </a>
-            <a href="tel:7732190326" className="btn-outline-white">
-              Call 773.219.0326
+            <a href="tel:7732190326" className="text-ivory/30 text-sm font-mono tracking-widest hover:text-ivory/60 transition-colors duration-500">
+              773.219.0326
             </a>
           </div>
         </div>
