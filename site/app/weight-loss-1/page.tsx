@@ -124,7 +124,7 @@ export default function WeightLossPage() {
             GLP-1 medications work. The clinical evidence is clear. But medication alone is not a program. Dr. Chavez supervises every step, adjusting dosing based on your response and checking in monthly. This is physician-led weight loss in Chicago&apos;s Wicker Park, not a subscription box.
           </p>
           <a
-            href="https://illariaesthetics.zenoti.com/webstoreNew/services/e815a1a1-0210-4e12-bd1b-4cd9d22b34c2"
+            href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"
@@ -318,7 +318,7 @@ export default function WeightLossPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="https://illariaesthetics.zenoti.com/webstoreNew/services/e815a1a1-0210-4e12-bd1b-4cd9d22b34c2"
+              href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"

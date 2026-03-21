@@ -88,7 +88,7 @@ export default function AboutPage() {
                 The office is in Wicker Park on North Western Avenue. A practice that feels professional without feeling cold. The kind of place you bring your actual skin concerns, not a Pinterest board.
               </p>
               <a
-                href="https://illariaesthetics.zenoti.com/webstoreNew/services/e815a1a1-0210-4e12-bd1b-4cd9d22b34c2"
+                href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
@@ -261,7 +261,7 @@ export default function AboutPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="https://illariaesthetics.zenoti.com/webstoreNew/services/e815a1a1-0210-4e12-bd1b-4cd9d22b34c2"
+              href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"

@@ -179,7 +179,7 @@ export default function ContactPage() {
                   The online booking system shows live availability. If you want help choosing the right service first, call and we will guide you.
                 </p>
                 <a
-                  href="https://illariaesthetics.zenoti.com/webstoreNew/services/e815a1a1-0210-4e12-bd1b-4cd9d22b34c2"
+                  href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary w-full block text-center"

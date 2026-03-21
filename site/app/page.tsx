@@ -46,7 +46,7 @@ export default function HomePage() {
           </h1>
           <div className="animate-fade-up-2">
             <a
-              href="https://illariaesthetics.zenoti.com/webstoreNew/services/e815a1a1-0210-4e12-bd1b-4cd9d22b34c2"
+              href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gold text-[11px] tracking-[0.25em] uppercase font-sans font-light border-b border-gold/50 pb-1 hover:border-gold transition-colors duration-500"
@@ -399,7 +399,7 @@ export default function HomePage() {
               </p>
               <div className="flex flex-col sm:flex-row items-start gap-6">
                 <a
-                  href="https://illariaesthetics.zenoti.com/webstoreNew/services/e815a1a1-0210-4e12-bd1b-4cd9d22b34c2"
+                  href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="border border-gold/40 text-gold px-10 py-3.5 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light hover:bg-gold/10 hover:border-gold transition-all duration-500"

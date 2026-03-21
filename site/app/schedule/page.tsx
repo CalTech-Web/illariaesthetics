@@ -37,7 +37,7 @@ export default function SchedulePage() {
             Pick a time that works for you and book online, or call and we will help you choose the right service. The practice is in Wicker Park on North Western Avenue, open Monday through Friday, 9am to 4pm.
           </p>
           <a
-            href="https://illariaesthetics.zenoti.com/webstoreNew/services/e815a1a1-0210-4e12-bd1b-4cd9d22b34c2"
+            href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"
@@ -68,7 +68,7 @@ export default function SchedulePage() {
                 See real availability and book any time, day or night. Pick your service, find a slot, and you are confirmed. Takes about two minutes.
               </p>
               <a
-                href="https://illariaesthetics.zenoti.com/webstoreNew/services/e815a1a1-0210-4e12-bd1b-4cd9d22b34c2"
+                href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"

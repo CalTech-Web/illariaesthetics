@@ -102,7 +102,7 @@ export default function Navigation() {
             ))}
 
             <a
-              href="https://illariaesthetics.zenoti.com/webstoreNew/services/e815a1a1-0210-4e12-bd1b-4cd9d22b34c2"
+              href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[11px] tracking-[0.2em] uppercase font-sans font-light text-gold border-b border-gold/40 pb-0.5 hover:border-gold transition-colors"
@@ -154,7 +154,7 @@ export default function Navigation() {
             ))}
             <div className="pt-4">
               <a
-                href="https://illariaesthetics.zenoti.com/webstoreNew/services/e815a1a1-0210-4e12-bd1b-4cd9d22b34c2"
+                href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[11px] tracking-[0.2em] uppercase font-sans font-light text-gold border-b border-gold/40 pb-0.5"
