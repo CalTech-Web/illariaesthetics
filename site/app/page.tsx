@@ -273,52 +273,84 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── SOCIAL PROOF ─── */}
-      <section className="relative py-36 linen-texture overflow-hidden">
+      {/* ─── TRUST ─── */}
+      <section className="relative bg-dark linen-texture-dark overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/assets/gallery/gallery-3-alumier.jpg"
-            alt="Illari Aesthetics"
+            alt=""
             fill
-            className="object-cover opacity-5"
+            className="object-cover opacity-[0.04]"
           />
-          <div className="absolute inset-0 bg-white/97" />
         </div>
 
-        <div className="relative z-10 max-w-[1000px] mx-auto px-8 lg:px-12 text-center">
-          <svg className="w-16 h-16 text-gold/15 mx-auto mb-10" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11H10v10H0z" />
-          </svg>
-
-          <blockquote className="mb-12">
-            <p className="font-serif text-dark italic text-[clamp(1.6rem,3.5vw,2.8rem)] leading-[1.25]">
-              &ldquo;The difference between Dr. Chavez and every other med spa I have tried is that he actually listens, builds a plan around my skin, and uses products I cannot find anywhere else. I will never go back to a chain.&rdquo;
-            </p>
-          </blockquote>
-
-          <div className="w-12 h-px bg-gold/20 mx-auto mb-8" />
-
-          <div className="inline-flex items-center gap-4 bg-marble-stone border border-dark/5 px-8 py-4 mb-10">
-            <div className="flex gap-1">
-              {[1, 2, 3, 4, 5].map((i) => (
-                <svg key={i} className="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                </svg>
-              ))}
-            </div>
-            <div className="w-px h-5 bg-dark/10" />
-            <p className="text-dark/40 text-[11px] tracking-[0.15em] uppercase font-sans font-light">5.0 on Google</p>
+        <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12 py-24">
+          {/* Section label with hairline */}
+          <div className="flex items-center gap-6 mb-16">
+            <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light shrink-0">Why Patients Choose Illari</p>
+            <div className="flex-1 h-px bg-gold/15" />
           </div>
 
-          <div className="block">
-            <a
-              href="https://www.google.com/maps/place/Illari+Aesthetics"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gold text-[11px] tracking-[0.25em] uppercase font-sans font-light border-b border-gold/40 pb-1 hover:border-gold transition-colors duration-500"
-            >
-              Read All Reviews
-            </a>
+          {/* Two-column trust display */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-gold/10">
+
+            {/* Left — Google rating */}
+            <div className="bg-dark p-12 lg:p-16 flex flex-col justify-between">
+              <div>
+                <div className="flex gap-1 mb-8">
+                  {[1, 2, 3, 4, 5].map((i) => (
+                    <svg key={i} className="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="font-serif text-gold text-[clamp(5rem,10vw,8rem)] leading-none mb-2">5.0</p>
+                <p className="text-white/25 text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-10">Perfect Rating on Google</p>
+                <p className="text-white/40 text-sm font-sans font-light leading-[1.8] max-w-sm">
+                  Wicker Park patients rate Illari Aesthetics a perfect five stars. Physician-led care that delivers results worth talking about.
+                </p>
+              </div>
+              <div className="mt-12">
+                <a
+                  href="https://www.google.com/maps/place/Illari+Aesthetics"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold text-[11px] tracking-[0.25em] uppercase font-sans font-light border-b border-gold/40 pb-1 hover:border-gold transition-colors duration-500"
+                >
+                  Read Reviews on Google
+                </a>
+              </div>
+            </div>
+
+            {/* Right — Trust pillars */}
+            <div className="divide-y divide-gold/10 bg-dark">
+              {[
+                {
+                  value: "30+",
+                  label: "Years of Clinical Experience",
+                  desc: "Dr. Chavez trained at Rush University, stayed on as faculty, and has been practicing medicine since the early 1990s. That depth of training shows in every treatment.",
+                },
+                {
+                  value: "M.D.",
+                  label: "Physician-Led, Not Esthetician-Run",
+                  desc: "Board-certified family physician overseeing every procedure. Medical-grade protocols, not beauty counter advice.",
+                },
+                {
+                  value: "100%",
+                  label: "Personalized Treatment Plans",
+                  desc: "No preset packages. Every plan is built from your skin type, your history, and your actual goals. Not borrowed from a template.",
+                },
+              ].map((item) => (
+                <div key={item.label} className="flex items-start gap-8 p-10 hover:bg-white/[0.02] transition-colors duration-500 group">
+                  <p className="font-serif text-gold text-2xl lg:text-3xl shrink-0 w-14 pt-1">{item.value}</p>
+                  <div>
+                    <p className="text-white/70 text-[11px] tracking-[0.2em] uppercase font-sans font-light mb-3 group-hover:text-white/90 transition-colors duration-500">{item.label}</p>
+                    <p className="text-white/30 text-sm font-sans font-light leading-[1.8]">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
           </div>
         </div>
       </section>
