@@ -10,17 +10,21 @@ const config: Config = {
     extend: {
       colors: {
         gold: {
-          DEFAULT: "#B57E3A",
-          dark: "#9E6C2E",
+          DEFAULT: "#b8933a",
+          dark: "#a07e2e",
         },
         dark: {
-          DEFAULT: "#161616",
-          medium: "#1B1B1B",
+          DEFAULT: "#1a1a18",
+          medium: "#1e1e1c",
+        },
+        ivory: {
+          DEFAULT: "#f5f0e8",
+          dark: "#e8e0d4",
         },
         neutral: {
-          medium: "#5E5E5E",
-          light: "#A4A4A4",
-          bg: "#F7F7F7",
+          medium: "#8a8578",
+          light: "#b0a99c",
+          bg: "#f5f0e8",
         },
       },
       fontFamily: {
@@ -28,12 +32,25 @@ const config: Config = {
         sans: ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],
       },
       animation: {
-        "fade-in": "fadeIn 1s ease-out both",
+        "fade-up": "fadeUp 0.8s ease-out both",
+        "fade-up-1": "fadeUp 0.8s ease-out 0.1s both",
+        "fade-up-2": "fadeUp 0.8s ease-out 0.2s both",
+        "fade-up-3": "fadeUp 0.8s ease-out 0.3s both",
+        "marquee": "marquee 30s linear infinite",
+        "draw-line": "drawLine 1.5s ease-out both",
       },
       keyframes: {
-        fadeIn: {
-          "0%": { opacity: "0", transform: "translateY(10px)" },
+        fadeUp: {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        drawLine: {
+          "0%": { strokeDashoffset: "100%" },
+          "100%": { strokeDashoffset: "0%" },
         },
       },
     },

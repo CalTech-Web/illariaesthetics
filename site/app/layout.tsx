@@ -136,7 +136,7 @@ export default function RootLayout({
       </head>
       <body className={`${cormorant.variable} ${inter.variable}`}>
         <Navigation />
-        <main className="pt-20">
+        <main>
           {children}
         </main>
         <Footer />

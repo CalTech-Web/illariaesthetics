@@ -4,13 +4,12 @@
 
 @layer base {
   :root {
-    --gold: #B57E3A;
-    --gold-dark: #9E6C2E;
-    --dark: #161616;
-    --dark-medium: #1B1B1B;
-    --text-medium: #5E5E5E;
-    --text-light: #A4A4A4;
-    --bg-light: #F7F7F7;
+    --gold: #b8933a;
+    --gold-dark: #a07e2e;
+    --dark: #1a1a18;
+    --dark-medium: #1e1e1c;
+    --ivory: #f5f0e8;
+    --ivory-dark: #e8e0d4;
   }
 
   html {
@@ -18,41 +17,133 @@
   }
 
   body {
-    @apply text-dark-medium font-sans antialiased;
+    @apply bg-dark text-ivory font-sans antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif tracking-wide;
+    @apply font-serif;
   }
+
+  ::selection {
+    background: rgba(184, 147, 58, 0.3);
+    color: #f5f0e8;
+  }
+}
+
+/* Linen texture overlay */
+.linen-texture {
+  position: relative;
+}
+.linen-texture::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg width='4' height='4' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3h1v1H1V3zm2-2h1v1H3V1z' fill='%23f5f0e8' fill-opacity='1'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Hairline borders */
+.hairline-t { border-top: 0.5px solid rgba(184, 147, 58, 0.15); }
+.hairline-b { border-bottom: 0.5px solid rgba(184, 147, 58, 0.15); }
+
+/* Nav link underline draw animation */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 0.5px;
+  background: #b8933a;
+  transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Ken Burns zoom on service tiles */
+.ken-burns img {
+  transition: transform 6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.ken-burns:hover img {
+  transform: scale(1.08);
+}
+
+/* Scroll-triggered animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+
+/* Marquee */
+.marquee-track {
+  display: flex;
+  animation: marquee 30s linear infinite;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Stroke-only numeral */
+.stroke-numeral {
+  -webkit-text-stroke: 1px #b8933a;
+  color: transparent;
+}
+
+/* Process line draw animation */
+.draw-line {
+  stroke-dasharray: 100%;
+  stroke-dashoffset: 100%;
+  transition: stroke-dashoffset 1.5s ease-out;
+}
+.draw-line.visible {
+  stroke-dashoffset: 0;
 }
 
 @layer components {
   .btn-primary {
-    @apply inline-block bg-gold text-white px-8 py-3 text-sm tracking-widest uppercase font-sans hover:bg-gold-dark transition-colors duration-300;
+    @apply inline-block bg-gold text-dark px-8 py-3 text-sm tracking-widest uppercase font-sans hover:bg-gold-dark transition-colors duration-300;
   }
 
   .btn-outline {
-    @apply inline-block border border-gold text-gold px-8 py-3 text-sm tracking-widest uppercase font-sans hover:bg-gold hover:text-white transition-colors duration-300;
+    @apply inline-block border border-gold text-gold px-8 py-3 text-sm tracking-widest uppercase font-sans hover:bg-gold hover:text-dark transition-colors duration-300;
   }
 
   .btn-outline-white {
-    @apply inline-block border border-white text-white px-8 py-3 text-sm tracking-widest uppercase font-sans hover:bg-white hover:text-dark transition-colors duration-300;
+    @apply inline-block border border-ivory/30 text-ivory px-8 py-3 text-sm tracking-widest uppercase font-sans hover:border-gold hover:text-gold transition-colors duration-300;
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl font-serif text-dark-medium mb-4;
+    @apply text-3xl md:text-4xl font-serif text-ivory mb-4;
   }
 
-  .section-title-white {
-    @apply text-3xl md:text-4xl font-serif text-white mb-4;
+  .section-title-dark {
+    @apply text-3xl md:text-4xl font-serif text-dark mb-4;
   }
 
   .gold-divider {
-    @apply w-16 h-px bg-gold mx-auto mb-6;
+    @apply w-16 h-px bg-gold/30 mx-auto mb-6;
   }
 
   .gold-divider-left {
-    @apply w-16 h-px bg-gold mb-6;
+    @apply w-16 h-px bg-gold/30 mb-6;
   }
 }
-
