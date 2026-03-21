@@ -2,6 +2,46 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Dr. Milton Chavez",
+  jobTitle: "Founder and Medical Director",
+  description:
+    "Board-certified family physician with 30+ years of clinical experience. Trained at Rush University and retained as faculty and preceptor. Founder of Illari Aesthetics in Chicago's Wicker Park.",
+  url: "https://illariaesthetics.com/about",
+  image: "https://illariaesthetics.com/assets/team/dr-chavez.jpg",
+  worksFor: {
+    "@type": "MedicalBusiness",
+    name: "Illari Aesthetics",
+    url: "https://illariaesthetics.com",
+  },
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "Rush University",
+  },
+  hasCredential: {
+    "@type": "EducationalOccupationalCredential",
+    credentialCategory: "Board Certification",
+    name: "Board-Certified Family Physician",
+  },
+  knowsAbout: [
+    "Family Medicine",
+    "Medical Aesthetics",
+    "Surgical Dermatology",
+    "Microneedling",
+    "Chemical Peels",
+    "Botox",
+    "Dermal Fillers",
+    "GLP-1 Weight Loss",
+    "IV Therapy",
+  ],
+  sameAs: [
+    "https://www.instagram.com/illariaesthetics/",
+    "https://www.facebook.com/illariaesthetics/",
+  ],
+};
+
 export const metadata: Metadata = {
   title: "About Illari Aesthetics | Dr. Milton Chavez, Chicago Med Spa",
   description: "Meet Dr. Milton Chavez, board-certified family physician with 30+ years of clinical experience and founder of Illari Aesthetics in Wicker Park, Chicago.",
@@ -24,6 +64,10 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+      />
       {/* Hero */}
       <section className="py-24 bg-neutral-bg">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">

@@ -3,12 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Microneedling Chicago | Chemical Peels & Medical Skin Care by Dr. Chavez",
-  description: "Physician-led microneedling and skin care in Chicago's Wicker Park. Dr. Chavez offers chemical peels, microneedling, cryoablation, and surgical dermatology with medical-grade products for superior results.",
+  title: "Microneedling & Dermaplaning Chicago | Medical Skin Care by Dr. Chavez",
+  description: "Physician-led microneedling, dermaplaning, and medical skin care in Chicago's Wicker Park. Dr. Chavez offers chemical peels, cryoablation, and surgical dermatology with medical-grade products for superior results.",
   alternates: { canonical: "https://illariaesthetics.com/skin-care" },
   openGraph: {
     url: "https://illariaesthetics.com/skin-care",
-    title: "Microneedling & Chemical Peels Chicago | Dr. Chavez, Board-Certified Physician",
+    title: "Microneedling & Dermaplaning Chicago | Dr. Chavez, Board-Certified Physician",
     description: "Microneedling, chemical peels, cryoablation, surgical dermatology, and dermaplaning by a board-certified physician in Chicago's Wicker Park.",
     images: [
       {

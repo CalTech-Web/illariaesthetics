@@ -10,6 +10,28 @@ export const metadata: Metadata = {
   },
 };
 
+const injectionsJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Vitamin Injection Menu at Illari Aesthetics Chicago",
+  description:
+    "Quick vitamin and wellness injections at Illari Aesthetics in Wicker Park, Chicago. B12, glutathione, NAD+, and more. Physician-supervised. Starting at $35.",
+  url: "https://illariaesthetics.com/injections",
+  numberOfItems: 10,
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Illari Injection", description: "Nutrients for hair, skin, and nails. $35." },
+    { "@type": "ListItem", position: 2, name: "Illari Plus Injection", description: "Hair, skin, and nails plus a glow antioxidant. $40." },
+    { "@type": "ListItem", position: 3, name: "Energy Injection (B12)", description: "B12 injected directly into muscle for fast fatigue relief. $35." },
+    { "@type": "ListItem", position: 4, name: "Energy Plus Injection", description: "Full B complex for energy and immune support. $40." },
+    { "@type": "ListItem", position: 5, name: "Glutathione Injection", description: "Master antioxidant to fight free radicals and promote anti-aging. $35." },
+    { "@type": "ListItem", position: 6, name: "Glutathione Plus Injection", description: "Double dose of glutathione antioxidant. $40." },
+    { "@type": "ListItem", position: 7, name: "Immunity Injection", description: "Three-part formula for immune defense, inflammation, and free radicals. $40." },
+    { "@type": "ListItem", position: 8, name: "Skinny Injection", description: "Weight loss and wellness injection to complement diet and exercise. $40." },
+    { "@type": "ListItem", position: 9, name: "NAD+ 50mg Injection", description: "NAD+ coenzyme for cellular energy and DNA repair, starter dose. $75." },
+    { "@type": "ListItem", position: 10, name: "NAD+ 100mg Injection", description: "Full therapeutic dose of NAD+ for cellular energy and DNA repair. $100." },
+  ],
+};
+
 const injections = [
   { name: "Illari", price: "$35", description: "Nutrients for hair, skin, and nails. One shot, 15 minutes." },
   { name: "Illari Plus", price: "$40", description: "The Illari injection plus a glow antioxidant. Same 15 minutes, wider effect." },
@@ -26,6 +48,10 @@ const injections = [
 export default function InjectionsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(injectionsJsonLd) }}
+      />
       {/* Hero */}
       <section className="py-24 bg-dark">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">

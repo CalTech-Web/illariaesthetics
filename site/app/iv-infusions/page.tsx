@@ -10,6 +10,27 @@ export const metadata: Metadata = {
   },
 };
 
+const infusionsJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "IV Infusion Menu at Illari Aesthetics Chicago",
+  description:
+    "Full IV vitamin drip infusion menu at Illari Aesthetics in Wicker Park, Chicago. Physician-supervised IV therapy starting at $99.",
+  url: "https://illariaesthetics.com/iv-infusions",
+  numberOfItems: 9,
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Illari IV Drip", description: "Hydration and antioxidants formulated for skin, hair, and appearance. The Illari house drip. $250." },
+    { "@type": "ListItem", position: 2, name: "Allergy IV Drip", description: "Targets histamine response and inflammation. Treat allergy symptoms without drowsiness. $165." },
+    { "@type": "ListItem", position: 3, name: "Hangover IV Drip", description: "Replaces fluids, electrolytes, and B vitamins after a long night. $225." },
+    { "@type": "ListItem", position: 4, name: "High Dose C IV Drip", description: "IV vitamin C antioxidant bypassing the digestive system for maximum absorption. $200." },
+    { "@type": "ListItem", position: 5, name: "Immunity IV Drip", description: "Antioxidants and micronutrients to strengthen immune defense and reduce inflammation. $165." },
+    { "@type": "ListItem", position: 6, name: "Modest IV Drip", description: "Plain saline hydration. The simplest and most affordable IV infusion. $99." },
+    { "@type": "ListItem", position: 7, name: "Myers Cocktail", description: "Magnesium, B vitamins, calcium, and high-dose vitamin C. Classic IV formula. $165." },
+    { "@type": "ListItem", position: 8, name: "NAD+ IV Drip", description: "NAD+ coenzyme for cellular energy and DNA repair delivered intravenously. $400+." },
+    { "@type": "ListItem", position: 9, name: "Soothe IV Drip", description: "Formulated for migraine relief. $250." },
+  ],
+};
+
 const infusions = [
   { name: "Illari", price: "$250", time: "~45 min", description: "Hydration and antioxidants formulated for skin, hair, and appearance. The Illari house drip." },
   { name: "Allergy", price: "$165", time: "~45 min", description: "Targets histamine response and inflammation during allergy season or acute flare-ups. Works without the drowsiness of most antihistamines." },
@@ -25,6 +46,10 @@ const infusions = [
 export default function IVInfusionsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(infusionsJsonLd) }}
+      />
       {/* Hero */}
       <section className="py-24 bg-dark">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">

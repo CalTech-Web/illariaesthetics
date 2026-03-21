@@ -18,6 +18,60 @@ export const metadata: Metadata = {
   },
 };
 
+const productsJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Medical-Grade Skincare Products at Illari Aesthetics Chicago",
+  description:
+    "Professionally dispensed AlumierMD and Derma Made skincare products used and recommended by Dr. Chavez at Illari Aesthetics in Chicago's Wicker Park.",
+  url: "https://illariaesthetics.com/products",
+  numberOfItems: 6,
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "AlumierMD AluminEye",
+      url: "https://us.alumiermd.com/products/alumineye?code=44A5EB2P",
+      description: "Eye treatment targeting dark circles, puffiness, and fine lines around the eye area.",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "AlumierMD Retinol Resurfacing Serum 0.5",
+      url: "https://us.alumiermd.com/products/retinol-resurfacing-serum-0-5?code=44A5EB2P",
+      description: "Medical-grade 0.5% retinol serum for resurfacing, fine lines, and uneven texture.",
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: "AlumierMD HydraDew",
+      url: "https://us.alumiermd.com/products/hydradew-11221?code=44A5EB2P",
+      description: "Lightweight moisturizer that rebuilds the skin barrier. Works well with retinol or post-peel.",
+    },
+    {
+      "@type": "ListItem",
+      position: 4,
+      name: "AlumierMD Bright & Clear Solution",
+      url: "https://us.alumiermd.com/products?code=44A5EB2P",
+      description: "Targets hyperpigmentation and uneven skin tone. Often used after cryoablation or chemical peels.",
+    },
+    {
+      "@type": "ListItem",
+      position: 5,
+      name: "AlumierMD Purifying Gel Cleanser",
+      url: "https://us.alumiermd.com/products/purifying-gel-cleanser?code=44A5EB2P",
+      description: "Cleansing gel that removes impurities without stripping moisture.",
+    },
+    {
+      "@type": "ListItem",
+      position: 6,
+      name: "AlumierMD HydraRich",
+      url: "https://us.alumiermd.com/products/hydrarich?code=44A5EB2P",
+      description: "Dense moisturizer for dry or compromised skin. Repairs the barrier without clogging pores.",
+    },
+  ],
+};
+
 const alumierProducts = [
   {
     name: "AluminEye",
@@ -73,6 +127,10 @@ const dermaMadeProducts = [
 export default function ProductsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productsJsonLd) }}
+      />
       {/* Hero */}
       <section className="relative py-32 bg-dark overflow-hidden">
         <div className="absolute inset-0">
