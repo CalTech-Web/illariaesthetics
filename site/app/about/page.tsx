@@ -96,7 +96,7 @@ export default function AboutPage() {
                 Schedule a Consultation
               </a>
             </div>
-            <div className="relative">
+            <div className="relative overflow-hidden">
               <div className="aspect-[3/4] relative overflow-hidden">
                 <Image
                   src="/assets/team/dr-chavez.jpg"
@@ -105,7 +105,7 @@ export default function AboutPage() {
                   className="object-cover object-center"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-dark text-white p-8 max-w-xs">
+              <div className="absolute bottom-0 right-0 bg-dark text-white p-6 max-w-xs">
                 <p className="font-serif text-gold text-lg mb-2">Dr. Milton Chavez</p>
                 <p className="text-xs tracking-wider uppercase text-neutral-light">Founder &amp; Medical Director</p>
               </div>
@@ -133,7 +133,7 @@ export default function AboutPage() {
 
             <blockquote className="border-l-2 border-gold pl-8 my-10">
               <p className="text-dark-medium font-serif italic text-2xl leading-relaxed">
-                &ldquo;As a doctor, we use higher grade medical products for a better patient result.&rdquo;
+                &ldquo;The mission is specific. Facilitate the expression of your true desired appearance.&rdquo;
               </p>
               <cite className="text-neutral-medium text-sm mt-4 block not-italic font-sans tracking-wider">
                 Dr. Milton Chavez
@@ -230,7 +230,7 @@ export default function AboutPage() {
                 iconPath: "M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z",
               },
             ].map((item) => (
-              <div key={item.title} className="border border-gold/20 p-8 hover:border-gold/40 transition-colors">
+              <div key={item.title} className="border border-gold/20 p-8 hover:border-gold/40 transition-colors h-full flex flex-col">
                 <svg
                   className="w-10 h-10 text-gold mb-5"
                   fill="none"

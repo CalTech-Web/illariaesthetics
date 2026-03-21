@@ -240,7 +240,7 @@ export default function SkinCarePage() {
                     href="https://illariaesthetics.zenoti.com/webstoreNew/services/e815a1a1-0210-4e12-bd1b-4cd9d22b34c2"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-outline"
+                    className="btn-primary"
                   >
                     Book This Treatment
                   </a>

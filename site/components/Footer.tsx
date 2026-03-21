@@ -85,8 +85,7 @@ export default function Footer() {
               <div>
                 <p className="text-neutral-light text-sm leading-relaxed">
                   1509 North Western Avenue, Unit B<br />
-                  Chicago, IL 60622<br />
-                  Wicker Park
+                  Chicago, IL 60622 (Wicker Park)
                 </p>
               </div>
               <div>
@@ -101,7 +100,7 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-neutral-light text-sm">
-                  Monday through Friday: 9:00 am to 4:00 pm<br />
+                  <span className="whitespace-nowrap">Monday through Friday: 9:00 am to 4:00&nbsp;pm</span><br />
                   Saturday: Closed<br />
                   Sunday: Closed
                 </p>

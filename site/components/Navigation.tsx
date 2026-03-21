@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -32,6 +33,19 @@ const navLinks = [
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (href: string) => {
+    if (href === "/") return pathname === "/";
+    return pathname.startsWith(href);
+  };
+
+  const navLinkClass = (href: string) =>
+    `text-sm tracking-widest uppercase transition-colors ${
+      isActive(href)
+        ? "text-gold border-b border-gold pb-0.5"
+        : "text-white/80 hover:text-gold"
+    }`;
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur-sm border-b border-gold/20">
@@ -51,7 +65,7 @@ export default function Navigation() {
 
           {/* Desktop Nav */}
           <div className="hidden lg:flex items-center space-x-8">
-            <Link href="/" className="text-white/80 hover:text-gold text-sm tracking-widest uppercase transition-colors">
+            <Link href="/" className={navLinkClass("/")}>
               Home
             </Link>
 
@@ -95,13 +109,13 @@ export default function Navigation() {
               </div>
             </div>
 
-            <Link href="/products" className="text-white/80 hover:text-gold text-sm tracking-widest uppercase transition-colors">
+            <Link href="/products" className={navLinkClass("/products")}>
               Products
             </Link>
-            <Link href="/schedule" className="text-white/80 hover:text-gold text-sm tracking-widest uppercase transition-colors">
+            <Link href="/schedule" className={navLinkClass("/schedule")}>
               Schedule
             </Link>
-            <Link href="/contact" className="text-white/80 hover:text-gold text-sm tracking-widest uppercase transition-colors">
+            <Link href="/contact" className={navLinkClass("/contact")}>
               Contact
             </Link>
             <a

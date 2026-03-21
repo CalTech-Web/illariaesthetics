@@ -88,7 +88,7 @@ export default function IVInfusionsPage() {
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-4 mt-8">
+          <div className="flex flex-wrap justify-center gap-4 mt-8">
             <Link href="/add-ons" className="btn-outline">View Add-Ons</Link>
             <Link href="/injections" className="btn-outline">View Injections</Link>
           </div>

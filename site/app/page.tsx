@@ -68,7 +68,7 @@ export default function HomePage() {
             priority
             fetchPriority="high"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-dark/90 via-dark/70 to-dark/30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/65 to-black/40" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32">

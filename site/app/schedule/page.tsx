@@ -127,10 +127,10 @@ export default function SchedulePage() {
                 items: ["IV Infusions (~45 min)", "Injections (~15 min)", "Immunity Drip", "NAD+ Therapy", "Hangover Recovery"],
               },
             ].map((service) => (
-              <div key={service.title} className="bg-white p-6">
+              <div key={service.title} className="bg-white p-6 h-full flex flex-col">
                 <h3 className="font-serif text-xl text-dark-medium mb-4">{service.title}</h3>
                 <div className="w-6 h-px bg-gold mb-4" />
-                <ul className="space-y-2 mb-6">
+                <ul className="space-y-2 mb-6 flex-1">
                   {service.items.map((item) => (
                     <li key={item} className="text-neutral-medium text-sm flex items-center gap-2">
                       <div className="w-1 h-1 rounded-full bg-gold flex-shrink-0" />
@@ -138,7 +138,7 @@ export default function SchedulePage() {
                     </li>
                   ))}
                 </ul>
-                <Link href={service.href} className="text-gold text-xs tracking-wider uppercase font-sans hover:text-gold-dark transition-colors">
+                <Link href={service.href} className="text-gold text-xs tracking-wider uppercase font-sans hover:text-gold-dark transition-colors mt-auto">
                   Learn More
                 </Link>
               </div>
@@ -161,8 +161,7 @@ export default function SchedulePage() {
                   <h3 className="font-serif text-lg text-dark-medium mb-2">Address</h3>
                   <p className="text-neutral-medium">
                     1509 North Western Avenue, Unit B<br />
-                    Chicago, IL 60622<br />
-                    Wicker Park Neighborhood
+                    Chicago, IL 60622 (Wicker Park)
                   </p>
                 </div>
 
@@ -180,7 +179,7 @@ export default function SchedulePage() {
                     ].map((item) => (
                       <div key={item.day} className="flex items-center justify-between py-2 border-b border-neutral-bg last:border-0">
                         <span className="text-dark-medium text-sm font-medium">{item.day}</span>
-                        <span className={`text-sm ${item.hours === "Closed" ? "text-neutral-light" : "text-neutral-medium"}`}>
+                        <span className={`text-sm ${item.hours === "Closed" ? "text-neutral-light italic" : "text-neutral-medium font-medium"}`}>
                           {item.hours}
                         </span>
                       </div>

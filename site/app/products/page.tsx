@@ -77,31 +77,37 @@ const alumierProducts = [
     name: "AluminEye",
     description: "Eye treatment formulated for the thin skin around the eye, where most creams underperform. Targets dark circles, puffiness, and fine lines.",
     url: "https://us.alumiermd.com/products/alumineye?code=44A5EB2P",
+    image: "/assets/products/alumiermd-alumineye.png",
   },
   {
     name: "Retinol Resurfacing Serum 0.5",
     description: "0.5% medical-grade retinol for resurfacing and renewal. Targets fine lines and uneven texture at a concentration not available over the counter.",
     url: "https://us.alumiermd.com/products/retinol-resurfacing-serum-0-5?code=44A5EB2P",
+    image: "/assets/products/alumiermd-retinol.png",
   },
   {
     name: "HydraDew",
     description: "Lightweight moisturizer that rebuilds the skin barrier. Works well alongside retinol or as aftercare following a chemical peel.",
     url: "https://us.alumiermd.com/products/hydradew-11221?code=44A5EB2P",
+    image: "/assets/products/alumiermd-hydradew.png",
   },
   {
     name: "Bright & Clear Solution",
     description: "Targets hyperpigmentation and uneven tone. Commonly used after cryoablation or a chemical peel to maintain the results.",
     url: "https://us.alumiermd.com/products?code=44A5EB2P",
+    image: "/assets/products/alumiermd-bright-clear.png",
   },
   {
     name: "Purifying Gel Cleanser",
     description: "Cleansing gel that clears the skin without stripping moisture. A clean starting point for any AlumierMD regimen.",
     url: "https://us.alumiermd.com/products/purifying-gel-cleanser?code=44A5EB2P",
+    image: "/assets/products/alumiermd-cleanser.png",
   },
   {
     name: "HydraRich",
     description: "Dense moisturizer for dry or compromised skin. Repairs the barrier without clogging pores.",
     url: "https://us.alumiermd.com/products/hydrarich?code=44A5EB2P",
+    image: "/assets/products/alumiermd-hydrarich.png",
   },
 ];
 
@@ -180,7 +186,7 @@ export default function ProductsPage() {
           </p>
           <blockquote className="border border-gold/20 p-8 mt-8">
             <p className="text-dark-medium font-serif italic text-xl leading-relaxed">
-              &ldquo;As a doctor, we use higher grade medical products for a better patient result.&rdquo;
+              &ldquo;We carry what we use. Every product we recommend is one we have used in the office.&rdquo;
             </p>
             <cite className="text-neutral-medium text-sm mt-4 block not-italic font-sans tracking-wider">
               Dr. Milton Chavez, Founder and Medical Director
@@ -229,23 +235,30 @@ export default function ProductsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {alumierProducts.map((product) => (
-              <div key={product.name} className="bg-white p-6 hover:shadow-lg transition-shadow group">
-                <h3 className="font-serif text-xl text-dark-medium mb-3 group-hover:text-gold transition-colors">{product.name}</h3>
-                <div className="w-6 h-px bg-gold mb-4" />
-                <p className="text-neutral-medium text-sm leading-relaxed mb-6">
-                  {product.description}
-                </p>
-                <a
-                  href={product.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gold text-sm tracking-wider uppercase font-sans hover:text-gold-dark transition-colors flex items-center gap-2"
-                >
-                  Purchase from Illari Aesthetics
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
+              <div key={product.name} className="bg-white hover:shadow-lg transition-shadow group flex flex-col overflow-hidden">
+                <div className="aspect-square relative bg-neutral-bg flex items-center justify-center p-4">
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    fill
+                    className="object-contain p-6"
+                  />
+                </div>
+                <div className="p-6 flex flex-col flex-1">
+                  <h3 className="font-serif text-xl text-dark-medium mb-3 group-hover:text-gold transition-colors">{product.name}</h3>
+                  <div className="w-6 h-px bg-gold mb-4" />
+                  <p className="text-neutral-medium text-sm leading-relaxed mb-6 flex-1">
+                    {product.description}
+                  </p>
+                  <a
+                    href={product.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-outline text-xs self-start"
+                  >
+                    Purchase
+                  </a>
+                </div>
               </div>
             ))}
           </div>

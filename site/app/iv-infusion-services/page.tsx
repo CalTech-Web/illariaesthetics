@@ -191,18 +191,19 @@ export default function IVTherapyPage() {
               </Link>
             </div>
 
-            <div className="bg-dark p-8 text-center">
-              <div className="w-16 h-16 rounded-full bg-gold/20 flex items-center justify-center mx-auto mb-6">
+            <div className="bg-white p-8 text-center border-2 border-gold relative">
+              <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gold text-white text-xs tracking-widest uppercase font-sans px-3 py-1">Featured</span>
+              <div className="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
                 </svg>
               </div>
-              <h3 className="font-serif text-2xl text-white mb-4">Injections</h3>
-              <p className="text-neutral-light text-sm leading-relaxed mb-6">
+              <h3 className="font-serif text-2xl text-dark-medium mb-4">Injections</h3>
+              <p className="text-neutral-medium text-sm leading-relaxed mb-6">
                 Intramuscular injections for targeted results. Hair, skin, and nails. B12 energy. Glutathione. Immunity. NAD+. Weight wellness. Each one takes about 15 minutes.
               </p>
               <p className="text-gold font-sans text-sm font-medium mb-6">Starting at $35</p>
-              <Link href="/injections" className="btn-outline-white">
+              <Link href="/injections" className="btn-outline">
                 View Injection Menu
               </Link>
             </div>
