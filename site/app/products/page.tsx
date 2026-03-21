@@ -4,6 +4,18 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Medical-Grade Skincare Products Chicago | AlumierMD & Derma Made",
   description: "Shop medical-grade skincare products used by Dr. Chavez at Illari Aesthetics in Chicago. AlumierMD and Derma Made, professionally dispensed skincare not available over the counter.",
+  alternates: { canonical: "https://illariaesthetics.com/products" },
+  openGraph: {
+    url: "https://illariaesthetics.com/products",
+    title: "AlumierMD & Derma Made Chicago | Medical-Grade Skincare at Illari Aesthetics",
+    description: "Purchase professionally dispensed AlumierMD and Derma Made skincare, the same lines Dr. Chavez uses and recommends at Illari Aesthetics in Chicago.",
+    images: [
+      {
+        url: "/assets/products/alumiermd-hero.jpg",
+        alt: "AlumierMD medical-grade skincare products at Illari Aesthetics",
+      },
+    ],
+  },
 };
 
 const alumierProducts = [

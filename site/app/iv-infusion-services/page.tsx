@@ -4,7 +4,19 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "IV Therapy Chicago | IV Infusions & Vitamin Injections | Illari Aesthetics",
-  description: "IV therapy and vitamin injections in Chicago's Wicker Park. Physician-supervised IV infusions for beauty, energy, immunity, hydration, and more. Walk-ins welcome.",
+  description: "IV therapy and vitamin injections in Chicago's Wicker Park. Physician-supervised IV hydration, NAD+, immunity, beauty drips, and more. Starting at $99.",
+  alternates: { canonical: "https://illariaesthetics.com/iv-infusion-services" },
+  openGraph: {
+    url: "https://illariaesthetics.com/iv-infusion-services",
+    title: "IV Therapy Chicago | Vitamin Drips & IV Hydration in Wicker Park",
+    description: "Physician-supervised IV therapy in Chicago's Wicker Park. Hydration, NAD+, immunity, beauty, hangover recovery, and more. Starting at $99.",
+    images: [
+      {
+        url: "/assets/gallery/gallery-2-treatment.jpg",
+        alt: "IV therapy and vitamin infusions at Illari Aesthetics, Chicago",
+      },
+    ],
+  },
 };
 
 export default function IVTherapyPage() {

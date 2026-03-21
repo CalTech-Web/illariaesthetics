@@ -1,5 +1,24 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Illari Aesthetics | Physician-Led Medical Spa in Chicago's Wicker Park",
+  description:
+    "Illari Aesthetics is a physician-led medical spa in Chicago's Wicker Park. Dr. Chavez, board-certified physician with 30+ years experience, offers Botox, fillers, IV therapy, medical weight loss, and skin care.",
+  alternates: { canonical: "https://illariaesthetics.com" },
+  openGraph: {
+    url: "https://illariaesthetics.com",
+    images: [
+      {
+        url: "/assets/team/dr-chavez.jpg",
+        width: 1023,
+        height: 1273,
+        alt: "Dr. Milton Chavez, Founder and Medical Director of Illari Aesthetics",
+      },
+    ],
+  },
+};
 
 export default function HomePage() {
   const services = [

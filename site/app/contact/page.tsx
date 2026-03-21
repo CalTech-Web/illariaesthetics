@@ -4,6 +4,10 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Contact Illari Aesthetics | Chicago Med Spa, Wicker Park",
   description: "Contact Illari Aesthetics in Chicago's Wicker Park. Call 773.219.0326 or email info@illariaesthetics.com. Open Monday through Friday, 9am to 4pm.",
+  alternates: { canonical: "https://illariaesthetics.com/contact" },
+  openGraph: {
+    url: "https://illariaesthetics.com/contact",
+  },
 };
 
 export default function ContactPage() {

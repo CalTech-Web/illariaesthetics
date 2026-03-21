@@ -4,6 +4,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Vitamin Injections Menu Chicago | B12, Glutathione, NAD+ | Illari Aesthetics",
   description: "Quick vitamin and wellness injections at Illari Aesthetics in Chicago's Wicker Park. B12 energy, glutathione, NAD+, immunity, and more. Approximately 15 minutes. Starting at $35.",
+  alternates: { canonical: "https://illariaesthetics.com/injections" },
+  openGraph: {
+    url: "https://illariaesthetics.com/injections",
+  },
 };
 
 const injections = [

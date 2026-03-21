@@ -5,6 +5,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Schedule an Appointment | Illari Aesthetics Chicago",
   description: "Book your appointment at Illari Aesthetics in Chicago's Wicker Park. Physician-led skin care, injectables, weight loss, and IV therapy. Monday through Friday, 9am to 4pm.",
+  alternates: { canonical: "https://illariaesthetics.com/schedule" },
+  openGraph: {
+    url: "https://illariaesthetics.com/schedule",
+  },
 };
 
 export default function SchedulePage() {

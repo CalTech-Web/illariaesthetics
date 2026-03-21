@@ -4,6 +4,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "IV Infusions Menu Chicago | Vitamin Drips | Illari Aesthetics",
   description: "Full IV infusion drip menu at Illari Aesthetics in Chicago's Wicker Park. Beauty, immunity, NAD+, hangover recovery, and more. Starting at $99.",
+  alternates: { canonical: "https://illariaesthetics.com/iv-infusions" },
+  openGraph: {
+    url: "https://illariaesthetics.com/iv-infusions",
+  },
 };
 
 const infusions = [

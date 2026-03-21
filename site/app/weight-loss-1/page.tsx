@@ -3,7 +3,19 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Medical Weight Loss Chicago | GLP-1 Program by Dr. Chavez",
-  description: "Physician-supervised GLP-1 weight loss program in Chicago's Wicker Park. Dr. Chavez offers tirzepatide and semaglutide with monthly check-ins starting at $350/month.",
+  description: "Physician-supervised GLP-1 weight loss in Chicago's Wicker Park. Dr. Chavez offers tirzepatide and semaglutide with monthly check-ins, tailored dosing, and real physician oversight. Starting at $350/month.",
+  alternates: { canonical: "https://illariaesthetics.com/weight-loss-1" },
+  openGraph: {
+    url: "https://illariaesthetics.com/weight-loss-1",
+    title: "Medical Weight Loss Chicago | GLP-1 (Semaglutide & Tirzepatide) by Dr. Chavez",
+    description: "Physician-supervised GLP-1 weight loss program in Chicago. Tirzepatide and semaglutide with monthly check-ins starting at $350/month.",
+    images: [
+      {
+        url: "/assets/gallery/weight-loss-hero.jpg",
+        alt: "Medical weight loss program at Illari Aesthetics, Chicago",
+      },
+    ],
+  },
 };
 
 export default function WeightLossPage() {

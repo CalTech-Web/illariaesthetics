@@ -5,6 +5,18 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Skin Care Chicago | Medical-Grade Skin Treatments by Dr. Chavez",
   description: "Physician-led skin care in Chicago's Wicker Park. Dr. Chavez offers chemical peels, microneedling, cryoablation, and surgical dermatology with medical-grade products for superior results.",
+  alternates: { canonical: "https://illariaesthetics.com/skin-care" },
+  openGraph: {
+    url: "https://illariaesthetics.com/skin-care",
+    title: "Medical-Grade Skin Care Chicago | Dr. Chavez, Board-Certified Physician",
+    description: "Chemical peels, microneedling, cryoablation, surgical dermatology, and dermaplaning by a board-certified physician in Chicago's Wicker Park.",
+    images: [
+      {
+        url: "/assets/gallery/skincare-chemical-peel.jpg",
+        alt: "Medical-grade skin care treatment at Illari Aesthetics, Chicago",
+      },
+    ],
+  },
 };
 
 const treatments = [

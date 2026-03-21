@@ -5,6 +5,20 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About Illari Aesthetics | Dr. Milton Chavez, Chicago Med Spa",
   description: "Meet Dr. Milton Chavez, board-certified family physician with 30+ years of clinical experience and founder of Illari Aesthetics in Wicker Park, Chicago.",
+  alternates: { canonical: "https://illariaesthetics.com/about" },
+  openGraph: {
+    url: "https://illariaesthetics.com/about",
+    title: "Dr. Milton Chavez | Board-Certified Physician & Founder, Illari Aesthetics Chicago",
+    description: "Dr. Chavez trained at Rush University and spent 30+ years in clinical medicine before founding Illari Aesthetics. This is physician-led care, not an esthetician.",
+    images: [
+      {
+        url: "/assets/team/dr-chavez.jpg",
+        width: 1023,
+        height: 1273,
+        alt: "Dr. Milton Chavez, Founder and Medical Director of Illari Aesthetics",
+      },
+    ],
+  },
 };
 
 export default function AboutPage() {

@@ -4,6 +4,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "IV Add-Ons | Enhance Your IV Infusion | Illari Aesthetics Chicago",
   description: "Enhance any IV infusion with add-ons at Illari Aesthetics in Chicago's Wicker Park. Glutathione, Toradol, Zofran, and additional hydration available.",
+  alternates: { canonical: "https://illariaesthetics.com/add-ons" },
+  openGraph: {
+    url: "https://illariaesthetics.com/add-ons",
+  },
 };
 
 const addOns = [

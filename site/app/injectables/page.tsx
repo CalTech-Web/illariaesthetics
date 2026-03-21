@@ -2,8 +2,20 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Injectables Chicago | Botox, Fillers & PRF by Dr. Chavez",
-  description: "Physician-administered injectables in Chicago's Wicker Park. Dr. Chavez offers Botox, Xeomin, Dysport, hyaluronic acid fillers, and PRF treatments for natural, refined results.",
+  title: "Botox Chicago | Injectables, Fillers & PRF by Dr. Chavez",
+  description: "Physician-administered Botox and injectables in Chicago's Wicker Park. Dr. Chavez offers Botox, Xeomin, Dysport, hyaluronic acid fillers, and PRF treatments for natural, refined results.",
+  alternates: { canonical: "https://illariaesthetics.com/injectables" },
+  openGraph: {
+    url: "https://illariaesthetics.com/injectables",
+    title: "Botox Chicago | Physician-Administered Injectables by Dr. Chavez",
+    description: "Botox, Xeomin, Dysport, hyaluronic acid filler, and PRF administered by a board-certified physician in Chicago's Wicker Park. Not an esthetician. A doctor.",
+    images: [
+      {
+        url: "/assets/gallery/gallery-6-lip-fillers.jpg",
+        alt: "Professional injectable treatments in Chicago by Dr. Chavez",
+      },
+    ],
+  },
 };
 
 export default function InjectablesPage() {
