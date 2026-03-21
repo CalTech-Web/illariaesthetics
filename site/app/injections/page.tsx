@@ -88,7 +88,7 @@ export default function InjectionsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       {/* Hero */}
-      <section className="py-24 bg-dark">
+      <section className="pt-[100px] pb-[75px] bg-dark">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">IV Therapy Menu</p>
           <h1 className="text-5xl font-serif text-white mb-6">Injections</h1>

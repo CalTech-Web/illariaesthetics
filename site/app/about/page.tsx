@@ -69,7 +69,7 @@ export default function AboutPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
       />
       {/* Hero */}
-      <section className="py-24 bg-neutral-bg">
+      <section className="pt-[100px] pb-[75px] bg-neutral-bg">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>

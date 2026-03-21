@@ -102,7 +102,7 @@ export default function InjectablesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       {/* Hero */}
-      <section className="relative py-32 bg-dark overflow-hidden">
+      <section className="relative pt-[100px] pb-[75px] bg-dark overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/assets/gallery/gallery-6-lip-fillers.jpg"
