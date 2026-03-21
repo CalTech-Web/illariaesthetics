@@ -69,45 +69,50 @@ export default function AboutPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
       />
       {/* Hero */}
-      <section className="pt-[100px] pb-[75px] bg-neutral-bg">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">Our Story</p>
-              <h1 className="text-5xl font-serif text-dark-medium mb-6 leading-tight">
-                Physician-Led<br />Aesthetic Excellence
+      <section className="relative bg-dark linen-texture-dark overflow-hidden">
+        <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 items-end min-h-[700px]">
+            {/* Left — Editorial copy */}
+            <div className="lg:col-span-6 py-28 lg:py-36 lg:pr-20 order-2 lg:order-1">
+              <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Our Story</p>
+              <h1 className="font-serif text-white text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05] mb-8">
+                Physician-Led<br /><span className="italic">Aesthetic Excellence</span>
               </h1>
-              <div className="gold-divider-left" />
-              <p className="text-neutral-medium leading-relaxed mb-6">
+              <div className="w-12 h-px bg-gold/40 mb-10" />
+              <p className="text-white/50 text-sm font-sans font-light leading-[1.8] mb-6 max-w-lg">
                 Dr. Milton Chavez spent years teaching resident physicians at Rush University before he opened his own aesthetics practice. That background is not just a line on a bio. It is the reason Illari Aesthetics approaches skin care the way a clinical practice would.
               </p>
-              <p className="text-neutral-medium leading-relaxed mb-6">
-                The mission is specific. Facilitate the expression of your true desired appearance. Not alter who you are, not hand you a package deal. Give you a treatment protocol built around your skin and your goals, using products a physician stands behind clinically.
+              <p className="text-white/50 text-sm font-sans font-light leading-[1.8] mb-6 max-w-lg">
+                The mission is specific. Facilitate the expression of your true desired appearance. Not alter who you are, not hand you a package deal. Give you a treatment protocol built around your skin and your goals.
               </p>
-              <p className="text-neutral-medium leading-relaxed mb-8">
-                The office is in Wicker Park on North Western Avenue. A practice that feels professional without feeling cold. The kind of place you bring your actual skin concerns, not a Pinterest board.
+              <p className="text-white/50 text-sm font-sans font-light leading-[1.8] mb-14 max-w-lg">
+                The office is in Wicker Park on North Western Avenue. A practice that feels professional without feeling cold.
               </p>
               <a
                 href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary"
+                className="border border-gold/60 text-gold px-10 py-3.5 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light hover:bg-gold/10 hover:border-gold transition-all duration-500"
               >
                 Schedule a Consultation
               </a>
             </div>
-            <div className="relative overflow-hidden">
-              <div className="aspect-[3/4] relative overflow-hidden">
-                <Image
-                  src="/assets/team/dr-chavez.jpg"
-                  alt="Dr. Milton Chavez, Founder and Medical Director of Illari Aesthetics"
-                  fill
-                  className="object-cover object-center"
-                />
-              </div>
-              <div className="absolute bottom-0 right-0 bg-dark text-white p-6 max-w-xs">
-                <p className="font-serif text-gold text-lg mb-2">Dr. Milton Chavez</p>
-                <p className="text-xs tracking-wider uppercase text-neutral-light">Founder &amp; Medical Director</p>
+
+            {/* Right — Portrait */}
+            <div className="lg:col-span-6 order-1 lg:order-2 relative h-[420px] lg:h-[700px]">
+              <Image
+                src="/assets/team/dr-chavez.jpg"
+                alt="Dr. Milton Chavez, Founder and Medical Director of Illari Aesthetics"
+                fill
+                className="object-cover object-center"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-dark/70 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-r from-dark/30 via-transparent to-transparent" />
+              {/* Name badge */}
+              <div className="absolute bottom-8 left-8 bg-dark/75 backdrop-blur-sm border border-gold/20 px-6 py-4">
+                <p className="font-serif text-gold text-base mb-1">Dr. Milton Chavez</p>
+                <p className="text-[9px] tracking-[0.25em] uppercase font-sans font-light text-white/50">Founder &amp; Medical Director</p>
               </div>
             </div>
           </div>
@@ -252,23 +257,24 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-neutral-bg">
+      <section className="py-20 bg-dark linen-texture-dark">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="section-title mb-6">Ready to Experience the Illari Difference?</h2>
+          <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-6">Wicker Park, Chicago</p>
+          <h2 className="font-serif text-white text-3xl md:text-4xl mb-6">Ready to Experience the Illari Difference?</h2>
           <div className="gold-divider" />
-          <p className="text-neutral-medium mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-white/50 text-sm font-sans font-light mb-12 max-w-2xl mx-auto leading-[1.8]">
             Book a consultation and find out what a physician-led practice looks like in practice.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-6">
             <a
               href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary"
+              className="border border-gold/60 text-gold px-10 py-3.5 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light hover:bg-gold/10 hover:border-gold transition-all duration-500"
             >
               Book a Consultation
             </a>
-            <Link href="/contact" className="btn-outline">
+            <Link href="/contact" className="text-white/50 text-sm font-mono tracking-widest hover:text-white/80 transition-colors duration-500 py-3.5">
               Contact Us
             </Link>
           </div>
