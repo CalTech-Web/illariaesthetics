@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IV Therapy Chicago | IV Infusions & Vitamin Injections | Illari Aesthetics",
+  title: "IV Therapy Chicago | Vitamin Drips & Infusions by Dr. Chavez",
   description: "IV therapy and vitamin injections in Chicago's Wicker Park. Physician-supervised IV hydration, NAD+, immunity, beauty drips, and more. Starting at $99.",
   alternates: { canonical: "https://illariaesthetics.com/iv-infusion-services" },
   openGraph: {
@@ -19,9 +19,60 @@ export const metadata: Metadata = {
   },
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is IV therapy?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "IV therapy delivers a concentrated blend of vitamins, minerals, and nutrients directly into your bloodstream, bypassing the digestive system entirely. This means full absorption and faster effects compared to oral supplements. At Illari Aesthetics, every infusion is administered in a physician-supervised clinical setting in Chicago's Wicker Park.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long does IV therapy take?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "IV infusions take approximately 45 minutes. Intramuscular vitamin injections take approximately 15 minutes.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What IV drips do you offer in Chicago?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We offer the Illari beauty drip ($250), NAD+ anti-aging ($400+), Hangover recovery ($225), Myers Cocktail ($165), High Dose C ($200), Immunity ($165), Allergy relief ($165), Soothe for migraines ($250), and Modest hydration ($99). Add-ons including glutathione, Toradol, Zofran, and extra hydration are available.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is IV therapy safe?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, when administered in a proper medical setting. At Illari Aesthetics, all IV therapy is physician-supervised by Dr. Milton Chavez, a board-certified family physician with 30+ years of clinical experience. Every infusion is performed in a clinical setting, not a spa.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Why choose Illari Aesthetics for IV therapy in Chicago?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Illari Aesthetics is physician-led. Dr. Chavez is a board-certified family physician who oversees every infusion in a real medical practice in Wicker Park, Chicago. That is a different standard of care than IV lounges or wellness spas offering similar services without physician oversight.",
+      },
+    },
+  ],
+};
+
 export default function IVTherapyPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       {/* Hero */}
       <section className="relative py-32 bg-dark overflow-hidden">
         <div className="absolute inset-0">
@@ -187,6 +238,54 @@ export default function IVTherapyPage() {
             <Link href="/iv-infusions" className="btn-primary">
               View Full IV Menu
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 bg-neutral-bg">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">Common Questions</p>
+            <h2 className="section-title">IV Therapy FAQ</h2>
+            <div className="gold-divider" />
+          </div>
+
+          <div className="space-y-6">
+            {[
+              {
+                q: "What is IV therapy?",
+                a: "IV therapy delivers a concentrated blend of vitamins, minerals, and nutrients directly into your bloodstream, bypassing the digestive system entirely. This means full absorption and faster effects compared to oral supplements. At Illari Aesthetics, every infusion is administered in a physician-supervised clinical setting in Chicago's Wicker Park.",
+              },
+              {
+                q: "How long does IV therapy take?",
+                a: "IV infusions take approximately 45 minutes. Intramuscular vitamin injections take approximately 15 minutes.",
+              },
+              {
+                q: "What IV drips do you offer in Chicago?",
+                a: "We offer the Illari beauty drip ($250), NAD+ anti-aging ($400+), Hangover recovery ($225), Myers Cocktail ($165), High Dose C ($200), Immunity ($165), Allergy relief ($165), Soothe for migraines ($250), and Modest hydration ($99). Add-ons including glutathione, Toradol, Zofran, and extra hydration are available.",
+              },
+              {
+                q: "Is IV therapy safe?",
+                a: "Yes, when administered in a proper medical setting. At Illari Aesthetics, all IV therapy is physician-supervised by Dr. Milton Chavez, a board-certified family physician with 30+ years of clinical experience. Every infusion is performed in a clinical setting, not a spa.",
+              },
+              {
+                q: "Why choose Illari Aesthetics for IV therapy in Chicago?",
+                a: "Illari Aesthetics is physician-led. Dr. Chavez is a board-certified family physician who oversees every infusion in a real medical practice in Wicker Park, Chicago. That is a different standard of care than IV lounges or wellness spas offering similar services without physician oversight.",
+              },
+            ].map((item) => (
+              <details key={item.q} className="border border-neutral-bg bg-white group">
+                <summary className="px-6 py-5 cursor-pointer flex items-center justify-between font-serif text-dark-medium text-lg hover:text-gold transition-colors">
+                  {item.q}
+                  <svg className="w-5 h-5 flex-shrink-0 ml-4 group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
+                  </svg>
+                </summary>
+                <div className="px-6 pb-6">
+                  <p className="text-neutral-medium leading-relaxed">{item.a}</p>
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </section>

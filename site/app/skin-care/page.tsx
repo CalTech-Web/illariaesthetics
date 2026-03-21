@@ -3,13 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Skin Care Chicago | Medical-Grade Skin Treatments by Dr. Chavez",
-  description: "Physician-led skin care in Chicago's Wicker Park. Dr. Chavez offers chemical peels, microneedling, cryoablation, and surgical dermatology with medical-grade products for superior results.",
+  title: "Microneedling Chicago | Chemical Peels & Medical Skin Care by Dr. Chavez",
+  description: "Physician-led microneedling and skin care in Chicago's Wicker Park. Dr. Chavez offers chemical peels, microneedling, cryoablation, and surgical dermatology with medical-grade products for superior results.",
   alternates: { canonical: "https://illariaesthetics.com/skin-care" },
   openGraph: {
     url: "https://illariaesthetics.com/skin-care",
-    title: "Medical-Grade Skin Care Chicago | Dr. Chavez, Board-Certified Physician",
-    description: "Chemical peels, microneedling, cryoablation, surgical dermatology, and dermaplaning by a board-certified physician in Chicago's Wicker Park.",
+    title: "Microneedling & Chemical Peels Chicago | Dr. Chavez, Board-Certified Physician",
+    description: "Microneedling, chemical peels, cryoablation, surgical dermatology, and dermaplaning by a board-certified physician in Chicago's Wicker Park.",
     images: [
       {
         url: "/assets/gallery/skincare-chemical-peel.jpg",
@@ -17,6 +17,45 @@ export const metadata: Metadata = {
       },
     ],
   },
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What makes Illari Aesthetics different from other skin care spas in Chicago?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Dr. Chavez is a board-certified family physician with over 30 years of clinical experience, trained at Rush University and retained as faculty. He evaluates your skin the way a physician does and uses products that are not available to non-medical providers. Every plan is built for you, not borrowed from a template.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What skin care treatments do you offer?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We offer skin surveys, cryoablation, surgical dermatology including lesion and mole removal and scar revision, chemical peels, dermaplaning, and microneedling. All treatments use medical-grade products from AlumierMD and Derma Made.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How do I know which treatment is right for me?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Start with the Skin Survey. Dr. Chavez performs a full facial assessment and walks you through treatment options, a recommended plan, and transparent pricing based on your specific skin and concerns.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you use different products than a regular spa?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Dr. Chavez uses professionally-dispensed medical-grade products from AlumierMD and Derma Made, which are not available to non-medical providers. As a doctor, he is able to use higher-grade products for better patient results.",
+      },
+    },
+  ],
 };
 
 const treatments = [
@@ -56,6 +95,10 @@ const treatments = [
 export default function SkinCarePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       {/* Hero */}
       <section className="relative py-32 bg-dark overflow-hidden">
         <div className="absolute inset-0">

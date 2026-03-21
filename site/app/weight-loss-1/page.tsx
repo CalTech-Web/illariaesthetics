@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Medical Weight Loss Chicago | GLP-1 Program by Dr. Chavez",
-  description: "Physician-supervised GLP-1 weight loss in Chicago's Wicker Park. Dr. Chavez offers tirzepatide and semaglutide with monthly check-ins, tailored dosing, and real physician oversight. Starting at $350/month.",
+  title: "Semaglutide Chicago | Medical Weight Loss by Dr. Chavez",
+  description: "Physician-supervised semaglutide and tirzepatide weight loss in Chicago's Wicker Park. Dr. Chavez offers GLP-1 programs with monthly check-ins, tailored dosing, and real physician oversight. Starting at $350/month.",
   alternates: { canonical: "https://illariaesthetics.com/weight-loss-1" },
   openGraph: {
     url: "https://illariaesthetics.com/weight-loss-1",
-    title: "Medical Weight Loss Chicago | GLP-1 (Semaglutide & Tirzepatide) by Dr. Chavez",
-    description: "Physician-supervised GLP-1 weight loss program in Chicago. Tirzepatide and semaglutide with monthly check-ins starting at $350/month.",
+    title: "Semaglutide Chicago | Medical Weight Loss & GLP-1 Program by Dr. Chavez",
+    description: "Physician-supervised semaglutide and tirzepatide weight loss in Chicago. GLP-1 program with monthly check-ins starting at $350/month.",
     images: [
       {
         url: "/assets/gallery/weight-loss-hero.jpg",
@@ -18,9 +18,68 @@ export const metadata: Metadata = {
   },
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Which GLP-1 medications do you offer?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Tirzepatide and semaglutide, two GLP-1 receptor agonists with strong clinical research behind them. Dr. Chavez will recommend the right one based on your medical history, health profile, and goals.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Am I a candidate for the weight loss program?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Generally, GLP-1 programs are appropriate for adults with a BMI of 27 or greater, or people who have tried diet and exercise without lasting results. Schedule a consultation with Dr. Chavez to confirm based on your health profile.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What are the potential side effects of semaglutide or tirzepatide?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Nausea, vomiting, and diarrhea are the most common early side effects, particularly as your body adjusts to the medication. Some people experience redness or itching at the injection site. Most of these resolve over time. Dr. Chavez monitors and adjusts dosing at your monthly check-ins to minimize them.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What does the weight loss program cost?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Plans start at approximately $350 per month. The exact cost varies based on the specific medication and dosage required for your treatment plan. Dr. Chavez will review all pricing transparently during your consultation.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How quickly will I see results from GLP-1 treatment?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Some patients notice appetite changes within the first few weeks. Measurable weight loss typically follows over several months with consistent use. Results vary by person, but Dr. Chavez is tracking your progress and adjusting the plan the whole time.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Why choose Illari Aesthetics for my weight loss program?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Commercial weight loss clinics scale by standardizing everything. Dr. Chavez does the opposite. He is a board-certified family physician reviewing your actual health at every visit and adjusting your program based on what he sees, not a template.",
+      },
+    },
+  ],
+};
+
 export default function WeightLossPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       {/* Hero */}
       <section className="relative py-32 bg-dark overflow-hidden">
         <div className="absolute inset-0">

@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Botox Chicago | Injectables, Fillers & PRF by Dr. Chavez",
-  description: "Physician-administered Botox and injectables in Chicago's Wicker Park. Dr. Chavez offers Botox, Xeomin, Dysport, hyaluronic acid fillers, and PRF treatments for natural, refined results.",
+  title: "Botox & Dermal Fillers Chicago | Injectables by Dr. Chavez",
+  description: "Physician-administered Botox and dermal fillers in Chicago's Wicker Park. Dr. Chavez offers Botox, Xeomin, Dysport, hyaluronic acid fillers, and PRF treatments for natural, refined results.",
   alternates: { canonical: "https://illariaesthetics.com/injectables" },
   openGraph: {
     url: "https://illariaesthetics.com/injectables",
-    title: "Botox Chicago | Physician-Administered Injectables by Dr. Chavez",
-    description: "Botox, Xeomin, Dysport, hyaluronic acid filler, and PRF administered by a board-certified physician in Chicago's Wicker Park. Not an esthetician. A doctor.",
+    title: "Botox & Dermal Fillers Chicago | Physician-Administered Injectables by Dr. Chavez",
+    description: "Botox, Xeomin, Dysport, hyaluronic acid dermal fillers, and PRF administered by a board-certified physician in Chicago's Wicker Park. Not an esthetician. A doctor.",
     images: [
       {
         url: "/assets/gallery/gallery-6-lip-fillers.jpg",
@@ -18,9 +18,60 @@ export const metadata: Metadata = {
   },
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What injectables do you offer?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Wrinkle relaxers including Botox, Xeomin, and Dysport. Hyaluronic acid dermal filler for volume and lip enhancement. And PRF, a treatment derived from your own blood used for skin rejuvenation, hair growth support, and wound healing.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Why should I choose a physician over a nurse practitioner for injectables?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Dr. Chavez brings 30 years of clinical training and a physician's knowledge of facial anatomy to every injection. His advanced filler technique training is not standard at most med spas. The difference shows in safety, accuracy, and how the results actually look.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long do wrinkle relaxers last?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Results from wrinkle relaxers such as Botox, Xeomin, and Dysport typically last three to four months, varying by individual metabolism and treatment area. Dr. Chavez will advise on timing for maintenance during your consultation.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long do fillers last?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Hyaluronic acid fillers generally last six to eighteen months depending on the product used, the area treated, and individual factors. Dr. Chavez will recommend the most appropriate product for your goals.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is PRF safe?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. PRF comes entirely from your own blood, so there is no risk of allergic reaction to a foreign substance. As a physician, Dr. Chavez follows strict clinical protocols for every step of the draw and processing.",
+      },
+    },
+  ],
+};
+
 export default function InjectablesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       {/* Hero */}
       <section className="relative py-32 bg-dark overflow-hidden">
         <div className="absolute inset-0">
