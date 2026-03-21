@@ -158,3 +158,18 @@ Key changes made:
 - AlumierMD brand intro: dropped brand PR copy ("delivering therapeutic outcomes for patients presenting an array of skin conditions"); replaced with physician voice explaining clean science rationale.
 [2026-03-20 16:56:16] Run #5 finished
 Deployed and live. Run #5 complete.
+Run #5 complete. Deployed and live.
+
+Here's what changed across 4 files:
+
+**Style violations fixed**
+- `iv-infusion-services/page.tsx` — "nail boost" and "add-on boosters" both removed as buzzword violations
+- Replaced with direct, specific language throughout
+
+**Add-Ons page** — All 4 descriptions rewritten with clinical specificity. Toradol is now identified by its drug name (ketorolac) with the mechanism explained. Zofran is identified as ondansetron with practical context. Glutathione add-on now explains what it does without restating its own name. Additional Hydration drops "boost" for plain description.
+
+**Injections page** — Glutathione replaced "fight free radicals and promote anti-aging" with the liver-production mechanism and why levels drop with age. NAD+ 50mg and 100mg are now meaningfully different: starter dose framing vs full therapeutic dose, with honest notes on what to expect.
+
+**Products page** — AlumierMD brand intro replaced the brand's own PR copy ("delivering therapeutic outcomes for patients presenting an array of skin conditions") with Dr. Chavez's voice explaining the clean science rationale in plain terms.
+[2026-03-20 17:00:22] Run #5 finished
+[2026-03-20 17:00:22] Reached max loops (5). Stopping.

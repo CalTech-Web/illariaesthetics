@@ -216,3 +216,27 @@ New zero-difficulty keyword opportunities discovered:
 - **Hangover IV FAQ** added to IV therapy page — targets hangover iv chicago (50 vol, KD 0, TP 100)
 - **Global keywords** expanded with 6 new Chicago-local terms
 [2026-03-20 17:45:00] Run #5 finished
+**SEO Agent Run #5 complete.** Deployed to production (commit `8fb66da`, Ready in 25s).
+
+---
+
+**Ahrefs research surfaced 9 untapped keywords, all KD 0-1:**
+
+- `ozempic chicago` — 150 vol, KD 0, TP 450 — weight-loss page title updated to "Semaglutide & Ozempic Chicago"; Ozempic FAQ added
+- `hair loss treatment chicago` — 200 vol, KD 1, TP 150 — PRF hair loss FAQ added to injectables page
+- `cryotherapy chicago` — 200 vol, KD 0 — cryoablation vs cryotherapy FAQ on skin-care page
+- `scar removal chicago` — 100 vol, KD 0 — surgical dermatology FAQ added
+- `mole removal chicago` — 70 vol, KD 0 — surgical dermatology FAQ added
+- `wart removal chicago` — 50 vol, KD 0, TP 200 — surgical dermatology FAQ added
+- `hangover iv chicago` — 50 vol, KD 0, TP 100 — hangover IV FAQ added to IV therapy page
+- `glutathione injection chicago` — 40 vol, KD 0 — first FAQPage schema + visible FAQ section added to the injections page
+
+**Changes shipped (`8fb66da`):**
+- Weight-loss title now leads with "Semaglutide & Ozempic Chicago"
+- 4 surgical dermatology + cryoablation FAQs added to skin-care page (420 combined vol, all KD 0)
+- PRF hair loss FAQ on injectables page captures PRF/PRP hair restoration searches
+- FAQPage JSON-LD + visible FAQ section added to injections page (was the only service sub-page with no FAQ schema)
+- Hangover IV FAQ on IV therapy page
+- Global keywords expanded with 6 new Chicago-local terms
+[2026-03-20 17:37:17] Run #5 finished
+[2026-03-20 17:37:17] Reached max loops (5). Stopping.

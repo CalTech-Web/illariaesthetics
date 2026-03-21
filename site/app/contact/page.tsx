@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Illari Aesthetics | Chicago Med Spa, Wicker Park",
@@ -22,6 +23,21 @@ export default function ContactPage() {
           <p className="text-neutral-light leading-relaxed text-lg max-w-2xl mx-auto">
             Illari Aesthetics is at 1509 N Western Avenue in Wicker Park, open Monday through Friday, 9am to 4pm. The fastest way to get on the schedule is a phone call. Email works too, allow a business day for a response.
           </p>
+        </div>
+      </section>
+
+      {/* Send a Message */}
+      <section className="py-20 bg-neutral-bg">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">Send a Message</p>
+            <h2 className="section-title">We Will Get Back to You</h2>
+            <div className="gold-divider" />
+            <p className="text-neutral-medium leading-relaxed">
+              Fill out the form and someone from Illari Aesthetics will respond within one business day. For faster help, call 773.219.0326.
+            </p>
+          </div>
+          <ContactForm />
         </div>
       </section>
 

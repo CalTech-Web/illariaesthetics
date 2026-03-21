@@ -85,3 +85,18 @@ Score held at 93. TBT improved significantly (40ms → 10ms). LCP is still the b
 
 **Result:** Score held at 93. TBT halved again (40ms → 10ms). LCP request discovery audit resolved. Remaining LCP bottleneck is a 920ms element render delay driven by JavaScript execution on the main thread.
 [2026-03-20 17:58:00] Run #2 finished
+**Run #2 Complete**
+
+| | Before | After |
+|---|---|---|
+| Performance | 93 | 93 |
+| LCP | 3.2s | 3.2s |
+| TBT | 40ms | **10ms** |
+| Passed audits | 18 | **20** |
+| LCP request discovery | failing | **resolved** |
+
+**What changed:** Added `fetchPriority="high"` to the hero `<Image>` component in `page.tsx`. In Next.js 16, the `priority` prop alone does not set `fetchpriority="high"` on the img element or preload link — it must be passed explicitly as a separate prop.
+
+**Result:** Score held at 93. TBT dropped 40ms → 10ms. The LCP request discovery audit is now resolved and 2 additional audits moved to "passed." The remaining LCP bottleneck is a 920ms element render delay caused by JavaScript execution blocking the main thread — the next run should target this with legacy JS reduction or bundle optimization.
+[2026-03-20 17:56:08] Run #2 finished
+[2026-03-20 17:56:08] Reached max loops (2). Stopping.
