@@ -36,3 +36,41 @@
 - Commit: `40fc17f`
 - Deployed to Vercel production — Ready in 20s
 
+**SEO Agent Run #1 complete.** Here's what was done:
+
+**Ahrefs audit:** Site had zero organic traffic, ranking only for a misspelled brand term at position 89. Three critical gaps: no sitemap, no robots.txt, no structured data.
+
+**Changes shipped (`40fc17f`):**
+- `sitemap.ts` — all 12 pages registered with Google (home priority 1.0, service pages 0.9)
+- `robots.ts` — crawl directives + sitemap pointer
+- `MedicalBusiness` JSON-LD in layout — address, hours, phone, Dr. Chavez as founder, social sameAs links; enables local Knowledge Panel
+- Canonical URLs on all 12 pages
+- OG images on all service pages (real photos vs. logo)
+- Twitter Card metadata added globally
+- Injectables page title shifted to "Botox Chicago" (1,700 vol, KD 2 — best opportunity on the site)
+- Global keywords expanded with Ahrefs-validated terms
+[2026-03-20 17:08:52] Run #1 finished
+[2026-03-20 17:08:57] Run #2 starting (model: sonnet)
+
+## Run #2 — 2026-03-20
+
+### Ahrefs Keyword Research Findings
+New zero-difficulty keyword opportunities discovered:
+- `microneedling chicago` — 1,700 vol, KD 0 (same volume as botox, not yet targeted)
+- `semaglutide chicago` — 600 vol, KD 0
+- `dermal fillers chicago` — 500 vol, KD 0
+- `chemical peel chicago` — 400 vol, KD 0
+- `iv drip chicago` — 150 vol, KD 0
+- `iv therapy chicago` — 450 vol, KD 2
+
+### Changes Made
+1. **Updated skin-care page title** — "Microneedling Chicago | Chemical Peels & Medical Skin Care by Dr. Chavez" targets microneedling chicago (1,700 vol, KD 0) and chemical peel chicago (400 vol, KD 0)
+2. **Updated injectables page title** — "Botox & Dermal Fillers Chicago | Injectables by Dr. Chavez" adds dermal fillers chicago (500 vol, KD 0)
+3. **Updated weight-loss page title** — "Semaglutide Chicago | Medical Weight Loss by Dr. Chavez" targets semaglutide chicago (600 vol, KD 0)
+4. **Updated IV therapy page title** — "IV Therapy Chicago | Vitamin Drips & Infusions by Dr. Chavez" (shortened from 75 chars to 60 chars)
+5. **Added FAQPage JSON-LD** to skin-care, injectables, weight-loss, and iv-infusion-services pages — all 4 pages had FAQ content but zero structured data; Google can now show rich FAQ snippets in SERPs
+6. **Added visible FAQ section** to iv-infusion-services page (was the only service page missing one) with 5 Q&As covering what IV therapy is, duration, menu, safety, and why choose Illari
+
+### Deployment
+- Commit: `0775550`
+- Deployed to Vercel production — Ready in 19s
