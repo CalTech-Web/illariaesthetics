@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -72,6 +73,9 @@ export const metadata: Metadata = {
     description: "Physician-led med spa in Chicago's Wicker Park. Botox, fillers, IV therapy, medical weight loss, and skin care by a board-certified physician.",
     images: ["/assets/team/dr-chavez.jpg"],
   },
+  verification: {
+    google: "xd2j_-wQOypnf-c6JZsqNWoCYAfYUg7UicwdAD2V-20",
+  },
 };
 
 const jsonLd = {
@@ -140,6 +144,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
