@@ -43,6 +43,12 @@ export const metadata: Metadata = {
     "medical weight loss Chicago",
     "Dr. Chavez",
     "medical grade skin care Chicago",
+    "ozempic Chicago",
+    "scar removal Chicago",
+    "mole removal Chicago",
+    "hair loss treatment Chicago",
+    "hangover IV Chicago",
+    "cryotherapy Chicago",
   ],
   openGraph: {
     type: "website",

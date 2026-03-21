@@ -32,6 +32,37 @@ const injectionsJsonLd = {
   ],
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Do you offer glutathione injections in Chicago?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Illari Aesthetics offers glutathione injections at our Wicker Park location in Chicago. Glutathione is a master antioxidant that fights free radicals and supports anti-aging. We offer a standard dose ($35) and a Glutathione Plus double dose ($40), administered in approximately 15 minutes by physician-supervised staff.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you offer B12 injections in Chicago?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Our Energy injection delivers B12 directly into muscle for faster absorption than oral supplements. For a broader effect, the Energy Plus includes a full B vitamin complex for energy and immune support. Both take approximately 15 minutes and are available at Illari Aesthetics in Wicker Park, Chicago, starting at $35.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What vitamin injections do you offer in Chicago?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We offer B12 energy injections ($35), B complex Energy Plus ($40), glutathione antioxidant ($35), Glutathione Plus double dose ($40), Immunity formula ($40), hair and skin and nails support via the Illari ($35) and Illari Plus ($40), NAD+ at 50mg ($75) and 100mg ($100), and the Skinny weight wellness injection ($40). All physician-supervised at Illari Aesthetics in Wicker Park, Chicago.",
+      },
+    },
+  ],
+};
+
 const injections = [
   { name: "Illari", price: "$35", description: "Nutrients for hair, skin, and nails. One shot, 15 minutes." },
   { name: "Illari Plus", price: "$40", description: "The Illari injection plus a glow antioxidant. Same 15 minutes, wider effect." },
@@ -51,6 +82,10 @@ export default function InjectionsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(injectionsJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       {/* Hero */}
       <section className="py-24 bg-dark">
@@ -93,6 +128,46 @@ export default function InjectionsPage() {
           <div className="flex flex-wrap gap-4 mt-8">
             <Link href="/iv-infusions" className="btn-outline">View IV Infusions</Link>
             <Link href="/add-ons" className="btn-outline">View Add-Ons</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">Common Questions</p>
+            <h2 className="section-title">Injections FAQ</h2>
+            <div className="gold-divider" />
+          </div>
+
+          <div className="space-y-6">
+            {[
+              {
+                q: "Do you offer glutathione injections in Chicago?",
+                a: "Yes. Illari Aesthetics offers glutathione injections at our Wicker Park location in Chicago. Glutathione is a master antioxidant that fights free radicals and supports anti-aging. We offer a standard dose ($35) and a Glutathione Plus double dose ($40), administered in approximately 15 minutes by physician-supervised staff.",
+              },
+              {
+                q: "Do you offer B12 injections in Chicago?",
+                a: "Yes. Our Energy injection delivers B12 directly into muscle for faster absorption than oral supplements. For a broader effect, the Energy Plus includes a full B vitamin complex for energy and immune support. Both take approximately 15 minutes and are available at Illari Aesthetics in Wicker Park, Chicago, starting at $35.",
+              },
+              {
+                q: "What vitamin injections do you offer in Chicago?",
+                a: "We offer B12 energy injections ($35), B complex Energy Plus ($40), glutathione antioxidant ($35), Glutathione Plus double dose ($40), Immunity formula ($40), hair and skin and nails support via the Illari ($35) and Illari Plus ($40), NAD+ at 50mg ($75) and 100mg ($100), and the Skinny weight wellness injection ($40). All physician-supervised at Illari Aesthetics in Wicker Park, Chicago.",
+              },
+            ].map((item) => (
+              <details key={item.q} className="border border-neutral-bg group">
+                <summary className="px-6 py-5 cursor-pointer flex items-center justify-between font-serif text-dark-medium text-lg hover:text-gold transition-colors">
+                  {item.q}
+                  <svg className="w-5 h-5 flex-shrink-0 ml-4 group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
+                  </svg>
+                </summary>
+                <div className="px-6 pb-6">
+                  <p className="text-neutral-medium leading-relaxed">{item.a}</p>
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </section>

@@ -55,6 +55,38 @@ const faqJsonLd = {
         text: "Yes. Dr. Chavez uses professionally-dispensed medical-grade products from AlumierMD and Derma Made, which are not available to non-medical providers. As a doctor, he is able to use higher-grade products for better patient results.",
       },
     },
+    {
+      "@type": "Question",
+      name: "Do you offer mole removal in Chicago?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Dr. Chavez performs mole removal at Illari Aesthetics in Chicago's Wicker Park through surgical dermatology. He evaluates each lesion clinically before recommending removal and performs the procedure with minimal scarring. As a board-certified physician with specific surgical training, Dr. Chavez brings a level of precision to mole removal that is not standard at most med spas.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you offer scar removal or scar revision in Chicago?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Dr. Chavez has specific training in surgical scar revisions, which is uncommon at most med spas. He uses surgical dermatology techniques to address scars from injury, surgery, or acne. Treatment plans are customized to the type, depth, and location of the scar.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you offer wart removal in Chicago?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Dr. Chavez offers wart removal at Illari Aesthetics through surgical dermatology and cryoablation. Cryoablation uses extremely cold liquid to freeze and destroy the affected tissue. Dr. Chavez evaluates the best approach based on the type, size, and location of the wart.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is cryoablation the same as cryotherapy?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Cryoablation and cryotherapy share the principle of using cold to destroy tissue, but cryoablation is a targeted medical procedure used to treat specific skin lesions including hyperpigmentation, sun spots, melasma, and irregular pigmentation. Dr. Chavez uses medical-grade cryoablation at Illari Aesthetics in Chicago, not the whole-body wellness chambers used for athletic recovery.",
+      },
+    },
   ],
 };
 
@@ -260,6 +292,22 @@ export default function SkinCarePage() {
               {
                 q: "Do you use different products than a regular spa?",
                 a: "Yes. Dr. Chavez uses professionally-dispensed medical-grade products from AlumierMD and Derma Made, which are not available to non-medical providers. As a doctor, he is able to use higher-grade products for better patient results.",
+              },
+              {
+                q: "Do you offer mole removal in Chicago?",
+                a: "Yes. Dr. Chavez performs mole removal at Illari Aesthetics in Chicago's Wicker Park through surgical dermatology. He evaluates each lesion clinically before recommending removal and performs the procedure with minimal scarring. As a board-certified physician with specific surgical training, Dr. Chavez brings a level of precision to mole removal that is not standard at most med spas.",
+              },
+              {
+                q: "Do you offer scar removal or scar revision in Chicago?",
+                a: "Yes. Dr. Chavez has specific training in surgical scar revisions, which is uncommon at most med spas. He uses surgical dermatology techniques to address scars from injury, surgery, or acne. Treatment plans are customized to the type, depth, and location of the scar.",
+              },
+              {
+                q: "Do you offer wart removal in Chicago?",
+                a: "Yes. Dr. Chavez offers wart removal at Illari Aesthetics through surgical dermatology and cryoablation. Cryoablation uses extremely cold liquid to freeze and destroy the affected tissue. Dr. Chavez evaluates the best approach based on the type, size, and location of the wart.",
+              },
+              {
+                q: "Is cryoablation the same as cryotherapy?",
+                a: "Cryoablation and cryotherapy share the principle of using cold to destroy tissue, but cryoablation is a targeted medical procedure used to treat specific skin lesions including hyperpigmentation, sun spots, melasma, and irregular pigmentation. Dr. Chavez uses medical-grade cryoablation at Illari Aesthetics in Chicago, not the whole-body wellness chambers used for athletic recovery.",
               },
             ].map((item) => (
               <details key={item.q} className="border border-neutral-bg group">

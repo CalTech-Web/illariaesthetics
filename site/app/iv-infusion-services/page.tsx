@@ -63,6 +63,14 @@ const faqJsonLd = {
         text: "Illari Aesthetics is physician-led. Dr. Chavez is a board-certified family physician who oversees every infusion in a real medical practice in Wicker Park, Chicago. That is a different standard of care than IV lounges or wellness spas offering similar services without physician oversight.",
       },
     },
+    {
+      "@type": "Question",
+      name: "Do you offer hangover IV therapy in Chicago?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Our Hangover IV delivers hydration and essential vitamins to help you recover after a long night. At $225 for approximately 45 minutes, it replenishes what your body lost with a targeted vitamin blend administered directly into your bloodstream. Available at Illari Aesthetics in Wicker Park, Chicago, Monday through Friday 9am to 4pm.",
+      },
+    },
   ],
 };
 
@@ -285,6 +293,10 @@ export default function IVTherapyPage() {
               {
                 q: "Why choose Illari Aesthetics for IV therapy in Chicago?",
                 a: "Illari Aesthetics is physician-led. Dr. Chavez is a board-certified family physician who oversees every infusion in a real medical practice in Wicker Park, Chicago. That is a different standard of care than IV lounges or wellness spas offering similar services without physician oversight.",
+              },
+              {
+                q: "Do you offer hangover IV therapy in Chicago?",
+                a: "Yes. Our Hangover IV delivers hydration and essential vitamins to help you recover after a long night. At $225 for approximately 45 minutes, it replenishes what your body lost with a targeted vitamin blend administered directly into your bloodstream. Available at Illari Aesthetics in Wicker Park, Chicago, Monday through Friday 9am to 4pm.",
               },
             ].map((item) => (
               <details key={item.q} className="border border-neutral-bg bg-white group">

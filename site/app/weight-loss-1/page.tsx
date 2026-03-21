@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Tirzepatide & Semaglutide Chicago | Medical Weight Loss by Dr. Chavez",
+  title: "Semaglutide & Ozempic Chicago | Medical Weight Loss by Dr. Chavez",
   description: "Physician-supervised tirzepatide and semaglutide weight loss in Chicago's Wicker Park. Dr. Chavez offers GLP-1 programs with monthly check-ins, tailored dosing, and real physician oversight. Starting at $350/month.",
   alternates: { canonical: "https://illariaesthetics.com/weight-loss-1" },
   openGraph: {
     url: "https://illariaesthetics.com/weight-loss-1",
-    title: "Tirzepatide & Semaglutide Chicago | Medical Weight Loss by Dr. Chavez",
+    title: "Semaglutide & Ozempic Chicago | Medical Weight Loss by Dr. Chavez",
     description: "Physician-supervised semaglutide and tirzepatide weight loss in Chicago. GLP-1 program with monthly check-ins starting at $350/month.",
     images: [
       {
@@ -68,6 +68,14 @@ const faqJsonLd = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "Commercial weight loss clinics scale by standardizing everything. Dr. Chavez does the opposite. He is a board-certified family physician reviewing your actual health at every visit and adjusting your program based on what he sees, not a template.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you offer Ozempic or Wegovy in Chicago?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Illari Aesthetics offers semaglutide, the active ingredient found in Ozempic and Wegovy, as part of a physician-supervised GLP-1 weight loss program. Dr. Chavez prescribes and monitors your semaglutide treatment with monthly check-ins and adjustments based on your response. Programs start around $350 per month.",
       },
     },
   ],
@@ -277,6 +285,10 @@ export default function WeightLossPage() {
               {
                 q: "Why choose Illari Aesthetics for my weight loss program?",
                 a: "Commercial weight loss clinics scale by standardizing everything. Dr. Chavez does the opposite. He is a board-certified family physician reviewing your actual health at every visit and adjusting your program based on what he sees, not a template.",
+              },
+              {
+                q: "Do you offer Ozempic or Wegovy in Chicago?",
+                a: "Illari Aesthetics offers semaglutide, the active ingredient found in Ozempic and Wegovy, as part of a physician-supervised GLP-1 weight loss program. Dr. Chavez prescribes and monitors your semaglutide treatment with monthly check-ins and adjustments based on your response. Programs start around $350 per month.",
               },
             ].map((item) => (
               <details key={item.q} className="border border-neutral-bg group">

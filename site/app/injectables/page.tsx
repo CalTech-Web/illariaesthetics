@@ -70,6 +70,14 @@ const faqJsonLd = {
         text: "Yes. Dr. Chavez offers hyaluronic acid lip filler at Illari Aesthetics in Chicago's Wicker Park. Lip injections are customized to your anatomy and goals, with conservative dosing for results that look natural, not overdone. Dr. Chavez has advanced training in filler technique, which makes a meaningful difference in lip work specifically.",
       },
     },
+    {
+      "@type": "Question",
+      name: "Do you offer PRF for hair loss in Chicago?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Dr. Chavez offers PRF (Platelet Rich Fibrin) treatments at Illari Aesthetics in Chicago's Wicker Park, including for hair growth support. PRF uses a concentrate derived from your own blood to stimulate natural regeneration in the scalp. It is a non-synthetic option with no risk of allergic reaction, administered as an injection by a board-certified physician.",
+      },
+    },
   ],
 };
 
@@ -273,6 +281,10 @@ export default function InjectablesPage() {
               {
                 q: "Do you offer lip filler in Chicago?",
                 a: "Yes. Dr. Chavez offers hyaluronic acid lip filler at Illari Aesthetics in Chicago's Wicker Park. Lip injections are customized to your anatomy and goals, with conservative dosing for results that look natural, not overdone. Dr. Chavez has advanced training in filler technique, which makes a meaningful difference in lip work specifically.",
+              },
+              {
+                q: "Do you offer PRF for hair loss in Chicago?",
+                a: "Yes. Dr. Chavez offers PRF (Platelet Rich Fibrin) treatments at Illari Aesthetics in Chicago's Wicker Park, including for hair growth support. PRF uses a concentrate derived from your own blood to stimulate natural regeneration in the scalp. It is a non-synthetic option with no risk of allergic reaction, administered as an injection by a board-certified physician.",
               },
             ].map((item) => (
               <details key={item.q} className="border border-neutral-bg bg-white group">
