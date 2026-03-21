@@ -108,3 +108,41 @@ New zero-difficulty keyword opportunities discovered:
 ### Deployment
 - Commit: `4923eca`
 - Deployed to Vercel production — Ready in 19s
+**SEO Agent Run #3 complete.** Deployed to production (commit `4923eca`, Ready in 19s).
+
+---
+
+**Ahrefs research surfaced two zero-difficulty keywords not yet targeted:**
+- `dermaplaning chicago` — 1,500 vol, KD 0 (same scale as botox/microneedling, completely untapped)
+- `tirzepatide chicago` — 200 vol, KD 0 (weight loss page was semaglutide-only)
+
+**Changes shipped:**
+- **Skin-care title** updated to "Microneedling & Dermaplaning Chicago | Medical Skin Care by Dr. Chavez" — now co-targets two KD=0 keywords with 3,200 combined search volume
+- **Weight-loss title** updated to "Tirzepatide & Semaglutide Chicago | Medical Weight Loss by Dr. Chavez" — tirzepatide leads since it's the newer, higher-demand GLP-1 drug
+- **Person JSON-LD** added to the about page for Dr. Milton Chavez — board certification, Rush University alumni, specialties, sameAs social links; strengthens E-E-A-T signals and Google Knowledge Graph eligibility
+- **ItemList JSON-LD** added to `/iv-infusions` (9 items), `/injections` (10 items), and `/products` (6 AlumierMD items) — Google can now surface these as rich menu/product results in SERPs
+[2026-03-20 17:21:35] Run #3 finished
+[2026-03-20 17:21:40] Run #4 starting (model: sonnet)
+
+## Run #4 — 2026-03-20
+
+### Ahrefs Keyword Research Findings
+New zero-difficulty keyword opportunities discovered:
+- `lip filler chicago` — 500 vol, KD 0 (injectables page had no lip filler targeting)
+- `lip injections chicago` — 450 vol, KD 0 (same intent cluster)
+- `xeomin chicago` — 200 vol, KD 0 (Illari uses Xeomin, not mentioned in metadata)
+- `dysport chicago` — 200 vol, KD 0 (Illari uses Dysport, not mentioned in metadata)
+- `myers cocktail chicago` — 90 vol, KD 0 (Illari offers Myers Cocktail IV)
+- `nad iv therapy chicago` — 100 vol, KD 0 (Illari offers NAD+ IV)
+
+### Changes Made
+1. **Updated injectables page title** — "Botox, Lip Filler & Dermal Fillers Chicago | Injectables by Dr. Chavez" adds lip filler chicago (500 vol, KD 0) + lip injections chicago (450 vol, KD 0); combined 950 vol of untapped KD 0 search demand
+2. **Updated injectables filler card h3** — "Lip Filler & Dermal Filler" (was "Filler"); surface-level but improves keyword density without keyword stuffing
+3. **Added lip filler FAQ** to injectables page — new Q&A "Do you offer lip filler in Chicago?" added to both visible FAQ section and FAQPage JSON-LD schema; enables rich snippet eligibility for this query
+4. **Updated IV therapy page title** — "Myers Cocktail & NAD+ IV Therapy Chicago | Vitamin Drips by Dr. Chavez" leads with two KD 0 terms (myers cocktail chicago 90 vol, nad iv therapy chicago 100 vol)
+5. **Added BreadcrumbList JSON-LD** to all 5 service pages (skin-care, injectables, weight-loss-1, iv-infusion-services, products) — Google can now show breadcrumb navigation in SERPs for all service pages
+6. **Updated global layout keywords** — added lip filler chicago, lip injections chicago, xeomin chicago, dysport chicago, myers cocktail chicago, NAD+ IV chicago
+
+### Deployment
+- Commit: `126d0b6`
+- Deployed to Vercel production — Ready in 21s
