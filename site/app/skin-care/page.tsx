@@ -198,40 +198,57 @@ export default function SkinCarePage() {
       </section>
 
       {/* Treatments */}
-      <section className="py-24 bg-neutral-bg">
+      <section className="py-24 bg-marble-stone">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">Our Treatments</p>
-            <h2 className="section-title">Skin Care Services</h2>
-            <div className="gold-divider" />
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16 gap-6">
+            <div>
+              <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">Our Treatments</p>
+              <h2 className="text-4xl md:text-5xl font-serif text-dark leading-tight">Skin Care Services</h2>
+              <div className="w-16 h-px bg-gold/50 mt-6" />
+            </div>
+            <a
+              href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary self-start md:self-auto flex-shrink-0"
+            >
+              Book a Consultation
+            </a>
           </div>
 
-          <div className="space-y-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {treatments.map((treatment, index) => (
               <div
                 key={treatment.title}
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}
+                className="ken-burns group bg-white hairline-t hairline-b overflow-hidden reveal flex flex-col"
+                style={{ transitionDelay: `${index * 0.08}s` }}
               >
-                <div className={`${index % 2 === 1 ? "lg:order-2" : ""}`}>
-                  <div className="aspect-[4/3] relative overflow-hidden">
-                    <Image
-                      src={treatment.image}
-                      alt={treatment.title}
-                      fill
-                      className="object-cover"
-                    />
+                {/* Image */}
+                <div className="aspect-[4/3] relative overflow-hidden bg-neutral-bg">
+                  <Image
+                    src={treatment.image}
+                    alt={treatment.title}
+                    fill
+                    className="object-cover group-hover:brightness-105 transition-all duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-dark/20 to-transparent" />
+                  {/* Treatment number badge */}
+                  <div className="absolute top-4 left-4 w-8 h-8 border border-ivory/60 flex items-center justify-center bg-dark/40 backdrop-blur-sm">
+                    <span className="text-ivory text-xs font-sans tracking-widest">0{index + 1}</span>
                   </div>
                 </div>
-                <div className={`${index % 2 === 1 ? "lg:order-1" : ""}`}>
-                  <h3 className="font-serif text-3xl text-dark-medium mb-4">{treatment.title}</h3>
-                  <div className="w-10 h-px bg-gold mb-6" />
-                  <p className="text-neutral-medium leading-relaxed mb-6">{treatment.description}</p>
+
+                {/* Content */}
+                <div className="p-7 flex flex-col flex-1 border border-ivory-dark/60">
+                  <h3 className="font-serif text-2xl text-dark mb-3 group-hover:text-gold transition-colors duration-300">{treatment.title}</h3>
+                  <div className="w-8 h-px bg-gold/50 mb-5" />
+                  <p className="text-neutral-medium text-sm leading-relaxed mb-5 flex-1">{treatment.description}</p>
                   {treatment.quote && (
-                    <blockquote className="border-l-2 border-gold pl-6 mb-6">
-                      <p className="text-dark-medium font-serif italic">
+                    <blockquote className="border-l border-gold/60 pl-4 mb-5 bg-marble-stone/60 py-3 pr-3">
+                      <p className="text-dark font-serif italic text-sm leading-relaxed">
                         &ldquo;{treatment.quote}&rdquo;
                       </p>
-                      <cite className="text-neutral-medium text-sm mt-2 block not-italic">
+                      <cite className="text-gold text-xs mt-2 block not-italic font-sans tracking-wider">
                         Dr. Milton Chavez
                       </cite>
                     </blockquote>
@@ -240,9 +257,12 @@ export default function SkinCarePage() {
                     href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-primary"
+                    className="inline-flex items-center gap-2 text-gold text-xs tracking-widest uppercase font-sans group-hover:gap-3 transition-all duration-300 mt-auto"
                   >
                     Book This Treatment
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
                   </a>
                 </div>
               </div>
