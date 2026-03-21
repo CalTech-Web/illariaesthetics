@@ -178,22 +178,32 @@ export default function SkinCarePage() {
       </section>
 
       {/* Why Dr. Chavez */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">Why It Matters</p>
-          <h2 className="section-title">A Physician&apos;s Approach to Skin Health</h2>
-          <div className="gold-divider" />
-          <p className="text-neutral-medium leading-relaxed mb-6 text-lg">
-            When Dr. Chavez examines your skin, he is drawing on 30 years of clinical and academic training, not aesthetic intuition. He sees lesions, pigmentation patterns, and scarring the way a physician does. Every recommendation is backed by that same training, and carried out with AlumierMD and Derma Made, two professional lines not available over the counter.
-          </p>
-          <blockquote className="border border-gold/20 p-8 mt-10">
-            <p className="text-dark-medium font-serif italic text-2xl leading-relaxed">
-              &ldquo;As a doctor, we use higher grade medical products for a better patient result.&rdquo;
-            </p>
-            <cite className="text-neutral-medium text-sm mt-4 block not-italic font-sans tracking-wider">
-              Dr. Milton Chavez, Founder and Medical Director
-            </cite>
-          </blockquote>
+      <section className="py-28 bg-marble-stone linen-texture">
+        <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+            {/* Left — editorial label + heading */}
+            <div className="lg:col-span-4">
+              <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Why It Matters</p>
+              <h2 className="font-serif text-dark text-[clamp(2rem,4vw,3.5rem)] leading-[1.1]">
+                A Physician&apos;s Approach<br />to Skin Health
+              </h2>
+              <div className="w-10 h-px bg-gold/30 mt-8" />
+            </div>
+            {/* Right — copy + blockquote */}
+            <div className="lg:col-span-8">
+              <p className="text-dark/50 text-base font-sans font-light leading-[1.9] mb-12">
+                When Dr. Chavez examines your skin, he is drawing on 30 years of clinical and academic training, not aesthetic intuition. He sees lesions, pigmentation patterns, and scarring the way a physician does. Every recommendation is backed by that same training, and carried out with AlumierMD and Derma Made, two professional lines not available over the counter.
+              </p>
+              <blockquote className="border-l-2 border-gold/40 pl-8">
+                <p className="font-serif text-dark italic text-[clamp(1.4rem,3vw,2rem)] leading-[1.35]">
+                  &ldquo;As a doctor, we use higher grade medical products for a better patient result.&rdquo;
+                </p>
+                <cite className="text-gold text-[10px] tracking-[0.25em] uppercase font-sans font-light mt-5 block not-italic">
+                  Dr. Milton Chavez, Founder and Medical Director
+                </cite>
+              </blockquote>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -272,99 +282,120 @@ export default function SkinCarePage() {
       </section>
 
       {/* Products Used */}
-      <section className="py-20 bg-dark">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">Professional Products</p>
-          <h2 className="section-title-white">Medical-Grade Products for Better Results</h2>
-          <div className="gold-divider" />
-          <p className="text-neutral-light leading-relaxed mb-10">
-            Dr. Chavez uses AlumierMD and Derma Made in every in-office treatment. These are professionally dispensed lines, not available at retail, chosen because they match the clinical standards of the practice. You can continue using them at home through Illari Aesthetics.
-          </p>
-          <Link href="/products" className="btn-primary">
-            Shop Our Products
-          </Link>
+      <section className="py-28 bg-dark linen-texture-dark">
+        <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+            <div className="lg:col-span-5">
+              <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Professional Products</p>
+              <h2 className="font-serif text-ivory text-[clamp(2rem,4vw,3.5rem)] leading-[1.1]">
+                Medical-Grade Products<br />for Better Results
+              </h2>
+              <div className="w-10 h-px bg-gold/30 mt-8" />
+            </div>
+            <div className="lg:col-span-7">
+              <p className="text-ivory/45 text-base font-sans font-light leading-[1.9] mb-10">
+                Dr. Chavez uses AlumierMD and Derma Made in every in-office treatment. These are professionally dispensed lines, not available at retail, chosen because they match the clinical standards of the practice. You can continue using them at home through Illari Aesthetics.
+              </p>
+              <Link
+                href="/products"
+                className="text-gold text-[11px] tracking-[0.25em] uppercase font-sans font-light border-b border-gold/40 pb-1 hover:border-gold transition-colors duration-500"
+              >
+                Shop Our Products
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">Common Questions</p>
-            <h2 className="section-title">Skin Care FAQ</h2>
-            <div className="gold-divider" />
-          </div>
+      <section className="py-28 bg-marble-stone linen-texture">
+        <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
+            {/* Left — sticky editorial header */}
+            <div className="lg:col-span-4 lg:sticky lg:top-32 self-start">
+              <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Common Questions</p>
+              <h2 className="font-serif text-dark text-[clamp(2rem,4vw,3.2rem)] leading-[1.1]">Skin Care FAQ</h2>
+              <div className="w-10 h-px bg-gold/30 mt-8 mb-8" />
+              <p className="text-dark/40 text-sm font-sans font-light leading-[1.8]">
+                Questions about our treatments or physician-led approach? These are the most common ones.
+              </p>
+            </div>
 
-          <div className="space-y-6">
-            {[
-              {
-                q: "What makes Illari Aesthetics different from other skin care spas in Chicago?",
-                a: "Dr. Chavez is a board-certified family physician with over 30 years of clinical experience, trained at Rush University and retained as faculty. He evaluates your skin the way a physician does and uses products that are not available to non-medical providers. Every plan is built for you, not borrowed from a template.",
-              },
-              {
-                q: "What skin care treatments do you offer?",
-                a: "We offer skin surveys, cryoablation, surgical dermatology including lesion and mole removal and scar revision, chemical peels, dermaplaning, and microneedling. All treatments use medical-grade products from AlumierMD and Derma Made.",
-              },
-              {
-                q: "How do I know which treatment is right for me?",
-                a: "Start with the Skin Survey. Dr. Chavez performs a full facial assessment and walks you through treatment options, a recommended plan, and transparent pricing based on your specific skin and concerns.",
-              },
-              {
-                q: "Do you use different products than a regular spa?",
-                a: "Yes. Dr. Chavez uses professionally-dispensed medical-grade products from AlumierMD and Derma Made, which are not available to non-medical providers. As a doctor, he is able to use higher-grade products for better patient results.",
-              },
-              {
-                q: "Do you offer mole removal in Chicago?",
-                a: "Yes. Dr. Chavez performs mole removal at Illari Aesthetics in Chicago's Wicker Park through surgical dermatology. He evaluates each lesion clinically before recommending removal and performs the procedure with minimal scarring. As a board-certified physician with specific surgical training, Dr. Chavez brings a level of precision to mole removal that is not standard at most med spas.",
-              },
-              {
-                q: "Do you offer scar removal or scar revision in Chicago?",
-                a: "Yes. Dr. Chavez has specific training in surgical scar revisions, which is uncommon at most med spas. He uses surgical dermatology techniques to address scars from injury, surgery, or acne. Treatment plans are customized to the type, depth, and location of the scar.",
-              },
-              {
-                q: "Do you offer wart removal in Chicago?",
-                a: "Yes. Dr. Chavez offers wart removal at Illari Aesthetics through surgical dermatology and cryoablation. Cryoablation uses extremely cold liquid to freeze and destroy the affected tissue. Dr. Chavez evaluates the best approach based on the type, size, and location of the wart.",
-              },
-              {
-                q: "Is cryoablation the same as cryotherapy?",
-                a: "Cryoablation and cryotherapy share the principle of using cold to destroy tissue, but cryoablation is a targeted medical procedure used to treat specific skin lesions including hyperpigmentation, sun spots, melasma, and irregular pigmentation. Dr. Chavez uses medical-grade cryoablation at Illari Aesthetics in Chicago, not the whole-body wellness chambers used for athletic recovery.",
-              },
-            ].map((item) => (
-              <details key={item.q} className="border border-neutral-bg group">
-                <summary className="px-6 py-5 cursor-pointer flex items-center justify-between font-serif text-dark-medium text-lg hover:text-gold transition-colors">
-                  {item.q}
-                  <svg className="w-5 h-5 flex-shrink-0 ml-4 group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
-                  </svg>
-                </summary>
-                <div className="px-6 pb-6">
-                  <p className="text-neutral-medium leading-relaxed">{item.a}</p>
-                </div>
-              </details>
-            ))}
+            {/* Right — accordion */}
+            <div className="lg:col-span-8 divide-y divide-gold/10">
+              {[
+                {
+                  q: "What makes Illari Aesthetics different from other skin care spas in Chicago?",
+                  a: "Dr. Chavez is a board-certified family physician with over 30 years of clinical experience, trained at Rush University and retained as faculty. He evaluates your skin the way a physician does and uses products that are not available to non-medical providers. Every plan is built for you, not borrowed from a template.",
+                },
+                {
+                  q: "What skin care treatments do you offer?",
+                  a: "We offer skin surveys, cryoablation, surgical dermatology including lesion and mole removal and scar revision, chemical peels, dermaplaning, and microneedling. All treatments use medical-grade products from AlumierMD and Derma Made.",
+                },
+                {
+                  q: "How do I know which treatment is right for me?",
+                  a: "Start with the Skin Survey. Dr. Chavez performs a full facial assessment and walks you through treatment options, a recommended plan, and transparent pricing based on your specific skin and concerns.",
+                },
+                {
+                  q: "Do you use different products than a regular spa?",
+                  a: "Yes. Dr. Chavez uses professionally-dispensed medical-grade products from AlumierMD and Derma Made, which are not available to non-medical providers. As a doctor, he is able to use higher-grade products for better patient results.",
+                },
+                {
+                  q: "Do you offer mole removal in Chicago?",
+                  a: "Yes. Dr. Chavez performs mole removal at Illari Aesthetics in Chicago's Wicker Park through surgical dermatology. He evaluates each lesion clinically before recommending removal and performs the procedure with minimal scarring. As a board-certified physician with specific surgical training, Dr. Chavez brings a level of precision to mole removal that is not standard at most med spas.",
+                },
+                {
+                  q: "Do you offer scar removal or scar revision in Chicago?",
+                  a: "Yes. Dr. Chavez has specific training in surgical scar revisions, which is uncommon at most med spas. He uses surgical dermatology techniques to address scars from injury, surgery, or acne. Treatment plans are customized to the type, depth, and location of the scar.",
+                },
+                {
+                  q: "Do you offer wart removal in Chicago?",
+                  a: "Yes. Dr. Chavez offers wart removal at Illari Aesthetics through surgical dermatology and cryoablation. Cryoablation uses extremely cold liquid to freeze and destroy the affected tissue. Dr. Chavez evaluates the best approach based on the type, size, and location of the wart.",
+                },
+                {
+                  q: "Is cryoablation the same as cryotherapy?",
+                  a: "Cryoablation and cryotherapy share the principle of using cold to destroy tissue, but cryoablation is a targeted medical procedure used to treat specific skin lesions including hyperpigmentation, sun spots, melasma, and irregular pigmentation. Dr. Chavez uses medical-grade cryoablation at Illari Aesthetics in Chicago, not the whole-body wellness chambers used for athletic recovery.",
+                },
+              ].map((item) => (
+                <details key={item.q} className="group py-6">
+                  <summary className="cursor-pointer flex items-start justify-between gap-6 font-serif text-dark text-lg leading-snug hover:text-gold transition-colors duration-300 list-none">
+                    {item.q}
+                    <span className="flex-shrink-0 w-6 h-6 border border-gold/40 rounded-full flex items-center justify-center mt-0.5 group-open:border-gold transition-colors duration-300">
+                      <svg className="w-3 h-3 text-gold group-open:rotate-45 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
+                      </svg>
+                    </span>
+                  </summary>
+                  <p className="text-dark/45 text-sm font-sans font-light leading-[1.9] mt-5 pr-12">{item.a}</p>
+                </details>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-neutral-bg">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="section-title mb-6">Schedule Your Skin Consultation in Chicago</h2>
-          <div className="gold-divider" />
-          <p className="text-neutral-medium mb-10 max-w-xl mx-auto leading-relaxed">
+      <section className="py-28 bg-dark linen-texture-dark">
+        <div className="max-w-[1400px] mx-auto px-8 lg:px-12 text-center">
+          <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Ready to Begin?</p>
+          <h2 className="font-serif text-ivory text-[clamp(2.5rem,5vw,4rem)] leading-[1.05] mb-6">
+            Schedule Your Skin Consultation<br />in Chicago
+          </h2>
+          <div className="w-10 h-px bg-gold/30 mx-auto mb-8" />
+          <p className="text-ivory/40 text-sm font-sans font-light leading-[1.9] mb-12 max-w-lg mx-auto">
             Open Monday through Friday, 9am to 4pm. Located at 1509 N Western Avenue, Unit B, Wicker Park, Chicago.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <a
               href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary"
+              className="border border-gold/60 text-gold px-10 py-3.5 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light hover:bg-gold/10 hover:border-gold transition-all duration-500"
             >
               Book Now
             </a>
-            <a href="tel:7732190326" className="btn-outline">
-              Call 773.219.0326
+            <a href="tel:7732190326" className="text-ivory/35 text-sm font-mono tracking-widest hover:text-ivory/70 transition-colors duration-500">
+              773.219.0326
             </a>
           </div>
         </div>
