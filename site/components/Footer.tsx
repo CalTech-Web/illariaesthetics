@@ -43,6 +43,7 @@ export default function Footer() {
             <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-7">Services</p>
             <ul className="space-y-3.5">
               {[
+                { label: "All Services", href: "/services" },
                 { label: "Skin Care", href: "/skin-care" },
                 { label: "Injectables", href: "/injectables" },
                 { label: "Weight Loss", href: "/weight-loss-1" },

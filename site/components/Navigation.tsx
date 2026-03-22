@@ -23,13 +23,13 @@ export default function Navigation() {
     return pathname.startsWith(href);
   };
 
-  const linkColor = scrolled ? "text-ivory/55 hover:text-ivory" : "text-white/80 hover:text-white";
+  const linkColor = scrolled ? "text-ivory/80 hover:text-ivory" : "text-white/80 hover:text-white";
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-dark/97 backdrop-blur-sm shadow-[0_1px_0_rgba(245,240,232,0.04)]"
+          ? "bg-dark backdrop-blur-sm shadow-[0_1px_0_rgba(245,240,232,0.06)]"
           : "bg-dark/30 backdrop-blur-[2px]"
       }`}
     >
@@ -63,14 +63,20 @@ export default function Navigation() {
             ))}
 
             <div className="relative group">
-              <button className={`nav-link text-[11px] tracking-[0.2em] uppercase font-sans font-light transition-colors flex items-center gap-1.5 ${linkColor}`}>
+              <Link
+                href="/services"
+                className={`nav-link text-[11px] tracking-[0.2em] uppercase font-sans font-light transition-colors flex items-center gap-1.5 ${
+                  isActive("/services") || isActive("/skin-care") || isActive("/injectables") || isActive("/weight-loss") || isActive("/iv-infusion") ? "text-gold active" : linkColor
+                }`}
+              >
                 Services
                 <svg className="w-2.5 h-2.5 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
                 </svg>
-              </button>
+              </Link>
               <div className="absolute top-full left-0 mt-4 w-52 bg-dark border border-ivory/8 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2">
                 {[
+                  { label: "All Services", href: "/services" },
                   { label: "Skin Care", href: "/skin-care" },
                   { label: "Injectables", href: "/injectables" },
                   { label: "Weight Loss", href: "/weight-loss-1" },
