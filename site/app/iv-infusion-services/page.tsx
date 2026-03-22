@@ -359,31 +359,47 @@ export default function IVTherapyPage() {
       </section>
 
       {/* ─── CTA ─── */}
-      <section className="bg-dark linen-texture-dark py-32">
-        <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12 text-center">
-          <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Wicker Park, Chicago</p>
-          <h2 className="font-serif text-ivory text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05] mb-8">
-            Book Your<br /><span className="italic">IV Therapy Session</span>
-          </h2>
-          <div className="w-12 h-px bg-gold/30 mx-auto mb-8" />
-          <p className="text-ivory/40 text-sm font-sans font-light leading-[1.9] mb-12 max-w-md mx-auto">
-            Available Monday through Friday, 9am to 4pm. Infusions approximately 45 minutes. Injections approximately 15 minutes.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
-            <a
-              href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-gold/60 text-gold px-10 py-3.5 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light hover:bg-gold/10 hover:border-gold transition-all duration-500"
-            >
-              Book Now
-            </a>
-            <a
-              href="tel:7732190326"
-              className="text-ivory/40 text-sm font-mono tracking-widest hover:text-ivory/70 transition-colors duration-500"
-            >
-              773.219.0326
-            </a>
+      <section className="relative bg-dark overflow-hidden">
+        {/* Background image — right side */}
+        <div className="absolute inset-0">
+          <div className="absolute right-0 top-0 bottom-0 w-[60%]">
+            <Image
+              src="/assets/gallery/iv-cta-bg.png"
+              alt=""
+              fill
+              className="object-cover object-center opacity-50"
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-l from-dark/30 via-dark/80 to-dark" />
+          <div className="absolute inset-0 bg-gradient-to-r from-dark via-transparent to-transparent" />
+        </div>
+
+        <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12 py-28 lg:py-36">
+          <div className="lg:max-w-lg">
+            <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Wicker Park, Chicago</p>
+            <h2 className="font-serif text-ivory text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05] mb-8">
+              Book Your<br /><span className="italic">IV Therapy Session</span>
+            </h2>
+            <div className="w-12 h-px bg-gold/30 mb-8" />
+            <p className="text-ivory/40 text-sm font-sans font-light leading-[1.9] mb-12 max-w-md">
+              Available Monday through Friday, 9am to 4pm. Infusions approximately 45 minutes. Injections approximately 15 minutes.
+            </p>
+            <div className="flex flex-col sm:flex-row items-start gap-6">
+              <a
+                href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-gold/60 text-gold px-10 py-3.5 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light hover:bg-gold/10 hover:border-gold transition-all duration-500"
+              >
+                Book Now
+              </a>
+              <a
+                href="tel:7732190326"
+                className="text-ivory/40 text-sm font-mono tracking-widest hover:text-ivory/70 transition-colors duration-500 py-3.5"
+              >
+                773.219.0326
+              </a>
+            </div>
           </div>
         </div>
       </section>
