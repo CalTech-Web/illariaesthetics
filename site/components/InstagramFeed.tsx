@@ -11,7 +11,6 @@ const INSTAGRAM_POSTS = [
   { src: "/assets/gallery/instagram-1.jpg", alt: "When should retinol be applied quiz at Illari Aesthetics", href: "https://www.instagram.com/illariaesthetics/" },
   { src: "/assets/gallery/instagram-2.jpg", alt: "Hyaluronic acid and sunscreen skincare tip at Illari Aesthetics", href: "https://www.instagram.com/illariaesthetics/" },
   { src: "/assets/gallery/instagram-3.jpg", alt: "Med spa injectable treatment at Illari Aesthetics", href: "https://www.instagram.com/illariaesthetics/" },
-  { src: "/assets/gallery/instagram-4.jpg", alt: "Chemical peels treatment at Illari Aesthetics", href: "https://www.instagram.com/illariaesthetics/" },
   { src: "/assets/gallery/instagram-5.jpg", alt: "Super Bowl skincare reminder at Illari Aesthetics", href: "https://www.instagram.com/illariaesthetics/" },
   { src: "/assets/gallery/instagram-6.jpg", alt: "Skincare reminder at Illari Aesthetics", href: "https://www.instagram.com/illariaesthetics/" },
   { src: "/assets/gallery/instagram-7.jpg", alt: "Did you know sleep and skin health at Illari Aesthetics", href: "https://www.instagram.com/illariaesthetics/" },
