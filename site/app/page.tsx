@@ -36,7 +36,6 @@ export default function HomePage() {
             fetchPriority="high"
           />
           <div className="absolute inset-0 bg-dark/35" />
-          <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-marble to-transparent" />
         </div>
 
         <div className="relative z-10 text-center px-8">
