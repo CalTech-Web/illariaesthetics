@@ -29,7 +29,7 @@ export default function Navigation() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-dark backdrop-blur-sm shadow-[0_1px_0_rgba(245,240,232,0.06)]"
+          ? "bg-dark backdrop-blur-sm shadow-[0_1px_0_rgba(181,126,58,0.15)] border-b border-gold/10"
           : "bg-dark/30 backdrop-blur-[2px]"
       }`}
     >
