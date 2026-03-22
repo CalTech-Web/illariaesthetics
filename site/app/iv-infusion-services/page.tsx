@@ -296,63 +296,76 @@ export default function IVTherapyPage() {
       </section>
 
       {/* ─── FAQ ─── */}
-      <section className="bg-marble-stone py-32 linen-texture">
-        <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-            {/* Left — editorial header */}
-            <div className="lg:col-span-4 lg:sticky lg:top-32">
+      <section className="py-32 bg-dark linen-texture-dark">
+        <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
+            {/* Left — sticky header */}
+            <div className="lg:col-span-4 lg:sticky lg:top-32 self-start">
               <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-6">Common Questions</p>
-              <h2 className="font-serif text-dark text-[clamp(2.2rem,4vw,3.5rem)] leading-[1.05] mb-8">
-                IV Therapy<br /><span className="italic">FAQ</span>
+              <h2 className="font-serif text-ivory text-[clamp(2.5rem,5vw,4rem)] leading-[1.05] mb-6">
+                IV Therapy <span className="italic">FAQ</span>
               </h2>
-              <div className="w-8 h-px bg-gold/30 mb-8" />
-              <p className="text-dark/40 text-sm font-sans font-light leading-[1.8]">
+              <div className="w-12 h-px bg-gold/30 mb-8" />
+              <p className="text-ivory/35 text-sm font-sans font-light leading-[1.8] mb-8">
                 Questions about what to expect, how long it takes, and what we offer at our Wicker Park clinic.
               </p>
+              <a
+                href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gold text-[11px] tracking-[0.25em] uppercase font-sans font-light border-b border-gold/40 pb-1 hover:border-gold transition-colors duration-500"
+              >
+                Still Have Questions? Book a Consultation
+              </a>
             </div>
 
             {/* Right — accordion */}
             <div className="lg:col-span-8">
-              <div className="divide-y divide-gold/10">
-                {[
-                  {
-                    q: "What is IV therapy?",
-                    a: "IV therapy delivers a concentrated blend of vitamins, minerals, and nutrients directly into your bloodstream, bypassing the digestive system entirely. This means full absorption and faster effects compared to oral supplements. At Illari Aesthetics, every infusion is administered in a physician-supervised clinical setting in Chicago's Wicker Park.",
-                  },
-                  {
-                    q: "How long does IV therapy take?",
-                    a: "IV infusions take approximately 45 minutes. Intramuscular vitamin injections take approximately 15 minutes.",
-                  },
-                  {
-                    q: "What IV drips do you offer in Chicago?",
-                    a: "We offer the Illari beauty drip ($250), NAD+ anti-aging ($400+), Hangover recovery ($225), Myers Cocktail ($165), High Dose C ($200), Immunity ($165), Allergy relief ($165), Soothe for migraines ($250), and Modest hydration ($99). Add-ons including glutathione, Toradol, Zofran, and extra hydration are available.",
-                  },
-                  {
-                    q: "Is IV therapy safe?",
-                    a: "Yes, when administered in a proper medical setting. At Illari Aesthetics, all IV therapy is physician-supervised by Dr. Milton Chavez, a board-certified family physician with 30+ years of clinical experience. Every infusion is performed in a clinical setting, not a spa.",
-                  },
-                  {
-                    q: "Why choose Illari Aesthetics for IV therapy in Chicago?",
-                    a: "Illari Aesthetics is physician-led. Dr. Chavez is a board-certified family physician who oversees every infusion in a real medical practice in Wicker Park, Chicago. That is a different standard of care than IV lounges or wellness spas offering similar services without physician oversight.",
-                  },
-                  {
-                    q: "Do you offer hangover IV therapy in Chicago?",
-                    a: "Yes. Our Hangover IV delivers hydration and essential vitamins to help you recover after a long night. At $225 for approximately 45 minutes, it replenishes what your body lost with a targeted vitamin blend administered directly into your bloodstream. Available Monday through Friday, 9am to 4pm.",
-                  },
-                ].map((item) => (
-                  <details key={item.q} className="group py-7">
-                    <summary className="cursor-pointer flex items-center justify-between gap-6 list-none">
-                      <span className="font-serif text-dark text-lg group-open:text-gold transition-colors duration-300">{item.q}</span>
-                      <span className="flex-shrink-0 w-5 h-5 border border-gold/30 rounded-full flex items-center justify-center group-open:border-gold transition-colors duration-300">
-                        <svg className="w-2.5 h-2.5 text-gold group-open:rotate-45 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
-                        </svg>
-                      </span>
-                    </summary>
-                    <p className="text-dark/45 text-sm font-sans font-light leading-[1.9] mt-5 max-w-xl">{item.a}</p>
-                  </details>
-                ))}
-              </div>
+              {[
+                {
+                  q: "What is IV therapy?",
+                  a: "IV therapy delivers a concentrated blend of vitamins, minerals, and nutrients directly into your bloodstream, bypassing the digestive system entirely. This means full absorption and faster effects compared to oral supplements. At Illari Aesthetics, every infusion is administered in a physician-supervised clinical setting in Chicago's Wicker Park.",
+                },
+                {
+                  q: "How long does IV therapy take?",
+                  a: "IV infusions take approximately 45 minutes. Intramuscular vitamin injections take approximately 15 minutes.",
+                },
+                {
+                  q: "What IV drips do you offer in Chicago?",
+                  a: "We offer the Illari beauty drip ($250), NAD+ anti-aging ($400+), Hangover recovery ($225), Myers Cocktail ($165), High Dose C ($200), Immunity ($165), Allergy relief ($165), Soothe for migraines ($250), and Modest hydration ($99). Add-ons including glutathione, Toradol, Zofran, and extra hydration are available.",
+                },
+                {
+                  q: "Is IV therapy safe?",
+                  a: "Yes, when administered in a proper medical setting. At Illari Aesthetics, all IV therapy is physician-supervised by Dr. Milton Chavez, a board-certified family physician with 30+ years of clinical experience. Every infusion is performed in a clinical setting, not a spa.",
+                },
+                {
+                  q: "Why choose Illari Aesthetics for IV therapy in Chicago?",
+                  a: "Illari Aesthetics is physician-led. Dr. Chavez is a board-certified family physician who oversees every infusion in a real medical practice in Wicker Park, Chicago. That is a different standard of care than IV lounges or wellness spas offering similar services without physician oversight.",
+                },
+                {
+                  q: "Do you offer hangover IV therapy in Chicago?",
+                  a: "Yes. Our Hangover IV delivers hydration and essential vitamins to help you recover after a long night. At $225 for approximately 45 minutes, it replenishes what your body lost with a targeted vitamin blend administered directly into your bloodstream. Available Monday through Friday, 9am to 4pm.",
+                },
+              ].map((item, i) => (
+                <details key={item.q} className="group border-b border-ivory/[0.06]">
+                  <summary className="cursor-pointer flex items-center gap-5 py-7 list-none">
+                    <span className="font-serif text-gold/40 text-sm flex-shrink-0 group-open:text-gold transition-colors duration-300 w-6 text-right">
+                      0{i + 1}
+                    </span>
+                    <span className="font-serif text-ivory/70 text-lg leading-snug group-hover:text-gold transition-colors duration-300 flex-1">
+                      {item.q}
+                    </span>
+                    <span className="flex-shrink-0 w-8 h-8 border border-gold/20 rounded-full flex items-center justify-center group-open:bg-gold/10 group-open:border-gold/50 transition-all duration-300">
+                      <svg className="w-3.5 h-3.5 text-gold group-open:rotate-45 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="pb-7 pl-11">
+                    <p className="text-ivory/35 text-sm font-sans font-light leading-[1.9]">{item.a}</p>
+                  </div>
+                </details>
+              ))}
             </div>
           </div>
         </div>
