@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import InstagramFeed from "@/components/InstagramFeed";
 
 export const metadata: Metadata = {
   title: "Illari Aesthetics | Physician-Led Medical Spa in Chicago's Wicker Park",
@@ -166,7 +167,7 @@ export default function HomePage() {
             <div className="grid grid-rows-2 gap-1">
               <Link href="/injectables" className="ken-burns group relative overflow-hidden block">
                 <Image
-                  src="/assets/gallery/gallery-4-lip-augmentation.jpg"
+                  src="/assets/gallery/injectable-cosmetic.jpg"
                   alt="Injectables"
                   fill
                   className="object-cover"
@@ -356,43 +357,13 @@ export default function HomePage() {
       </section>
 
       {/* ─── CONNECT / SOCIAL ─── */}
-      <section className="bg-marble py-24 linen-texture">
-        <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12">
-          <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-12 text-center">Follow Along</p>
-
-          <div className="flex flex-col md:flex-row items-stretch gap-1 max-w-4xl mx-auto">
-            {[
-              { platform: "Instagram", handle: "@illariaesthetics", href: "https://www.instagram.com/illariaesthetics/", image: "/assets/gallery/gallery-5-face-injection.jpg" },
-              { platform: "Facebook", handle: "Illari Aesthetics", href: "https://www.facebook.com/illariaesthetics/", image: "/assets/gallery/gallery-6-lip-fillers.jpg" },
-              { platform: "TikTok", handle: "@illari.aesthetics", href: "https://www.tiktok.com/@illari.aesthetics", image: "/assets/gallery/gallery-8-profile.jpg" },
-            ].map((social) => (
-              <a
-                key={social.platform}
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="ken-burns group relative flex-1 aspect-[3/4] overflow-hidden block"
-              >
-                <Image src={social.image} alt={social.platform} fill className="object-cover" />
-                <div className="absolute inset-0 bg-dark/60 group-hover:bg-dark/40 transition-colors duration-700" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
-                  <p className="font-serif text-ivory text-2xl mb-1">{social.platform}</p>
-                  <p className="text-ivory/40 text-[10px] tracking-[0.2em] uppercase font-sans font-light mb-4">{social.handle}</p>
-                  <span className="text-gold text-[10px] tracking-[0.2em] uppercase font-sans font-light border-b border-gold/30 pb-0.5 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500">
-                    Follow
-                  </span>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
+      <InstagramFeed />
 
       {/* ─── FOOTER CTA ─── */}
       <section className="relative linen-texture hairline-t overflow-hidden bg-marble-stone">
         <div className="absolute inset-0 opacity-[0.04]">
           <Image
-            src="/assets/gallery/gallery-8-profile.jpg"
+            src="/assets/gallery/injectable-profile.jpg"
             alt=""
             fill
             className="object-cover scale-x-[-1]"
@@ -404,7 +375,7 @@ export default function HomePage() {
             {/* Left — Portrait with blending */}
             <div className="relative hidden lg:block">
               <Image
-                src="/assets/gallery/gallery-8-profile.jpg"
+                src="/assets/gallery/injectable-profile.jpg"
                 alt="Patient consultation at Illari Aesthetics"
                 fill
                 className="object-cover object-center"

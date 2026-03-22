@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description: "Botox, Xeomin, Dysport, lip filler, hyaluronic acid dermal fillers, and PRF administered by a board-certified physician in Chicago's Wicker Park. Not an esthetician. A doctor.",
     images: [
       {
-        url: "/assets/gallery/gallery-6-lip-fillers.jpg",
+        url: "/assets/gallery/injectable-lips.jpg",
         alt: "Professional injectable treatments in Chicago by Dr. Chavez",
       },
     ],
@@ -105,7 +105,7 @@ export default function InjectablesPage() {
       <section className="relative pt-[100px] pb-[75px] bg-dark overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/assets/gallery/gallery-6-lip-fillers.jpg"
+            src="/assets/gallery/injectable-lips.jpg"
             alt="Professional injectable treatments in Chicago"
             fill
             className="object-cover opacity-30"
@@ -174,7 +174,7 @@ export default function InjectablesPage() {
             {/* Wrinkle Relaxers */}
             <div className="ken-burns group relative aspect-[3/4] overflow-hidden">
               <Image
-                src="/assets/gallery/gallery-1-injections.jpg"
+                src="/assets/gallery/injectable-botox-1.jpg"
                 alt="Wrinkle relaxer injections Chicago"
                 fill
                 className="object-cover"
@@ -193,7 +193,7 @@ export default function InjectablesPage() {
             {/* Filler */}
             <div className="ken-burns group relative aspect-[3/4] overflow-hidden">
               <Image
-                src="/assets/gallery/gallery-4-lip-augmentation.jpg"
+                src="/assets/gallery/injectable-cosmetic.jpg"
                 alt="Dermal filler lip augmentation Chicago"
                 fill
                 className="object-cover"
@@ -212,7 +212,7 @@ export default function InjectablesPage() {
             {/* PRF */}
             <div className="ken-burns group relative aspect-[3/4] overflow-hidden">
               <Image
-                src="/assets/gallery/gallery-9-syringe.jpg"
+                src="/assets/gallery/injectable-syringe.jpg"
                 alt="PRF platelet rich fibrinogen treatment Chicago"
                 fill
                 className="object-cover"
@@ -240,12 +240,12 @@ export default function InjectablesPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-px bg-gold/10">
             {[
-              { src: "/assets/gallery/gallery-5-face-injection.jpg", alt: "Face injection treatment Chicago" },
-              { src: "/assets/gallery/gallery-7-face-injection2.jpg", alt: "Physician injectable treatment" },
-              { src: "/assets/gallery/gallery-6-lip-fillers.jpg", alt: "Lip filler treatment Chicago" },
-              { src: "/assets/gallery/gallery-8-profile.jpg", alt: "Patient profile injectable results" },
-              { src: "/assets/gallery/gallery-1-injections.jpg", alt: "Injectable treatment in progress" },
-              { src: "/assets/gallery/gallery-4-lip-augmentation.jpg", alt: "Lip augmentation before and after" },
+              { src: "/assets/gallery/injectable-botox-1.jpg", alt: "Botox injection treatment Chicago" },
+              { src: "/assets/gallery/injectable-botox-2.jpg", alt: "Physician injectable treatment" },
+              { src: "/assets/gallery/injectable-lips.jpg", alt: "Lip filler treatment Chicago" },
+              { src: "/assets/gallery/injectable-profile.jpg", alt: "Patient profile injectable results" },
+              { src: "/assets/gallery/injectable-forehead.jpg", alt: "Forehead injectable treatment" },
+              { src: "/assets/gallery/injectable-cosmetic.jpg", alt: "Aesthetic treatment results" },
             ].map((img) => (
               <div key={img.src} className="ken-burns aspect-square relative overflow-hidden bg-dark">
                 <Image src={img.src} alt={img.alt} fill className="object-cover opacity-85 group-hover:opacity-100 transition-opacity duration-700" />

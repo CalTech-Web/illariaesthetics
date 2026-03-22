@@ -18,7 +18,7 @@ export default function SchedulePage() {
       <section className="relative pt-[120px] pb-[100px] bg-dark overflow-hidden linen-texture-dark">
         <div className="absolute inset-0">
           <Image
-            src="/assets/gallery/skincare-survey.jpg"
+            src="/assets/gallery/schedule-hero.jpg"
             alt="Book an appointment at Illari Aesthetics Chicago"
             fill
             className="object-cover opacity-20"
@@ -165,8 +165,8 @@ export default function SchedulePage() {
             {/* Left: Image panel */}
             <div className="relative hidden lg:block min-h-[500px]">
               <Image
-                src="/assets/gallery/gallery-2-treatment.jpg"
-                alt="Illari Aesthetics treatment room in Wicker Park Chicago"
+                src="/assets/gallery/schedule-location.jpg"
+                alt="Illari Aesthetics clinic in Wicker Park Chicago"
                 fill
                 className="object-cover"
               />
