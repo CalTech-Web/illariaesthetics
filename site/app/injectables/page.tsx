@@ -262,7 +262,7 @@ export default function InjectablesPage() {
             {[
               { src: "/assets/gallery/injectable-gallery-1.jpg", alt: "Aesthetic treatment at Illari Aesthetics" },
               { src: "/assets/gallery/injectable-gallery-5.jpg", alt: "Cosmetic lip filler syringe at Illari Aesthetics" },
-              { src: "/assets/gallery/injectable-gallery-2.jpg", alt: "Injectable procedure at Illari Aesthetics" },
+              { src: "/assets/gallery/injectable-gallery-8.webp", alt: "Facial injectable treatment at Illari Aesthetics" },
               { src: "/assets/gallery/injectable-wrinkle-new.jpg", alt: "Wrinkle relaxer treatment" },
               { src: "/assets/gallery/injectable-gallery-6.png", alt: "Male facial injectable treatment Chicago" },
               { src: "/assets/gallery/injectable-gallery-7.png", alt: "Aesthetic skin treatment at Illari Aesthetics" },
