@@ -1,34 +1,21 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import Image from "next/image";
 
 /* ────────────────────────────────────────────────────────────
-   Instagram post shortcodes to embed.
-   To update: go to any post on instagram.com/illariaesthetics,
-   copy the shortcode from the URL (e.g. /p/ABC123/ → "ABC123")
+   Social gallery section — curated images linking to Instagram.
+   Uses existing site gallery images in an Instagram-style grid.
    ──────────────────────────────────────────────────────────── */
-const INSTAGRAM_POSTS = [
-  "DH2-sV3JXQS",
-  "DHiKGGhpKWT",
-  "DHH6f5gpFQ6",
-  "DGp-aXuJWsV",
+const GALLERY_IMAGES = [
+  { src: "/assets/gallery/skincare-chemical-peel.jpg", alt: "Chemical peel treatment at Illari Aesthetics" },
+  { src: "/assets/gallery/injectable-lips.jpg", alt: "Lip filler treatment at Illari Aesthetics" },
+  { src: "/assets/gallery/iv-therapy-hero.jpg", alt: "IV therapy session at Illari Aesthetics" },
+  { src: "/assets/gallery/injectable-cosmetic.jpg", alt: "Cosmetic injectable procedure at Illari Aesthetics" },
+  { src: "/assets/gallery/skincare-microneedling.jpg", alt: "Microneedling treatment at Illari Aesthetics" },
+  { src: "/assets/gallery/weight-loss-new.jpg", alt: "Weight loss program at Illari Aesthetics" },
 ];
 
 export default function InstagramFeed() {
-  const sectionRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    /* Load Instagram embed.js once */
-    if (typeof window !== "undefined" && !(window as any).instgrm) {
-      const s = document.createElement("script");
-      s.src = "https://www.instagram.com/embed.js";
-      s.async = true;
-      document.body.appendChild(s);
-    } else if ((window as any).instgrm) {
-      (window as any).instgrm.Embeds.process();
-    }
-  }, []);
-
   return (
     <section className="bg-dark py-24 linen-texture">
       <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12">
@@ -36,38 +23,43 @@ export default function InstagramFeed() {
         <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-4 text-center">
           Follow Along
         </p>
-        <h2 className="font-serif text-ivory text-3xl md:text-4xl text-center mb-12">
+        <h2 className="font-serif text-ivory text-3xl md:text-4xl text-center mb-4">
           @illariaesthetics
         </h2>
+        <p className="text-ivory/30 text-sm font-sans font-light text-center mb-12 max-w-md mx-auto">
+          Stay connected. Follow us on social media for the latest treatments, results, and behind the scenes.
+        </p>
 
-        {/* Instagram post grid */}
-        <div
-          ref={sectionRef}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-16"
+        {/* Image grid — Instagram-style */}
+        <a
+          href="https://www.instagram.com/illariaesthetics/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-1 max-w-6xl mx-auto mb-16 group"
         >
-          {INSTAGRAM_POSTS.map((shortcode) => (
+          {GALLERY_IMAGES.map((img) => (
             <div
-              key={shortcode}
-              className="instagram-embed-wrapper overflow-hidden rounded-sm"
+              key={img.src}
+              className="relative aspect-square overflow-hidden"
             >
-              <blockquote
-                className="instagram-media"
-                data-instgrm-captioned={false}
-                data-instgrm-permalink={`https://www.instagram.com/p/${shortcode}/`}
-                data-instgrm-version="14"
-                style={{
-                  background: "#1b1b1b",
-                  border: 0,
-                  margin: 0,
-                  padding: 0,
-                  width: "100%",
-                  maxWidth: "100%",
-                  minWidth: "100%",
-                }}
+              <Image
+                src={img.src}
+                alt={img.alt}
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-700"
               />
+              <div className="absolute inset-0 bg-dark/10 group-hover:bg-dark/30 transition-colors duration-500 flex items-center justify-center">
+                <svg
+                  className="w-8 h-8 text-white opacity-0 group-hover:opacity-70 transition-opacity duration-500"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </div>
             </div>
           ))}
-        </div>
+        </a>
 
         {/* Social links bar */}
         <div className="flex flex-wrap items-center justify-center gap-8">

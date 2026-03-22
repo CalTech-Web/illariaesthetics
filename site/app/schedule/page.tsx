@@ -15,7 +15,7 @@ export default function SchedulePage() {
   return (
     <>
       {/* ─── HERO ─── */}
-      <section className="relative pt-[120px] pb-[100px] bg-dark overflow-hidden linen-texture-dark">
+      <section className="relative pt-[155px] pb-[75px] bg-dark overflow-hidden linen-texture-dark">
         <div className="absolute inset-0">
           <Image
             src="/assets/gallery/schedule-hero.jpg"

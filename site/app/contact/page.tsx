@@ -15,8 +15,8 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-[100px] pb-[75px] bg-dark">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <section className="pt-[155px] pb-[75px] bg-dark">
+        <div className="max-w-[1400px] mx-auto px-8 lg:px-12 text-center">
           <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">Get in Touch</p>
           <h1 className="text-5xl font-serif text-white mb-6">Contact Us</h1>
           <div className="w-16 h-px bg-gold mx-auto mb-8" />
@@ -28,7 +28,7 @@ export default function ContactPage() {
 
       {/* Main Content: Editorial Split */}
       <section className="bg-dark linen-texture-dark">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-[1400px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[700px]">
 
             {/* Left: Contact Info Editorial Panel */}
@@ -198,7 +198,7 @@ export default function ContactPage() {
 
       {/* Book CTA */}
       <section className="py-16 bg-dark border-t border-gold/10">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+        <div className="max-w-4xl mx-auto px-8 lg:px-12 text-center">
           <p className="text-gold text-xs tracking-widest uppercase mb-4 font-sans">Ready to Book?</p>
           <h2 className="font-serif text-3xl text-white mb-4">Book Your Appointment Online</h2>
           <p className="text-neutral-light text-sm leading-relaxed mb-8 max-w-xl mx-auto">

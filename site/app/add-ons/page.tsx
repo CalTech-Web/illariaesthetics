@@ -21,8 +21,8 @@ export default function AddOnsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-[100px] pb-[75px] bg-dark">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <section className="pt-[155px] pb-[75px] bg-dark">
+        <div className="max-w-[1400px] mx-auto px-8 lg:px-12 text-center">
           <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">IV Therapy Menu</p>
           <h1 className="text-5xl font-serif text-white mb-6">IV Add-Ons</h1>
           <div className="w-16 h-px bg-gold mx-auto mb-8" />
@@ -34,7 +34,7 @@ export default function AddOnsPage() {
 
       {/* Add-Ons Menu */}
       <section className="py-24 bg-dark linen-texture-dark">
-        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-8 lg:px-12">
           <div className="divide-y divide-gold/10">
             {addOns.map((item, index) => (
               <div
@@ -87,7 +87,7 @@ export default function AddOnsPage() {
 
       {/* CTA */}
       <section className="py-20 bg-dark">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+        <div className="max-w-4xl mx-auto px-8 lg:px-12 text-center">
           <h2 className="font-serif text-ivory text-3xl md:text-4xl mb-6">Book Your IV Session</h2>
           <div className="gold-divider" />
           <p className="text-neutral-light mb-10 leading-relaxed">

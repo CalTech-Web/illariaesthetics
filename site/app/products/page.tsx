@@ -151,7 +151,7 @@ export default function ProductsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       {/* Hero */}
-      <section className="relative pt-[100px] pb-[75px] bg-dark overflow-hidden">
+      <section className="relative pt-[155px] pb-[75px] bg-dark overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/assets/products/alumiermd-hero.jpg"
@@ -161,7 +161,7 @@ export default function ProductsPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-dark/95 to-dark/50" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12">
           <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">
             Professional-Grade Skincare, Chicago
           </p>
@@ -209,7 +209,7 @@ export default function ProductsPage() {
 
       {/* AlumierMD Section */}
       <section className="py-24 bg-dark linen-texture-dark">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
             <div className="lg:col-span-1">
               <div className="aspect-square relative overflow-hidden mb-6">

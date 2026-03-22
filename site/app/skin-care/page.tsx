@@ -145,7 +145,7 @@ export default function SkinCarePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       {/* Hero */}
-      <section className="relative pt-[100px] pb-[75px] bg-dark overflow-hidden">
+      <section className="relative pt-[155px] pb-[75px] bg-dark overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/assets/gallery/skincare-chemical-peel.jpg"
@@ -155,7 +155,7 @@ export default function SkinCarePage() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-dark/95 to-dark/60" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12">
           <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">
             Physician-Led Skin Care, Chicago
           </p>
@@ -209,7 +209,7 @@ export default function SkinCarePage() {
 
       {/* Treatments */}
       <section className="py-24 bg-marble-stone">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16 gap-6">
             <div>
               <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">Our Treatments</p>

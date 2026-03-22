@@ -102,7 +102,7 @@ export default function InjectablesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       {/* Hero */}
-      <section className="relative pt-[100px] pb-[75px] bg-dark overflow-hidden">
+      <section className="relative pt-[155px] pb-[75px] bg-dark overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/assets/gallery/injectable-lips.jpg"
@@ -112,7 +112,7 @@ export default function InjectablesPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-dark/95 to-dark/50" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12">
           <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">
             Physician-Administered, Chicago
           </p>

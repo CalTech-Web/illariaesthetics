@@ -16,7 +16,7 @@ export default function Footer() {
                 height={95}
                 className="h-10 w-auto opacity-70 mb-8"
               />
-              <p className="font-serif text-ivory/70 text-[clamp(1.4rem,2.5vw,2rem)] leading-[1.3] max-w-xl italic">
+              <p className="font-serif text-ivory/80 text-[clamp(1.4rem,2.5vw,2rem)] leading-[1.3] max-w-xl italic">
                 &ldquo;Physician-led care. Medical-grade results. Every treatment built around you.&rdquo;
               </p>
             </div>
@@ -29,7 +29,7 @@ export default function Footer() {
               >
                 Book an Appointment
               </a>
-              <a href="tel:7732190326" className="text-ivory/30 text-sm font-mono tracking-widest hover:text-ivory/60 transition-colors duration-500">
+              <a href="tel:7732190326" className="text-ivory/50 text-sm font-mono tracking-widest hover:text-ivory/80 transition-colors duration-500">
                 773.219.0326
               </a>
             </div>
@@ -51,7 +51,7 @@ export default function Footer() {
                 { label: "Products", href: "/products" },
               ].map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-ivory/35 hover:text-ivory/80 text-xs font-sans font-light tracking-wider transition-colors duration-300">
+                  <Link href={link.href} className="text-ivory/60 hover:text-ivory text-xs font-sans font-light tracking-wider transition-colors duration-300">
                     {link.label}
                   </Link>
                 </li>
@@ -69,7 +69,7 @@ export default function Footer() {
                 { label: "Contact", href: "/contact" },
               ].map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-ivory/35 hover:text-ivory/80 text-xs font-sans font-light tracking-wider transition-colors duration-300">
+                  <Link href={link.href} className="text-ivory/60 hover:text-ivory text-xs font-sans font-light tracking-wider transition-colors duration-300">
                     {link.label}
                   </Link>
                 </li>
@@ -81,14 +81,14 @@ export default function Footer() {
           <div>
             <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-7">Visit</p>
             <div className="space-y-4">
-              <p className="text-ivory/35 text-xs font-sans font-light leading-[1.9]">
+              <p className="text-ivory/60 text-xs font-sans font-light leading-[1.9]">
                 1509 North Western Avenue<br />
                 Unit B, Chicago IL 60622
               </p>
-              <p className="text-ivory/30 text-[10px] font-sans font-light tracking-[0.15em] uppercase">
+              <p className="text-ivory/50 text-[10px] font-sans font-light tracking-[0.15em] uppercase">
                 Mon–Fri &nbsp;9am–4pm
               </p>
-              <a href="mailto:info@illariaesthetics.com" className="block text-ivory/30 hover:text-gold/70 text-xs font-sans font-light tracking-wider transition-colors duration-300">
+              <a href="mailto:info@illariaesthetics.com" className="block text-ivory/50 hover:text-gold text-xs font-sans font-light tracking-wider transition-colors duration-300">
                 info@illariaesthetics.com
               </a>
             </div>
@@ -108,7 +108,7 @@ export default function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-ivory/30 hover:text-gold/80 transition-colors duration-300 group"
+                  className="flex items-center gap-3 text-ivory/50 hover:text-gold transition-colors duration-300 group"
                   aria-label={social.label}
                 >
                   <svg className="w-3.5 h-3.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
@@ -125,12 +125,12 @@ export default function Footer() {
       {/* Bottom */}
       <div className="border-t border-white/[0.06]">
         <div className="max-w-[1400px] mx-auto px-8 lg:px-12 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-ivory/15 text-[10px] font-mono tracking-wider">
-            &copy; 2024 Illari Aesthetics. All Rights Reserved.
+          <p className="text-ivory/30 text-[10px] font-mono tracking-wider">
+            &copy; 2025 Illari Aesthetics. All Rights Reserved.
           </p>
-          <p className="text-ivory/15 text-[10px] font-mono tracking-wider">
+          <p className="text-ivory/30 text-[10px] font-mono tracking-wider">
             Built by{" "}
-            <a href="https://caltechweb.com" target="_blank" rel="noopener noreferrer" className="hover:text-gold/40 transition-colors duration-300">
+            <a href="https://caltechweb.com" target="_blank" rel="noopener noreferrer" className="hover:text-gold/60 transition-colors duration-300">
               CalTech Web
             </a>
           </p>

@@ -87,7 +87,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-[120px] pb-[100px] bg-dark overflow-hidden linen-texture-dark">
+      <section className="relative pt-[155px] pb-[75px] bg-dark overflow-hidden linen-texture-dark">
         <div className="absolute inset-0">
           <Image
             src="/assets/gallery/skincare-chemical-peel.jpg"
@@ -114,99 +114,78 @@ export default function ServicesPage() {
       {/* Services List */}
       <section className="bg-marble py-32 linen-texture">
         <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
-          <div className="space-y-1">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
             {services.map((service, i) => (
-              <div
+              <Link
                 key={service.title}
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-0 bg-dark ${
-                  i % 2 === 1 ? "lg:direction-rtl" : ""
-                }`}
+                href={service.href}
+                className="ken-burns group relative aspect-[3/4] overflow-hidden block"
               >
-                {/* Image */}
-                <Link
-                  href={service.href}
-                  className={`ken-burns relative aspect-[4/3] lg:aspect-auto overflow-hidden block ${
-                    i % 2 === 1 ? "lg:order-2" : ""
-                  }`}
-                >
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-dark/20 hover:bg-dark/10 transition-colors duration-500" />
-                </Link>
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/30 to-transparent" />
+                <div className="absolute inset-0 bg-dark/0 group-hover:bg-dark/20 transition-colors duration-500" />
 
-                {/* Content */}
-                <div
-                  className={`flex flex-col justify-center p-10 lg:p-16 ${
-                    i % 2 === 1 ? "lg:order-1" : ""
-                  }`}
-                >
-                  <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-6">
+                {/* Content overlay */}
+                <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-10">
+                  <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-3">
                     0{i + 1}
                   </p>
-                  <h2 className="font-serif text-white text-3xl lg:text-4xl mb-6 leading-tight">
+                  <h2 className="font-serif text-white text-2xl lg:text-3xl mb-3 leading-tight translate-y-2 group-hover:translate-y-0 transition-transform duration-700">
                     {service.title}
                   </h2>
-                  <div className="w-10 h-px bg-gold/30 mb-6" />
-                  <p className="text-white/45 text-sm font-sans font-light leading-[1.8] mb-8 max-w-lg">
-                    {service.description}
+                  <div className="w-8 h-px bg-gold/40 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <p className="text-white/40 text-xs font-sans font-light leading-[1.7] max-w-xs opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 mb-4">
+                    {service.description.split('.')[0]}.
                   </p>
 
-                  <ul className="space-y-2 mb-10">
-                    {service.treatments.map((t) => (
+                  <ul className="space-y-1.5 mb-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-150">
+                    {service.treatments.slice(0, 3).map((t) => (
                       <li
                         key={t}
-                        className="text-white/30 text-xs font-sans font-light flex items-center gap-2.5"
+                        className="text-white/30 text-[10px] font-sans font-light flex items-center gap-2"
                       >
                         <div className="w-1 h-1 rounded-full bg-gold/60 flex-shrink-0" />
                         {t}
                       </li>
                     ))}
+                    {service.treatments.length > 3 && (
+                      <li className="text-gold/50 text-[10px] font-sans font-light">
+                        +{service.treatments.length - 3} more
+                      </li>
+                    )}
                   </ul>
-
-                  <Link
-                    href={service.href}
-                    className="text-gold text-[11px] tracking-[0.25em] uppercase font-sans font-light border-b border-gold/40 pb-1 hover:border-gold transition-colors duration-500 self-start"
-                  >
-                    Learn More
-                  </Link>
                 </div>
-              </div>
+              </Link>
             ))}
-          </div>
-        </div>
-      </section>
 
-      {/* CTA */}
-      <section className="py-28 bg-dark linen-texture-dark">
-        <div className="max-w-[1000px] mx-auto px-8 lg:px-12 text-center">
-          <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">
-            Chicago&apos;s Physician-Led Med Spa
-          </p>
-          <h2 className="font-serif text-white text-[clamp(2rem,4vw,3.5rem)] leading-[1.05] mb-6">
-            Ready to Get <span className="italic">Started?</span>
-          </h2>
-          <div className="w-12 h-px bg-gold/30 mx-auto mb-8" />
-          <p className="text-white/40 text-sm font-sans font-light mb-12 max-w-xl mx-auto leading-[1.8]">
-            Book a consultation with Dr. Chavez and find out which treatments are right for your skin and your goals.
-          </p>
-          <div className="flex flex-wrap justify-center items-center gap-8">
+            {/* Book Now tile */}
             <a
               href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-gold/60 text-gold px-10 py-3.5 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light hover:bg-gold/10 hover:border-gold transition-all duration-500"
+              className="relative aspect-[3/4] overflow-hidden bg-dark flex flex-col items-center justify-center text-center p-10 group hover:bg-dark/90 transition-colors duration-500"
             >
-              Book Now
-            </a>
-            <a
-              href="tel:7732190326"
-              className="text-white/40 text-sm font-mono tracking-widest hover:text-white/70 transition-colors duration-500"
-            >
-              773.219.0326
+              <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-6">
+                Chicago&apos;s Physician-Led Med Spa
+              </p>
+              <h3 className="font-serif text-white text-3xl lg:text-4xl mb-6 leading-tight">
+                Ready to Get <span className="italic">Started?</span>
+              </h3>
+              <div className="w-12 h-px bg-gold/30 mb-6" />
+              <p className="text-white/40 text-sm font-sans font-light leading-[1.8] mb-8 max-w-xs">
+                Book a consultation with Dr. Chavez and find out which treatments are right for your skin and your goals.
+              </p>
+              <span className="border border-gold/60 text-gold px-8 py-3 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light group-hover:bg-gold/10 group-hover:border-gold transition-all duration-500">
+                Book Now
+              </span>
+              <p className="text-white/20 text-sm font-mono tracking-widest mt-5">
+                773.219.0326
+              </p>
             </a>
           </div>
         </div>

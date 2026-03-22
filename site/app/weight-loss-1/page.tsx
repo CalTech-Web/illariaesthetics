@@ -102,7 +102,7 @@ export default function WeightLossPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       {/* Hero */}
-      <section className="relative pt-[100px] pb-[75px] bg-dark overflow-hidden">
+      <section className="relative pt-[155px] pb-[75px] bg-dark overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/assets/gallery/weight-loss-hero.jpg"
@@ -112,7 +112,7 @@ export default function WeightLossPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-dark/95 to-dark/50" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12">
           <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">
             Physician-Supervised, Chicago
           </p>
@@ -326,7 +326,7 @@ export default function WeightLossPage() {
 
       {/* CTA */}
       <section className="py-20 bg-dark">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+        <div className="max-w-4xl mx-auto px-8 lg:px-12 text-center">
           <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">Chicago Medical Weight Loss</p>
           <h2 className="section-title-white mb-6">Start Your Weight Loss Journey</h2>
           <div className="gold-divider" />

@@ -88,8 +88,8 @@ export default function InjectionsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       {/* Hero */}
-      <section className="pt-[100px] pb-[75px] bg-dark">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <section className="pt-[155px] pb-[75px] bg-dark">
+        <div className="max-w-[1400px] mx-auto px-8 lg:px-12 text-center">
           <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">IV Therapy Menu</p>
           <h1 className="text-5xl font-serif text-white mb-6">Injections</h1>
           <div className="w-16 h-px bg-gold mx-auto mb-8" />
@@ -101,7 +101,7 @@ export default function InjectionsPage() {
 
       {/* Menu */}
       <section className="py-24 bg-dark linen-texture-dark">
-        <div className="max-w-5xl mx-auto px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-8 lg:px-12">
           <div className="divide-y divide-gold/10">
             {injections.map((item, index) => (
               <div
@@ -159,7 +159,7 @@ export default function InjectionsPage() {
 
       {/* FAQ */}
       <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-8 lg:px-12">
           <div className="text-center mb-16">
             <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">Common Questions</p>
             <h2 className="section-title">Injections FAQ</h2>
@@ -199,7 +199,7 @@ export default function InjectionsPage() {
 
       {/* CTA */}
       <section className="py-20 bg-dark">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+        <div className="max-w-4xl mx-auto px-8 lg:px-12 text-center">
           <h2 className="section-title-white mb-6">Ready to Book?</h2>
           <div className="gold-divider" />
           <p className="text-neutral-light mb-10 leading-relaxed">
