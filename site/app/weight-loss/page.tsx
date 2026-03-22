@@ -262,21 +262,31 @@ export default function WeightLossPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-marble-stone linen-texture py-32">
-        <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-0">
-            <div className="lg:col-span-4 lg:pr-16">
+      <section className="py-32 bg-dark linen-texture-dark">
+        <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
+            {/* Left — sticky header */}
+            <div className="lg:col-span-4 lg:sticky lg:top-32 self-start">
               <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-6">Common Questions</p>
-              <h2 className="font-serif text-dark text-[clamp(2rem,4vw,3.5rem)] leading-[1.05] mb-8">
-                Weight Loss<br /><span className="italic">FAQ</span>
+              <h2 className="font-serif text-ivory text-[clamp(2.5rem,5vw,4rem)] leading-[1.05] mb-6">
+                Weight Loss <span className="italic">FAQ</span>
               </h2>
               <div className="w-12 h-px bg-gold/30 mb-8" />
-              <p className="text-dark/50 text-sm font-sans font-light leading-[1.8]">
+              <p className="text-ivory/35 text-sm font-sans font-light leading-[1.8] mb-8">
                 Questions about the GLP-1 program, candidacy, and what to expect. Book a consultation to discuss your specific health profile with Dr. Chavez.
               </p>
+              <a
+                href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gold text-[11px] tracking-[0.25em] uppercase font-sans font-light border-b border-gold/40 pb-1 hover:border-gold transition-colors duration-500"
+              >
+                Still Have Questions? Book a Consultation
+              </a>
             </div>
 
-            <div className="lg:col-span-8 divide-y divide-gold/10">
+            {/* Right — accordion */}
+            <div className="lg:col-span-8">
               {[
                 {
                   q: "Which GLP-1 medications do you offer?",
@@ -306,16 +316,23 @@ export default function WeightLossPage() {
                   q: "Do you offer Ozempic or Wegovy in Chicago?",
                   a: "Illari Aesthetics offers semaglutide, the active ingredient found in Ozempic and Wegovy, as part of a physician-supervised GLP-1 weight loss program. Dr. Chavez prescribes and monitors your semaglutide treatment with monthly check-ins and adjustments based on your response. Programs start around $350 per month.",
                 },
-              ].map((item) => (
-                <details key={item.q} className="group py-1">
-                  <summary className="py-6 cursor-pointer flex items-center justify-between font-serif text-dark text-lg hover:text-gold transition-colors duration-300 list-none">
-                    {item.q}
-                    <svg className="w-4 h-4 flex-shrink-0 ml-6 text-gold/50 group-open:rotate-45 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 4v16m8-8H4" />
-                    </svg>
+              ].map((item, i) => (
+                <details key={item.q} className="group border-b border-ivory/[0.06]">
+                  <summary className="cursor-pointer flex items-center gap-5 py-7 list-none">
+                    <span className="font-serif text-gold/40 text-sm flex-shrink-0 group-open:text-gold transition-colors duration-300 w-6 text-right">
+                      0{i + 1}
+                    </span>
+                    <span className="font-serif text-ivory/70 text-lg leading-snug group-hover:text-gold transition-colors duration-300 flex-1">
+                      {item.q}
+                    </span>
+                    <span className="flex-shrink-0 w-8 h-8 border border-gold/20 rounded-full flex items-center justify-center group-open:bg-gold/10 group-open:border-gold/50 transition-all duration-300">
+                      <svg className="w-3.5 h-3.5 text-gold group-open:rotate-45 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
+                      </svg>
+                    </span>
                   </summary>
-                  <div className="pb-6">
-                    <p className="text-dark/50 text-sm font-sans font-light leading-[1.8]">{item.a}</p>
+                  <div className="pb-7 pl-11">
+                    <p className="text-ivory/35 text-sm font-sans font-light leading-[1.9]">{item.a}</p>
                   </div>
                 </details>
               ))}
