@@ -137,26 +137,46 @@ export default function InjectablesPage() {
       {/* Physician Difference */}
       <section className="py-32 bg-marble-stone linen-texture">
         <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-            <div className="lg:col-span-6 lg:pr-8">
-              <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">The Physician Difference</p>
-              <blockquote className="mb-10">
-                <p className="font-serif text-dark text-[clamp(1.8rem,3.5vw,3rem)] leading-[1.15] italic">
+          <div className="text-center mb-20">
+            <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-6">The Physician Difference</p>
+            <h2 className="font-serif text-dark text-[clamp(2.5rem,5vw,4rem)] leading-[1.05] mb-6">
+              Why a <span className="italic">Physician</span> Matters
+            </h2>
+            <div className="w-12 h-px bg-gold/30 mx-auto" />
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+            <div>
+              <blockquote className="border-l-2 border-gold/50 pl-8 mb-10">
+                <p className="font-serif text-dark text-[clamp(1.6rem,3vw,2.4rem)] leading-[1.2] italic">
                   &ldquo;Anatomy, dosing, placement depth. When a physician does the injecting, those decisions carry thirty years of clinical training behind them.&rdquo;
                 </p>
+                <cite className="text-gold/70 text-[10px] tracking-[0.25em] uppercase font-sans font-light mt-5 block not-italic">
+                  Dr. Milton Chavez, Founder &amp; Medical Director
+                </cite>
               </blockquote>
-              <div className="w-12 h-px bg-gold/30 mb-8" />
-              <cite className="text-dark/30 text-[10px] tracking-[0.25em] uppercase font-sans font-light not-italic">Dr. Milton Chavez, Founder &amp; Medical Director</cite>
-            </div>
-            <div className="lg:col-span-6">
-              <p className="text-dark/50 text-sm font-sans font-light leading-[1.8] mb-6">
+              <p className="text-dark/55 text-[15px] font-sans font-light leading-[1.9]">
                 Most Chicago med spas use nurse practitioners or estheticians for injectables. Dr. Chavez is a board-certified family physician with advanced training specifically in filler technique. That is a different level of anatomical knowledge, and it shows in how your results turn out.
               </p>
-              <p className="text-dark/50 text-sm font-sans font-light leading-[1.8]">
-                Every treatment is built around your facial anatomy, your goals, and your medical history. Results that look natural, not like you had work done.
-              </p>
+            </div>
+
+            <div className="grid grid-cols-3 gap-px bg-gold/10">
+              {[
+                { stat: "30+", label: "Years of Clinical Training" },
+                { stat: "M.D.", label: "Board-Certified Physician" },
+                { stat: "100%", label: "Physician-Administered" },
+              ].map((item) => (
+                <div key={item.label} className="bg-marble-stone p-6 text-center">
+                  <p className="font-serif text-gold text-3xl lg:text-4xl mb-3">{item.stat}</p>
+                  <p className="text-dark/40 text-[10px] tracking-[0.15em] uppercase font-sans font-light leading-[1.6]">{item.label}</p>
+                </div>
+              ))}
             </div>
           </div>
+
+          <p className="text-dark/45 text-sm font-sans font-light leading-[1.9] max-w-2xl mx-auto text-center">
+            Every treatment is built around your facial anatomy, your goals, and your medical history. Results that look natural, not like you had work done.
+          </p>
         </div>
       </section>
 
@@ -174,7 +194,7 @@ export default function InjectablesPage() {
             {/* Wrinkle Relaxers */}
             <div className="ken-burns group relative aspect-[3/4] overflow-hidden">
               <Image
-                src="/assets/gallery/injectable-botox-1.jpg"
+                src="/assets/gallery/injectable-wrinkle-new.jpg"
                 alt="Wrinkle relaxer injections Chicago"
                 fill
                 className="object-cover"
@@ -240,14 +260,14 @@ export default function InjectablesPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-px bg-gold/10">
             {[
-              { src: "/assets/gallery/injectable-botox-1.jpg", alt: "Botox injection treatment Chicago" },
-              { src: "/assets/gallery/injectable-botox-2.jpg", alt: "Physician injectable treatment" },
+              { src: "/assets/gallery/injectable-gallery-1.jpg", alt: "Aesthetic treatment at Illari Aesthetics" },
               { src: "/assets/gallery/injectable-lips.jpg", alt: "Lip filler treatment Chicago" },
-              { src: "/assets/gallery/injectable-profile.jpg", alt: "Patient profile injectable results" },
-              { src: "/assets/gallery/injectable-forehead.jpg", alt: "Forehead injectable treatment" },
-              { src: "/assets/gallery/injectable-cosmetic.jpg", alt: "Aesthetic treatment results" },
+              { src: "/assets/gallery/injectable-gallery-2.jpg", alt: "Injectable procedure at Illari Aesthetics" },
+              { src: "/assets/gallery/injectable-wrinkle-new.jpg", alt: "Wrinkle relaxer treatment" },
+              { src: "/assets/gallery/injectable-gallery-4.jpg", alt: "Relaxing treatment experience" },
+              { src: "/assets/gallery/injectable-cosmetic.jpg", alt: "Cosmetic injectable results" },
             ].map((img) => (
-              <div key={img.src} className="ken-burns aspect-square relative overflow-hidden bg-dark">
+              <div key={img.src} className="ken-burns group aspect-square relative overflow-hidden bg-dark">
                 <Image src={img.src} alt={img.alt} fill className="object-cover opacity-85 group-hover:opacity-100 transition-opacity duration-700" />
               </div>
             ))}
@@ -258,91 +278,110 @@ export default function InjectablesPage() {
       {/* FAQ */}
       <section className="py-32 bg-marble-stone linen-texture">
         <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
-            {/* Left — editorial header */}
-            <div className="lg:col-span-4 lg:sticky lg:top-32 self-start">
-              <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-6">Common Questions</p>
-              <h2 className="font-serif text-dark text-[clamp(2rem,4vw,3.5rem)] leading-[1.05] mb-8">
-                Injectables<br /><span className="italic">FAQ</span>
-              </h2>
-              <div className="w-12 h-px bg-gold/30 mb-8" />
-              <p className="text-dark/40 text-sm font-sans font-light leading-[1.8]">
-                Questions about Botox, filler, PRF, or what to expect from a physician-administered treatment. Answered here.
-              </p>
-            </div>
+          <div className="text-center mb-20">
+            <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-6">Common Questions</p>
+            <h2 className="font-serif text-dark text-[clamp(2.5rem,5vw,4rem)] leading-[1.05] mb-6">
+              Injectables <span className="italic">FAQ</span>
+            </h2>
+            <div className="w-12 h-px bg-gold/30 mx-auto mb-6" />
+            <p className="text-dark/40 text-sm font-sans font-light leading-[1.8] max-w-lg mx-auto">
+              Questions about Botox, filler, PRF, or what to expect from a physician-administered treatment. Answered here.
+            </p>
+          </div>
 
-            {/* Right — accordion */}
-            <div className="lg:col-span-8 divide-y divide-gold/10">
-              {[
-                {
-                  q: "What injectables do you offer?",
-                  a: "Wrinkle relaxers including Botox, Xeomin, and Dysport. Hyaluronic acid dermal filler for volume and lip enhancement. And PRF, a treatment derived from your own blood used for skin rejuvenation, hair growth support, and wound healing.",
-                },
-                {
-                  q: "Why should I choose a physician over a nurse practitioner for injectables?",
-                  a: "Dr. Chavez brings 30 years of clinical training and a physician's knowledge of facial anatomy to every injection. His advanced filler technique training is not standard at most med spas. The difference shows in safety, accuracy, and how the results actually look.",
-                },
-                {
-                  q: "How long do wrinkle relaxers last?",
-                  a: "Results from wrinkle relaxers such as Botox, Xeomin, and Dysport typically last three to four months, varying by individual metabolism and treatment area. Dr. Chavez will advise on timing for maintenance during your consultation.",
-                },
-                {
-                  q: "How long do fillers last?",
-                  a: "Hyaluronic acid fillers generally last six to eighteen months depending on the product used, the area treated, and individual factors. Dr. Chavez will recommend the most appropriate product for your goals.",
-                },
-                {
-                  q: "Is PRF safe?",
-                  a: "Yes. PRF comes entirely from your own blood, so there is no risk of allergic reaction to a foreign substance. As a physician, Dr. Chavez follows strict clinical protocols for every step of the draw and processing.",
-                },
-                {
-                  q: "Do you offer lip filler in Chicago?",
-                  a: "Yes. Dr. Chavez offers hyaluronic acid lip filler at Illari Aesthetics in Chicago's Wicker Park. Lip injections are customized to your anatomy and goals, with conservative dosing for results that look natural, not overdone. Dr. Chavez has advanced training in filler technique, which makes a meaningful difference in lip work specifically.",
-                },
-                {
-                  q: "Do you offer PRF for hair loss in Chicago?",
-                  a: "Yes. Dr. Chavez offers PRF (Platelet Rich Fibrin) treatments at Illari Aesthetics in Chicago's Wicker Park, including for hair growth support. PRF uses a concentrate derived from your own blood to stimulate natural regeneration in the scalp. It is a non-synthetic option with no risk of allergic reaction, administered as an injection by a board-certified physician.",
-                },
-              ].map((item) => (
-                <details key={item.q} className="group py-6">
-                  <summary className="cursor-pointer flex items-center justify-between gap-6 font-serif text-dark text-lg lg:text-xl hover:text-gold transition-colors duration-300 list-none">
+          <div className="max-w-3xl mx-auto">
+            {[
+              {
+                q: "What injectables do you offer?",
+                a: "Wrinkle relaxers including Botox, Xeomin, and Dysport. Hyaluronic acid dermal filler for volume and lip enhancement. And PRF, a treatment derived from your own blood used for skin rejuvenation, hair growth support, and wound healing.",
+              },
+              {
+                q: "Why should I choose a physician over a nurse practitioner for injectables?",
+                a: "Dr. Chavez brings 30 years of clinical training and a physician's knowledge of facial anatomy to every injection. His advanced filler technique training is not standard at most med spas. The difference shows in safety, accuracy, and how the results actually look.",
+              },
+              {
+                q: "How long do wrinkle relaxers last?",
+                a: "Results from wrinkle relaxers such as Botox, Xeomin, and Dysport typically last three to four months, varying by individual metabolism and treatment area. Dr. Chavez will advise on timing for maintenance during your consultation.",
+              },
+              {
+                q: "How long do fillers last?",
+                a: "Hyaluronic acid fillers generally last six to eighteen months depending on the product used, the area treated, and individual factors. Dr. Chavez will recommend the most appropriate product for your goals.",
+              },
+              {
+                q: "Is PRF safe?",
+                a: "Yes. PRF comes entirely from your own blood, so there is no risk of allergic reaction to a foreign substance. As a physician, Dr. Chavez follows strict clinical protocols for every step of the draw and processing.",
+              },
+              {
+                q: "Do you offer lip filler in Chicago?",
+                a: "Yes. Dr. Chavez offers hyaluronic acid lip filler at Illari Aesthetics in Chicago's Wicker Park. Lip injections are customized to your anatomy and goals, with conservative dosing for results that look natural, not overdone.",
+              },
+              {
+                q: "Do you offer PRF for hair loss in Chicago?",
+                a: "Yes. Dr. Chavez offers PRF (Platelet Rich Fibrin) treatments including for hair growth support. PRF uses a concentrate derived from your own blood to stimulate natural regeneration in the scalp. It is a non-synthetic option with no risk of allergic reaction.",
+              },
+            ].map((item, i) => (
+              <details key={item.q} className="group border-b border-gold/10">
+                <summary className="cursor-pointer flex items-center gap-6 py-7 list-none">
+                  <span className="font-serif text-gold text-lg flex-shrink-0 opacity-40 group-open:opacity-100 transition-opacity duration-300">
+                    0{i + 1}
+                  </span>
+                  <span className="font-serif text-dark text-lg leading-snug group-hover:text-gold transition-colors duration-300 flex-1">
                     {item.q}
-                    <span className="w-5 h-5 flex-shrink-0 rounded-full border border-gold/40 flex items-center justify-center text-gold group-open:bg-gold/10 transition-colors duration-300">
-                      <svg className="w-3 h-3 group-open:rotate-45 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                      </svg>
-                    </span>
-                  </summary>
-                  <p className="mt-5 text-dark/50 text-sm font-sans font-light leading-[1.8]">{item.a}</p>
-                </details>
-              ))}
-            </div>
+                  </span>
+                  <span className="flex-shrink-0 w-8 h-8 border border-gold/30 rounded-full flex items-center justify-center group-open:bg-gold/10 group-open:border-gold/60 transition-all duration-300">
+                    <svg className="w-3.5 h-3.5 text-gold group-open:rotate-45 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
+                    </svg>
+                  </span>
+                </summary>
+                <div className="pb-7 pl-12">
+                  <p className="text-dark/45 text-sm font-sans font-light leading-[1.9]">{item.a}</p>
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-28 bg-dark linen-texture-dark">
-        <div className="max-w-[1400px] mx-auto px-8 lg:px-12 text-center">
-          <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Chicago&apos;s Physician-Led Med Spa</p>
-          <h2 className="font-serif text-white text-[clamp(2.5rem,5vw,4rem)] leading-[1.05] mb-6">
-            Book Your Injectable<br /><span className="italic">Consultation</span>
-          </h2>
-          <div className="w-12 h-px bg-gold/30 mx-auto mb-8" />
-          <p className="text-white/40 text-sm font-sans font-light mb-12 max-w-xl mx-auto leading-[1.8]">
-            Available Monday through Friday, 9am to 4pm. Located in Wicker Park at 1509 N Western Avenue, Unit B.
-          </p>
-          <div className="flex flex-wrap justify-center items-center gap-8">
-            <a
-              href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-gold/60 text-gold px-10 py-3.5 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light hover:bg-gold/10 hover:border-gold transition-all duration-500"
-            >
-              Book Now
-            </a>
-            <a href="tel:7732190326" className="text-white/40 text-sm font-mono tracking-widest hover:text-white/70 transition-colors duration-500">
-              773.219.0326
-            </a>
+      <section className="relative bg-dark overflow-hidden">
+        {/* Background image — pushed left */}
+        <div className="absolute inset-0">
+          <div className="absolute left-0 top-0 bottom-0 w-[60%]">
+            <Image
+              src="/assets/gallery/injectable-cta-bg.jpg"
+              alt=""
+              fill
+              className="object-cover object-left"
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-r from-dark/40 via-dark/80 to-dark" />
+          <div className="absolute inset-0 bg-gradient-to-l from-dark via-transparent to-transparent" />
+        </div>
+
+        <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12 py-28 lg:py-36">
+          <div className="lg:ml-auto lg:max-w-lg text-center lg:text-left">
+            <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Chicago&apos;s Physician-Led Med Spa</p>
+            <h2 className="font-serif text-white text-[clamp(2.5rem,5vw,4rem)] leading-[1.05] mb-6">
+              Book Your Injectable<br /><span className="italic">Consultation</span>
+            </h2>
+            <div className="w-12 h-px bg-gold/40 mb-8 mx-auto lg:mx-0" />
+            <p className="text-white/40 text-sm font-sans font-light mb-12 leading-[1.8]">
+              Available Monday through Friday, 9am to 4pm. Located in Wicker Park at 1509 N Western Avenue, Unit B.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center lg:items-start gap-6">
+              <a
+                href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-gold/60 text-gold px-10 py-3.5 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light hover:bg-gold/10 hover:border-gold transition-all duration-500"
+              >
+                Book Now
+              </a>
+              <a href="tel:7732190326" className="text-white/40 text-sm font-mono tracking-widest hover:text-white/70 transition-colors duration-500 py-3.5">
+                773.219.0326
+              </a>
+            </div>
           </div>
         </div>
       </section>
