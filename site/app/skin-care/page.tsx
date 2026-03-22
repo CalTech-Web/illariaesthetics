@@ -423,7 +423,7 @@ export default function SkinCarePage() {
               src="/assets/gallery/skincare-cta-bg.jpg"
               alt=""
               fill
-              className="object-cover object-center"
+              className="object-cover object-center opacity-60"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-l from-dark/30 via-dark/80 to-dark" />

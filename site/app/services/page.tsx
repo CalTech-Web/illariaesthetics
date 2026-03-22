@@ -168,24 +168,33 @@ export default function ServicesPage() {
               href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative aspect-[3/4] overflow-hidden bg-dark flex flex-col items-center justify-center text-center p-10 group hover:bg-dark/90 transition-colors duration-500"
+              className="relative aspect-[3/4] overflow-hidden bg-dark flex flex-col items-center justify-center text-center p-10 group"
             >
-              <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-6">
-                Chicago&apos;s Physician-Led Med Spa
-              </p>
-              <h3 className="font-serif text-white text-3xl lg:text-4xl mb-6 leading-tight">
-                Ready to Get <span className="italic">Started?</span>
-              </h3>
-              <div className="w-12 h-px bg-gold/30 mb-6" />
-              <p className="text-white/40 text-sm font-sans font-light leading-[1.8] mb-8 max-w-xs">
-                Book a consultation with Dr. Chavez and find out which treatments are right for your skin and your goals.
-              </p>
-              <span className="border border-gold/60 text-gold px-8 py-3 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light group-hover:bg-gold/10 group-hover:border-gold transition-all duration-500">
-                Book Now
-              </span>
-              <p className="text-white/20 text-sm font-mono tracking-widest mt-5">
-                773.219.0326
-              </p>
+              <Image
+                src="/assets/gallery/services-cta-bg.jpg"
+                alt=""
+                fill
+                className="object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-dark/40 to-dark/60" />
+              <div className="relative z-10">
+                <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-6">
+                  Chicago&apos;s Physician-Led Med Spa
+                </p>
+                <h3 className="font-serif text-white text-3xl lg:text-4xl mb-6 leading-tight">
+                  Ready to Get <span className="italic">Started?</span>
+                </h3>
+                <div className="w-12 h-px bg-gold/30 mb-6 mx-auto" />
+                <p className="text-white/40 text-sm font-sans font-light leading-[1.8] mb-8 max-w-xs mx-auto">
+                  Book a consultation with Dr. Chavez and find out which treatments are right for your skin and your goals.
+                </p>
+                <span className="border border-gold/60 text-gold px-8 py-3 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light group-hover:bg-gold/10 group-hover:border-gold transition-all duration-500">
+                  Book Now
+                </span>
+                <p className="text-white/20 text-sm font-mono tracking-widest mt-5">
+                  773.219.0326
+                </p>
+              </div>
             </a>
           </div>
         </div>
