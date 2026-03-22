@@ -58,9 +58,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10">
-          <div className="w-px h-12 bg-gradient-to-b from-transparent via-white/30 to-transparent" />
-        </div>
       </section>
 
       {/* ─── STATS MARQUEE ─── */}
@@ -167,7 +164,7 @@ export default function HomePage() {
             <div className="grid grid-rows-2 gap-1">
               <Link href="/injectables" className="ken-burns group relative overflow-hidden block">
                 <Image
-                  src="/assets/gallery/injectable-cosmetic.jpg"
+                  src="/assets/gallery/injectables-hero.jpg"
                   alt="Injectables"
                   fill
                   className="object-cover"
@@ -184,7 +181,7 @@ export default function HomePage() {
               <div className="grid grid-cols-2 gap-1">
                 <Link href="/weight-loss-1" className="ken-burns group relative overflow-hidden block">
                   <Image
-                    src="/assets/gallery/weight-loss-hero.jpg"
+                    src="/assets/gallery/weight-loss-new.jpg"
                     alt="Weight Loss"
                     fill
                     className="object-cover"
@@ -200,7 +197,7 @@ export default function HomePage() {
 
                 <Link href="/iv-infusion-services" className="ken-burns group relative overflow-hidden block">
                   <Image
-                    src="/assets/gallery/gallery-2-treatment.jpg"
+                    src="/assets/gallery/iv-therapy-hero.jpg"
                     alt="IV Therapy"
                     fill
                     className="object-cover"
@@ -360,54 +357,38 @@ export default function HomePage() {
       <InstagramFeed />
 
       {/* ─── FOOTER CTA ─── */}
-      <section className="relative linen-texture hairline-t overflow-hidden bg-marble-stone">
-        <div className="absolute inset-0 opacity-[0.04]">
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0">
           <Image
-            src="/assets/gallery/injectable-profile.jpg"
+            src="/assets/gallery/cta-beauty.jpg"
             alt=""
             fill
-            className="object-cover scale-x-[-1]"
+            className="object-cover"
           />
+          <div className="absolute inset-0 bg-dark/75" />
         </div>
 
-        <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch min-h-[600px]">
-            {/* Left — Portrait with blending */}
-            <div className="relative hidden lg:block">
-              <Image
-                src="/assets/gallery/injectable-profile.jpg"
-                alt="Patient consultation at Illari Aesthetics"
-                fill
-                className="object-cover object-center"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-marble-stone" />
-              <div className="absolute inset-0 bg-gradient-to-b from-marble-stone via-transparent to-marble-stone opacity-60" />
-            </div>
-
-            {/* Right — CTA content */}
-            <div className="flex flex-col justify-center py-28 lg:py-0 lg:pl-16">
-              <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Ready to Begin?</p>
-              <h2 className="font-serif text-dark text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05] mb-6">
-                Your Transformation<br />Starts Here
-              </h2>
-              <div className="w-12 h-px bg-gold/30 mb-8" />
-              <p className="text-dark/50 text-sm font-sans font-light leading-[1.8] mb-12 max-w-md">
-                A board-certified physician is ready to evaluate your skin and build a real treatment plan. Tailored to you, not templated.
-              </p>
-              <div className="flex flex-col sm:flex-row items-start gap-6">
-                <a
-                  href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="border border-gold/60 text-gold px-10 py-3.5 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light hover:bg-gold/10 hover:border-gold transition-all duration-500"
-                >
-                  Schedule Your Appointment
-                </a>
-                <a href="tel:7732190326" className="text-dark/40 text-sm font-mono tracking-widest hover:text-dark/70 transition-colors duration-500 py-3.5">
-                  773.219.0326
-                </a>
-              </div>
-            </div>
+        <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12 py-28 lg:py-36 text-center">
+          <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Ready to Begin?</p>
+          <h2 className="font-serif text-white text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05] mb-6">
+            Your Transformation<br />Starts Here
+          </h2>
+          <div className="w-12 h-px bg-gold/40 mx-auto mb-8" />
+          <p className="text-white/50 text-sm font-sans font-light leading-[1.8] mb-12 max-w-md mx-auto">
+            A board-certified physician is ready to evaluate your skin and build a real treatment plan. Tailored to you, not templated.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+            <a
+              href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-gold/60 text-gold px-10 py-3.5 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light hover:bg-gold/10 hover:border-gold transition-all duration-500"
+            >
+              Schedule Your Appointment
+            </a>
+            <a href="tel:7732190326" className="text-white/40 text-sm font-mono tracking-widest hover:text-white/70 transition-colors duration-500 py-3.5">
+              773.219.0326
+            </a>
           </div>
         </div>
       </section>
