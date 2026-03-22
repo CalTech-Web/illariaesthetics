@@ -36,10 +36,10 @@ export default function ContactPage() {
               {/* Background image with dark overlay */}
               <div className="absolute inset-0">
                 <Image
-                  src="/assets/gallery/skincare-microneedling.jpg"
+                  src="/assets/gallery/contact-form-bg.avif"
                   alt="Illari Aesthetics treatment room, Wicker Park Chicago"
                   fill
-                  className="object-cover"
+                  className="object-cover opacity-40"
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-dark/97 via-dark/88 to-dark/70" />
               </div>
@@ -193,25 +193,6 @@ export default function ContactPage() {
             </div>
 
           </div>
-        </div>
-      </section>
-
-      {/* Book CTA */}
-      <section className="py-16 bg-dark border-t border-gold/10">
-        <div className="max-w-4xl mx-auto px-8 lg:px-12 text-center">
-          <p className="text-gold text-xs tracking-widest uppercase mb-4 font-sans">Ready to Book?</p>
-          <h2 className="font-serif text-3xl text-white mb-4">Book Your Appointment Online</h2>
-          <p className="text-neutral-light text-sm leading-relaxed mb-8 max-w-xl mx-auto">
-            The online booking system shows live availability. Pick your service, find a time, and you are confirmed in minutes.
-          </p>
-          <a
-            href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary"
-          >
-            Book Your Appointment
-          </a>
         </div>
       </section>
     </>
