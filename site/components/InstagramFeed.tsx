@@ -8,6 +8,7 @@ import Image from "next/image";
    ──────────────────────────────────────────────────────────── */
 
 const INSTAGRAM_POSTS = [
+  { src: "/assets/gallery/instagram-1.jpg", alt: "When should retinol be applied quiz at Illari Aesthetics", href: "https://www.instagram.com/illariaesthetics/" },
   { src: "/assets/gallery/injectable-gallery-5.jpg", alt: "Lip filler treatment at Illari Aesthetics", href: "https://www.instagram.com/illariaesthetics/" },
   { src: "/assets/gallery/skincare-chemical-peel.jpg", alt: "Chemical peel treatment at Illari Aesthetics", href: "https://www.instagram.com/illariaesthetics/" },
   { src: "/assets/gallery/gallery-1-injections.jpg", alt: "Injection treatment at Illari Aesthetics", href: "https://www.instagram.com/illariaesthetics/" },
@@ -17,7 +18,6 @@ const INSTAGRAM_POSTS = [
   { src: "/assets/gallery/gallery-6-lip-fillers.jpg", alt: "Lip fillers at Illari Aesthetics", href: "https://www.instagram.com/illariaesthetics/" },
   { src: "/assets/gallery/weight-loss-new.jpg", alt: "Weight loss program at Illari Aesthetics", href: "https://www.instagram.com/illariaesthetics/" },
   { src: "/assets/gallery/skincare-dermaplane.jpg", alt: "Dermaplane facial at Illari Aesthetics", href: "https://www.instagram.com/illariaesthetics/" },
-  { src: "/assets/gallery/injectable-profile.jpg", alt: "Profile balancing at Illari Aesthetics", href: "https://www.instagram.com/illariaesthetics/" },
 ];
 
 /* Duplicate once for seamless loop — the animation shifts -50% so
@@ -49,14 +49,14 @@ export default function InstagramFeed() {
               href={post.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="relative flex-shrink-0 w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] overflow-hidden group/card"
+              className="relative flex-shrink-0 h-[280px] sm:h-[340px] md:h-[400px] aspect-[4/5] overflow-hidden group/card"
             >
               <Image
                 src={post.src}
                 alt={post.alt}
                 fill
-                sizes="(max-width: 640px) 200px, (max-width: 768px) 250px, 300px"
-                className="object-cover transition-transform duration-700 group-hover/card:scale-110"
+                sizes="(max-width: 640px) 224px, (max-width: 768px) 272px, 320px"
+                className="object-contain transition-transform duration-700 group-hover/card:scale-110"
               />
               {/* Hover overlay */}
               <div className="absolute inset-0 bg-dark/0 group-hover/card:bg-dark/40 transition-colors duration-500 flex items-center justify-center">
