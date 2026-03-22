@@ -94,17 +94,17 @@ const treatments = [
   {
     title: "Skin Survey",
     description: "A full facial assessment covering all lesions, scars, and blemishes, with treatment options and transparent pricing. If you are unsure what your skin needs, or want a second opinion from an actual physician, this is where to start.",
-    image: "/assets/gallery/skincare-survey.jpg",
+    image: "/assets/gallery/skincare-survey-new.jpg",
   },
   {
     title: "Cryoablation",
     description: "Extremely cold liquid applied with precision to freeze and destroy abnormal tissue. Dr. Chavez uses cryoablation to target hyperpigmentation, sun spots, melasma, and irregular pigmentation. A physician-grade technique for pigmentation that does not respond to topical treatments.",
-    image: "/assets/gallery/skincare-cryo.jpg",
+    image: "/assets/gallery/skincare-cryo-new2.jpg",
   },
   {
     title: "Surgical Dermatology",
     description: "Wart removal, lesion and mole removal, scar revision. Dr. Chavez trained specifically in surgical scar revisions, which is not common at med spas. If you have a scar or a suspicious growth you want addressed by an actual physician, this is the treatment.",
-    image: "/assets/gallery/skincare-surgical.jpg",
+    image: "/assets/gallery/skincare-surgical-new.jpg",
   },
   {
     title: "Chemical Peels",
@@ -120,7 +120,7 @@ const treatments = [
   {
     title: "Microneedling",
     description: "Small controlled injuries to the first layer of skin trigger collagen and elastin production. The result is firmer, smoother skin over time. Good for texture, acne scarring, and general skin renewal.",
-    image: "/assets/gallery/skincare-microneedling.jpg",
+    image: "/assets/gallery/skincare-microneedling-new.jpg",
   },
 ];
 
