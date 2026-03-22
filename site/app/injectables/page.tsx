@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description: "Botox, Xeomin, Dysport, lip filler, hyaluronic acid dermal fillers, and PRF administered by a board-certified physician in Chicago's Wicker Park. Not an esthetician. A doctor.",
     images: [
       {
-        url: "/assets/gallery/injectable-lips.jpg",
+        url: "/assets/gallery/injectable-gallery-5.jpg",
         alt: "Professional injectable treatments in Chicago by Dr. Chavez",
       },
     ],
@@ -105,7 +105,7 @@ export default function InjectablesPage() {
       <section className="relative pt-[155px] pb-[75px] bg-dark overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/assets/gallery/injectable-lips.jpg"
+            src="/assets/gallery/injectable-gallery-5.jpg"
             alt="Professional injectable treatments in Chicago"
             fill
             className="object-cover opacity-30"
@@ -213,7 +213,7 @@ export default function InjectablesPage() {
             {/* Filler */}
             <div className="ken-burns group relative aspect-[3/4] overflow-hidden">
               <Image
-                src="/assets/gallery/injectable-cosmetic.jpg"
+                src="/assets/gallery/injectable-gallery-5.jpg"
                 alt="Dermal filler lip augmentation Chicago"
                 fill
                 className="object-cover"
@@ -261,11 +261,11 @@ export default function InjectablesPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-px bg-gold/10">
             {[
               { src: "/assets/gallery/injectable-gallery-1.jpg", alt: "Aesthetic treatment at Illari Aesthetics" },
-              { src: "/assets/gallery/injectable-lips.jpg", alt: "Lip filler treatment Chicago" },
+              { src: "/assets/gallery/injectable-gallery-5.jpg", alt: "Cosmetic lip filler syringe at Illari Aesthetics" },
               { src: "/assets/gallery/injectable-gallery-2.jpg", alt: "Injectable procedure at Illari Aesthetics" },
               { src: "/assets/gallery/injectable-wrinkle-new.jpg", alt: "Wrinkle relaxer treatment" },
-              { src: "/assets/gallery/injectable-gallery-4.jpg", alt: "Relaxing treatment experience" },
-              { src: "/assets/gallery/injectable-cosmetic.jpg", alt: "Cosmetic injectable results" },
+              { src: "/assets/gallery/injectable-gallery-6.png", alt: "Male facial injectable treatment Chicago" },
+              { src: "/assets/gallery/injectable-gallery-7.png", alt: "Aesthetic skin treatment at Illari Aesthetics" },
             ].map((img) => (
               <div key={img.src} className="ken-burns group aspect-square relative overflow-hidden bg-dark">
                 <Image src={img.src} alt={img.alt} fill className="object-cover opacity-85 group-hover:opacity-100 transition-opacity duration-700" />
