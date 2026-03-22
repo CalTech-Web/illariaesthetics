@@ -279,29 +279,55 @@ export default function SchedulePage() {
       </section>
 
       {/* ─── CLOSING CTA ─── */}
-      <section className="py-24 bg-dark border-t border-gold/10 linen-texture-dark">
-        <div className="max-w-[1000px] mx-auto px-8 lg:px-12 text-center">
-          <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Ready to Begin?</p>
-          <h2 className="font-serif text-white text-[clamp(2rem,4vw,3.5rem)] leading-[1.05] mb-6">
-            Your Consultation<br />Starts Here
-          </h2>
-          <div className="w-12 h-px bg-gold/20 mx-auto mb-8" />
-          <p className="text-white/40 text-sm font-sans font-light leading-[1.9] mb-12 max-w-md mx-auto">
-            The online booking system shows live availability. Pick your service, find a time, and you are confirmed in minutes.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <a
-              href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-gold/60 text-gold px-10 py-3.5 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light hover:bg-gold/10 hover:border-gold transition-all duration-500"
-            >
-              Book Your Appointment
-            </a>
-            <a href="tel:7732190326" className="text-white/30 text-sm font-mono tracking-widest hover:text-white/60 transition-colors duration-500">
-              773.219.0326
-            </a>
+      <section className="relative bg-dark border-t border-gold/10 overflow-hidden">
+        <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center min-h-[500px]">
+            {/* Left: text + CTA */}
+            <div className="py-24 lg:pr-16">
+              <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Ready to Begin?</p>
+              <h2 className="font-serif text-white text-[clamp(2rem,4vw,3.5rem)] leading-[1.05] mb-6">
+                Your Consultation<br />Starts Here
+              </h2>
+              <div className="w-12 h-px bg-gold/20 mb-8" />
+              <p className="text-white/40 text-sm font-sans font-light leading-[1.9] mb-12 max-w-md">
+                The online booking system shows live availability. Pick your service, find a time, and you are confirmed in minutes.
+              </p>
+              <div className="flex flex-col sm:flex-row items-start gap-6">
+                <a
+                  href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-gold/60 text-gold px-10 py-3.5 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light hover:bg-gold/10 hover:border-gold transition-all duration-500"
+                >
+                  Book Your Appointment
+                </a>
+                <a href="tel:7732190326" className="text-white/30 text-sm font-mono tracking-widest hover:text-white/60 transition-colors duration-500 py-3.5">
+                  773.219.0326
+                </a>
+              </div>
+            </div>
+
+            {/* Right: background image */}
+            <div className="relative hidden lg:block h-full min-h-[500px]">
+              <Image
+                src="/assets/gallery/cta-consultation.avif"
+                alt="Consultation at Illari Aesthetics"
+                fill
+                className="object-cover opacity-25"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/60 to-transparent" />
+            </div>
           </div>
+        </div>
+
+        {/* Mobile: subtle background image */}
+        <div className="absolute inset-0 lg:hidden">
+          <Image
+            src="/assets/gallery/cta-consultation.avif"
+            alt=""
+            fill
+            className="object-cover object-right opacity-10"
+          />
         </div>
       </section>
     </>
