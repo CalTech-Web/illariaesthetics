@@ -240,38 +240,44 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="relative overflow-hidden">
+      <section className="relative bg-dark overflow-hidden">
+        {/* Background image — left side */}
         <div className="absolute inset-0">
-          <Image
-            src="/assets/gallery/cta-beauty.jpg"
-            alt=""
-            fill
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-dark/75" />
+          <div className="absolute left-0 top-0 bottom-0 w-[55%]">
+            <Image
+              src="/assets/gallery/about-cta-bg.jpg"
+              alt=""
+              fill
+              className="object-cover object-center"
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-r from-dark/30 via-dark/80 to-dark" />
+          <div className="absolute inset-0 bg-gradient-to-l from-dark via-transparent to-transparent" />
         </div>
 
-        <div className="relative z-10 max-w-[1000px] mx-auto px-8 lg:px-12 py-28 lg:py-36 text-center">
-          <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Wicker Park, Chicago</p>
-          <h2 className="font-serif text-white text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05] mb-6">
-            Experience the Illari <span className="italic">Difference</span>
-          </h2>
-          <div className="w-12 h-px bg-gold/40 mx-auto mb-8" />
-          <p className="text-white/50 text-sm font-sans font-light mb-12 max-w-md mx-auto leading-[1.8]">
-            A board-certified physician is ready to evaluate your skin and build a real treatment plan, tailored to your goals, not templated from a menu.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <a
-              href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-gold/60 text-gold px-10 py-3.5 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light hover:bg-gold/10 hover:border-gold transition-all duration-500"
-            >
-              Book a Consultation
-            </a>
-            <a href="tel:7732190326" className="text-white/40 text-sm font-mono tracking-widest hover:text-white/70 transition-colors duration-500 py-3.5">
-              773.219.0326
-            </a>
+        <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12 py-28 lg:py-36">
+          <div className="lg:ml-auto lg:max-w-lg text-center lg:text-left">
+            <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Wicker Park, Chicago</p>
+            <h2 className="font-serif text-white text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05] mb-6">
+              Experience the Illari <span className="italic">Difference</span>
+            </h2>
+            <div className="w-12 h-px bg-gold/40 mb-8 mx-auto lg:mx-0" />
+            <p className="text-white/50 text-sm font-sans font-light mb-12 max-w-md leading-[1.8]">
+              A board-certified physician is ready to evaluate your skin and build a real treatment plan, tailored to your goals, not templated from a menu.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center lg:items-start gap-6">
+              <a
+                href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-gold/60 text-gold px-10 py-3.5 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light hover:bg-gold/10 hover:border-gold transition-all duration-500"
+              >
+                Book a Consultation
+              </a>
+              <a href="tel:7732190326" className="text-white/40 text-sm font-mono tracking-widest hover:text-white/70 transition-colors duration-500 py-3.5">
+                773.219.0326
+              </a>
+            </div>
           </div>
         </div>
       </section>
