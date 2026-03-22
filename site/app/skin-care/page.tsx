@@ -331,73 +331,85 @@ export default function SkinCarePage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-32 bg-marble-stone linen-texture">
+      <section className="py-32 bg-dark linen-texture-dark">
         <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
-          <div className="text-center mb-20">
-            <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-6">Common Questions</p>
-            <h2 className="font-serif text-dark text-[clamp(2.5rem,5vw,4rem)] leading-[1.05] mb-6">
-              Skin Care <span className="italic">FAQ</span>
-            </h2>
-            <div className="w-12 h-px bg-gold/30 mx-auto mb-6" />
-            <p className="text-dark/40 text-sm font-sans font-light leading-[1.8] max-w-lg mx-auto">
-              Questions about our treatments or physician-led approach? These are the most common ones.
-            </p>
-          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
+            {/* Left — sticky header */}
+            <div className="lg:col-span-4 lg:sticky lg:top-32 self-start">
+              <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-6">Common Questions</p>
+              <h2 className="font-serif text-ivory text-[clamp(2.5rem,5vw,4rem)] leading-[1.05] mb-6">
+                Skin Care <span className="italic">FAQ</span>
+              </h2>
+              <div className="w-12 h-px bg-gold/30 mb-8" />
+              <p className="text-ivory/35 text-sm font-sans font-light leading-[1.8] mb-8">
+                Questions about our treatments or physician-led approach? These are the most common ones.
+              </p>
+              <a
+                href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gold text-[11px] tracking-[0.25em] uppercase font-sans font-light border-b border-gold/40 pb-1 hover:border-gold transition-colors duration-500"
+              >
+                Still Have Questions? Book a Consultation
+              </a>
+            </div>
 
-          <div className="max-w-3xl mx-auto">
-            {[
-              {
-                q: "What makes Illari Aesthetics different from other skin care spas in Chicago?",
-                a: "Dr. Chavez is a board-certified family physician with over 30 years of clinical experience, trained at Rush University and retained as faculty. He evaluates your skin the way a physician does and uses products that are not available to non-medical providers. Every plan is built for you, not borrowed from a template.",
-              },
-              {
-                q: "What skin care treatments do you offer?",
-                a: "We offer skin surveys, cryoablation, surgical dermatology including lesion and mole removal and scar revision, chemical peels, dermaplaning, and microneedling. All treatments use medical-grade products from AlumierMD and Derma Made.",
-              },
-              {
-                q: "How do I know which treatment is right for me?",
-                a: "Start with the Skin Survey. Dr. Chavez performs a full facial assessment and walks you through treatment options, a recommended plan, and transparent pricing based on your specific skin and concerns.",
-              },
-              {
-                q: "Do you use different products than a regular spa?",
-                a: "Yes. Dr. Chavez uses professionally-dispensed medical-grade products from AlumierMD and Derma Made, which are not available to non-medical providers. As a doctor, he is able to use higher-grade products for better patient results.",
-              },
-              {
-                q: "Do you offer mole removal in Chicago?",
-                a: "Yes. Dr. Chavez performs mole removal at Illari Aesthetics in Chicago's Wicker Park through surgical dermatology. He evaluates each lesion clinically before recommending removal and performs the procedure with minimal scarring.",
-              },
-              {
-                q: "Do you offer scar removal or scar revision in Chicago?",
-                a: "Yes. Dr. Chavez has specific training in surgical scar revisions, which is uncommon at most med spas. He uses surgical dermatology techniques to address scars from injury, surgery, or acne. Treatment plans are customized to the type, depth, and location of the scar.",
-              },
-              {
-                q: "Do you offer wart removal in Chicago?",
-                a: "Yes. Dr. Chavez offers wart removal through surgical dermatology and cryoablation. Cryoablation uses extremely cold liquid to freeze and destroy the affected tissue. Dr. Chavez evaluates the best approach based on the type, size, and location of the wart.",
-              },
-              {
-                q: "Is cryoablation the same as cryotherapy?",
-                a: "Cryoablation and cryotherapy share the principle of using cold to destroy tissue, but cryoablation is a targeted medical procedure used to treat specific skin lesions including hyperpigmentation, sun spots, melasma, and irregular pigmentation. Dr. Chavez uses medical-grade cryoablation, not the whole-body wellness chambers used for athletic recovery.",
-              },
-            ].map((item, i) => (
-              <details key={item.q} className="group border-b border-gold/10">
-                <summary className="cursor-pointer flex items-center gap-6 py-7 list-none">
-                  <span className="font-serif text-gold text-lg flex-shrink-0 opacity-40 group-open:opacity-100 transition-opacity duration-300">
-                    0{i + 1}
-                  </span>
-                  <span className="font-serif text-dark text-lg leading-snug group-hover:text-gold transition-colors duration-300 flex-1">
-                    {item.q}
-                  </span>
-                  <span className="flex-shrink-0 w-8 h-8 border border-gold/30 rounded-full flex items-center justify-center group-open:bg-gold/10 group-open:border-gold/60 transition-all duration-300">
-                    <svg className="w-3.5 h-3.5 text-gold group-open:rotate-45 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
-                    </svg>
-                  </span>
-                </summary>
-                <div className="pb-7 pl-12">
-                  <p className="text-dark/45 text-sm font-sans font-light leading-[1.9]">{item.a}</p>
-                </div>
-              </details>
+            {/* Right — accordion */}
+            <div className="lg:col-span-8">
+              {[
+                {
+                  q: "What makes Illari Aesthetics different from other skin care spas in Chicago?",
+                  a: "Dr. Chavez is a board-certified family physician with over 30 years of clinical experience, trained at Rush University and retained as faculty. He evaluates your skin the way a physician does and uses products that are not available to non-medical providers. Every plan is built for you, not borrowed from a template.",
+                },
+                {
+                  q: "What skin care treatments do you offer?",
+                  a: "We offer skin surveys, cryoablation, surgical dermatology including lesion and mole removal and scar revision, chemical peels, dermaplaning, and microneedling. All treatments use medical-grade products from AlumierMD and Derma Made.",
+                },
+                {
+                  q: "How do I know which treatment is right for me?",
+                  a: "Start with the Skin Survey. Dr. Chavez performs a full facial assessment and walks you through treatment options, a recommended plan, and transparent pricing based on your specific skin and concerns.",
+                },
+                {
+                  q: "Do you use different products than a regular spa?",
+                  a: "Yes. Dr. Chavez uses professionally-dispensed medical-grade products from AlumierMD and Derma Made, which are not available to non-medical providers. As a doctor, he is able to use higher-grade products for better patient results.",
+                },
+                {
+                  q: "Do you offer mole removal in Chicago?",
+                  a: "Yes. Dr. Chavez performs mole removal at Illari Aesthetics in Chicago's Wicker Park through surgical dermatology. He evaluates each lesion clinically before recommending removal and performs the procedure with minimal scarring.",
+                },
+                {
+                  q: "Do you offer scar removal or scar revision in Chicago?",
+                  a: "Yes. Dr. Chavez has specific training in surgical scar revisions, which is uncommon at most med spas. He uses surgical dermatology techniques to address scars from injury, surgery, or acne. Treatment plans are customized to the type, depth, and location of the scar.",
+                },
+                {
+                  q: "Do you offer wart removal in Chicago?",
+                  a: "Yes. Dr. Chavez offers wart removal through surgical dermatology and cryoablation. Cryoablation uses extremely cold liquid to freeze and destroy the affected tissue. Dr. Chavez evaluates the best approach based on the type, size, and location of the wart.",
+                },
+                {
+                  q: "Is cryoablation the same as cryotherapy?",
+                  a: "Cryoablation and cryotherapy share the principle of using cold to destroy tissue, but cryoablation is a targeted medical procedure used to treat specific skin lesions including hyperpigmentation, sun spots, melasma, and irregular pigmentation. Dr. Chavez uses medical-grade cryoablation, not the whole-body wellness chambers used for athletic recovery.",
+                },
+              ].map((item, i) => (
+                <details key={item.q} className="group border-b border-ivory/[0.06]">
+                  <summary className="cursor-pointer flex items-center gap-5 py-7 list-none">
+                    <span className="font-serif text-gold/40 text-sm flex-shrink-0 group-open:text-gold transition-colors duration-300 w-6 text-right">
+                      0{i + 1}
+                    </span>
+                    <span className="font-serif text-ivory/70 text-lg leading-snug group-hover:text-gold transition-colors duration-300 flex-1">
+                      {item.q}
+                    </span>
+                    <span className="flex-shrink-0 w-8 h-8 border border-gold/20 rounded-full flex items-center justify-center group-open:bg-gold/10 group-open:border-gold/50 transition-all duration-300">
+                      <svg className="w-3.5 h-3.5 text-gold group-open:rotate-45 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="pb-7 pl-11">
+                    <p className="text-ivory/35 text-sm font-sans font-light leading-[1.9]">{item.a}</p>
+                  </div>
+                </details>
             ))}
+          </div>
           </div>
         </div>
       </section>
