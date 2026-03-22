@@ -342,26 +342,44 @@ export default function WeightLossPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-dark">
-        <div className="max-w-4xl mx-auto px-8 lg:px-12 text-center">
-          <p className="text-gold text-sm tracking-widest uppercase mb-4 font-sans">Chicago Medical Weight Loss</p>
-          <h2 className="section-title-white mb-6">Start Your Weight Loss Journey</h2>
-          <div className="gold-divider" />
-          <p className="text-neutral-light mb-10 max-w-xl mx-auto leading-relaxed">
-            Book a consultation with Dr. Chavez to review your goals and find out if the GLP-1 program is a fit for your health profile.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary"
-            >
-              Schedule Now
-            </a>
-            <a href="tel:7732190326" className="btn-outline-white">
-              Call 773.219.0326
-            </a>
+      <section className="relative bg-dark overflow-hidden">
+        {/* Background image — left side */}
+        <div className="absolute inset-0">
+          <div className="absolute left-0 top-0 bottom-0 w-[55%]">
+            <Image
+              src="/assets/gallery/weightloss-cta-bg.jpg"
+              alt=""
+              fill
+              className="object-cover object-center"
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-r from-dark/30 via-dark/80 to-dark" />
+          <div className="absolute inset-0 bg-gradient-to-l from-dark via-transparent to-transparent" />
+        </div>
+
+        <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12 py-28 lg:py-36">
+          <div className="lg:ml-auto lg:max-w-lg text-center lg:text-left">
+            <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-8">Chicago Medical Weight Loss</p>
+            <h2 className="font-serif text-ivory text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05] mb-6">
+              Start Your Weight Loss <span className="italic">Journey</span>
+            </h2>
+            <div className="w-12 h-px bg-gold/40 mb-8 mx-auto lg:mx-0" />
+            <p className="text-ivory/40 text-sm font-sans font-light leading-[1.9] mb-12 max-w-md">
+              Book a consultation with Dr. Chavez to review your goals and find out if the GLP-1 program is a fit for your health profile.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center lg:items-start gap-6">
+              <a
+                href="https://web2.myaestheticspro.com/BN/index.cfm?52A4C5D4699E6C16FB67ACA46E1487324CFC2165279C2B6FC9B29ADF9D0A6FBB"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-gold/60 text-gold px-10 py-3.5 rounded-full text-[11px] tracking-[0.25em] uppercase font-sans font-light hover:bg-gold/10 hover:border-gold transition-all duration-500"
+              >
+                Schedule Now
+              </a>
+              <a href="tel:7732190326" className="text-ivory/40 text-sm font-mono tracking-widest hover:text-ivory/70 transition-colors duration-500 py-3.5">
+                773.219.0326
+              </a>
+            </div>
           </div>
         </div>
       </section>
