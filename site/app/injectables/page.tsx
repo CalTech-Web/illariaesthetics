@@ -213,7 +213,7 @@ export default function InjectablesPage() {
             {/* Filler */}
             <div className="ken-burns group relative aspect-[3/4] overflow-hidden">
               <Image
-                src="/assets/gallery/injectable-gallery-5.jpg"
+                src="/assets/gallery/injectable-filler-card.jpg"
                 alt="Dermal filler lip augmentation Chicago"
                 fill
                 className="object-cover"
