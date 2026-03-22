@@ -30,7 +30,7 @@ export default function Navigation() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
           ? "bg-dark/97 backdrop-blur-sm shadow-[0_1px_0_rgba(245,240,232,0.04)]"
-          : "bg-transparent"
+          : "bg-dark/30 backdrop-blur-[2px]"
       }`}
     >
       <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
@@ -69,7 +69,7 @@ export default function Navigation() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              <div className="absolute top-full left-0 mt-4 w-52 bg-dark/97 backdrop-blur-sm border border-ivory/5 shadow-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2">
+              <div className="absolute top-full left-0 mt-4 w-52 bg-dark border border-ivory/8 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2">
                 {[
                   { label: "Skin Care", href: "/skin-care" },
                   { label: "Injectables", href: "/injectables" },
