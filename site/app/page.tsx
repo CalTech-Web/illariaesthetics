@@ -271,7 +271,8 @@ export default function HomePage() {
       </section>
 
       {/* ─── TRUST ─── */}
-      <section className="relative bg-dark linen-texture-dark overflow-hidden">
+      <section className="relative bg-dark overflow-hidden">
+        {/* Subtle background image */}
         <div className="absolute inset-0">
           <Image
             src="/assets/gallery/gallery-3-alumier.jpg"
@@ -281,73 +282,58 @@ export default function HomePage() {
           />
         </div>
 
-        <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12 py-24">
-          {/* Section label with hairline */}
-          <div className="flex items-center gap-6 mb-16">
-            <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light shrink-0">Why Patients Choose Illari</p>
-            <div className="flex-1 h-px bg-gold/15" />
-          </div>
-
-          {/* Two-column trust display */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-gold/10">
-
-            {/* Left — Google rating */}
-            <div className="bg-dark p-12 lg:p-16 flex flex-col justify-between">
-              <div>
-                <div className="flex gap-1 mb-8">
-                  {[1, 2, 3, 4, 5].map((i) => (
-                    <svg key={i} className="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg>
-                  ))}
-                </div>
-                <p className="font-serif text-gold text-[clamp(5rem,10vw,8rem)] leading-none mb-2">5.0</p>
-                <p className="text-white/25 text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-10">Perfect Rating on Google</p>
-                <p className="text-white/40 text-sm font-sans font-light leading-[1.8] max-w-sm">
-                  Wicker Park patients rate Illari Aesthetics a perfect five stars. Physician-led care that delivers results worth talking about.
-                </p>
-              </div>
-              <div className="mt-12">
-                <a
-                  href="https://www.google.com/maps/place/Illari+Aesthetics"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gold text-[11px] tracking-[0.25em] uppercase font-sans font-light border-b border-gold/40 pb-1 hover:border-gold transition-colors duration-500"
-                >
-                  Read Reviews on Google
-                </a>
-              </div>
-            </div>
-
-            {/* Right — Trust pillars */}
-            <div className="divide-y divide-gold/10 bg-dark">
-              {[
-                {
-                  value: "30+",
-                  label: "Years of Clinical Experience",
-                  desc: "Dr. Chavez trained at Rush University, stayed on as faculty, and has been practicing medicine since the early 1990s. That depth of training shows in every treatment.",
-                },
-                {
-                  value: "M.D.",
-                  label: "Physician-Led, Not Esthetician-Run",
-                  desc: "Board-certified family physician overseeing every procedure. Medical-grade protocols, not beauty counter advice.",
-                },
-                {
-                  value: "100%",
-                  label: "Personalized Treatment Plans",
-                  desc: "No preset packages. Every plan is built from your skin type, your history, and your actual goals. Not borrowed from a template.",
-                },
-              ].map((item) => (
-                <div key={item.label} className="flex items-start gap-8 p-10 hover:bg-white/[0.02] transition-colors duration-500 group">
-                  <p className="font-serif text-gold text-2xl lg:text-3xl shrink-0 w-14 pt-1">{item.value}</p>
-                  <div>
-                    <p className="text-white/70 text-[11px] tracking-[0.2em] uppercase font-sans font-light mb-3 group-hover:text-white/90 transition-colors duration-500">{item.label}</p>
-                    <p className="text-white/30 text-sm font-sans font-light leading-[1.8]">{item.desc}</p>
-                  </div>
-                </div>
+        <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12 py-32">
+          {/* Google Rating — centered hero block */}
+          <div className="text-center mb-24">
+            <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-10">Why Patients Choose Illari</p>
+            <div className="flex justify-center gap-1.5 mb-6">
+              {[1, 2, 3, 4, 5].map((i) => (
+                <svg key={i} className="w-6 h-6 text-gold" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
               ))}
             </div>
+            <p className="font-serif text-gold text-[clamp(6rem,12vw,10rem)] leading-none mb-4">5.0</p>
+            <p className="text-white/30 text-[11px] tracking-[0.3em] uppercase font-sans font-light mb-6">Perfect Rating on Google</p>
+            <p className="text-white/40 text-sm font-sans font-light leading-[1.8] max-w-md mx-auto mb-10">
+              Wicker Park patients rate Illari Aesthetics a perfect five stars. Physician-led care that delivers results worth talking about.
+            </p>
+            <a
+              href="https://www.google.com/maps/place/Illari+Aesthetics"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold text-[11px] tracking-[0.25em] uppercase font-sans font-light border-b border-gold/40 pb-1 hover:border-gold transition-colors duration-500"
+            >
+              Read Reviews on Google
+            </a>
+          </div>
 
+          {/* Trust pillars — 3-column grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-gold/10">
+            {[
+              {
+                value: "30+",
+                label: "Years of Clinical Experience",
+                desc: "Dr. Chavez trained at Rush University, stayed on as faculty, and has been practicing medicine since the early 1990s. That depth of training shows in every treatment.",
+              },
+              {
+                value: "M.D.",
+                label: "Physician-Led Care",
+                desc: "Board-certified family physician overseeing every procedure. Medical-grade protocols and a doctor's understanding of anatomy, not beauty counter advice.",
+              },
+              {
+                value: "100%",
+                label: "Personalized Plans",
+                desc: "No preset packages. Every plan is built from your skin type, your history, and your actual goals. Not borrowed from a template.",
+              },
+            ].map((item) => (
+              <div key={item.label} className="bg-dark p-10 lg:p-12 text-center group hover:bg-white/[0.02] transition-colors duration-500">
+                <p className="font-serif text-gold text-5xl lg:text-6xl mb-5">{item.value}</p>
+                <p className="text-white/70 text-[11px] tracking-[0.2em] uppercase font-sans font-light mb-4 group-hover:text-white/90 transition-colors duration-500">{item.label}</p>
+                <div className="w-8 h-px bg-gold/30 mx-auto mb-5" />
+                <p className="text-white/30 text-sm font-sans font-light leading-[1.8]">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
