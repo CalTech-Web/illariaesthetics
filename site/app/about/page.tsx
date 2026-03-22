@@ -191,17 +191,7 @@ export default function AboutPage() {
       </section>
 
       {/* Differentiators */}
-      <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="/assets/gallery/about-why-choose.jpg"
-            alt=""
-            fill
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-dark/85" />
-        </div>
-
+      <section className="relative py-32 bg-dark overflow-hidden">
         <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12">
           <div className="text-center mb-20">
             <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-6">Why Choose Us</p>
