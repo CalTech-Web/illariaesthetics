@@ -39,7 +39,7 @@ export default function ContactPage() {
                   src="/assets/gallery/contact-form-bg.avif"
                   alt="Illari Aesthetics treatment room, Wicker Park Chicago"
                   fill
-                  className="object-cover opacity-40"
+                  className="object-cover opacity-20"
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-dark/97 via-dark/88 to-dark/70" />
               </div>
