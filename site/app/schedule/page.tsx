@@ -102,56 +102,73 @@ export default function SchedulePage() {
       </section>
 
       {/* ─── SERVICES TO BOOK ─── */}
-      <section className="bg-marble py-32 linen-texture">
+      <section className="bg-dark py-32 linen-texture-dark">
         <div className="max-w-[1400px] mx-auto px-8 lg:px-12">
           <div className="mb-20">
             <p className="text-gold text-[10px] tracking-[0.3em] uppercase font-sans font-light mb-6">What to Book</p>
-            <h2 className="font-serif text-dark text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05]">
+            <h2 className="font-serif text-ivory text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05]">
               Our Services
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-dark/5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
             {[
               {
                 title: "Skin Care",
                 href: "/skin-care",
+                image: "/assets/gallery/skincare-facial.jpg",
                 items: ["Skin Survey", "Cryoablation", "Chemical Peels", "Microneedling", "Dermaplane", "Surgical Dermatology"],
               },
               {
                 title: "Injectables",
                 href: "/injectables",
+                image: "/assets/gallery/injectable-cosmetic.jpg",
                 items: ["Botox / Xeomin / Dysport", "Hyaluronic Acid Filler", "PRF Treatment"],
               },
               {
                 title: "Weight Loss",
                 href: "/weight-loss",
+                image: "/assets/gallery/weight-loss-new.jpg",
                 items: ["GLP-1 Consultation", "Tirzepatide Program", "Semaglutide Program", "Monthly Check-In"],
               },
               {
                 title: "IV Therapy",
                 href: "/iv-infusion-services",
+                image: "/assets/gallery/iv-therapy-hero.jpg",
                 items: ["IV Infusions (~45 min)", "Injections (~15 min)", "Immunity Drip", "NAD+ Therapy", "Hangover Recovery"],
               },
             ].map((service) => (
-              <div key={service.title} className="bg-marble p-10 flex flex-col group">
-                <p className="font-serif text-dark text-2xl mb-4">{service.title}</p>
-                <div className="w-6 h-px bg-gold/40 mb-6" />
-                <ul className="space-y-2.5 mb-8 flex-1">
-                  {service.items.map((item) => (
-                    <li key={item} className="text-dark/40 text-sm font-sans font-light flex items-center gap-2.5">
-                      <div className="w-1 h-1 rounded-full bg-gold/60 flex-shrink-0" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <Link
-                  href={service.href}
-                  className="text-gold text-[10px] tracking-[0.25em] uppercase font-sans font-light border-b border-gold/30 pb-1 hover:border-gold transition-colors duration-500 self-start"
-                >
-                  Learn More
-                </Link>
-              </div>
+              <Link
+                key={service.title}
+                href={service.href}
+                className="ken-burns group relative aspect-[3/4] overflow-hidden block"
+              >
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/30 to-transparent" />
+                <div className="absolute inset-0 bg-dark/0 group-hover:bg-dark/20 transition-colors duration-500" />
+                <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-10">
+                  <p className="font-serif text-ivory text-2xl lg:text-3xl mb-3 leading-tight translate-y-2 group-hover:translate-y-0 transition-transform duration-700">
+                    {service.title}
+                  </p>
+                  <div className="w-8 h-px bg-gold/40 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <ul className="space-y-1.5 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                    {service.items.map((item) => (
+                      <li key={item} className="text-white/30 text-[10px] font-sans font-light flex items-center gap-2">
+                        <div className="w-1 h-1 rounded-full bg-gold/60 flex-shrink-0" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                  <span className="text-gold text-[10px] tracking-[0.25em] uppercase font-sans font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-150">
+                    Learn More
+                  </span>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
