@@ -46,7 +46,7 @@ export default function Footer() {
                 { label: "All Services", href: "/services" },
                 { label: "Skin Care", href: "/skin-care" },
                 { label: "Injectables", href: "/injectables" },
-                { label: "Weight Loss", href: "/weight-loss-1" },
+                { label: "Weight Loss", href: "/weight-loss" },
                 { label: "IV Therapy", href: "/iv-infusion-services" },
                 { label: "Products", href: "/products" },
               ].map((link) => (

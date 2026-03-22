@@ -178,7 +178,7 @@ export default function HomePage() {
               </Link>
 
               <div className="grid grid-cols-2 gap-1">
-                <Link href="/weight-loss-1" className="ken-burns group relative overflow-hidden block">
+                <Link href="/weight-loss" className="ken-burns group relative overflow-hidden block">
                   <Image
                     src="/assets/gallery/weight-loss-new.jpg"
                     alt="Weight Loss"

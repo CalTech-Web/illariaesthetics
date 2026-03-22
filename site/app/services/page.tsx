@@ -45,7 +45,7 @@ const services = [
   },
   {
     title: "Weight Loss",
-    href: "/weight-loss-1",
+    href: "/weight-loss",
     image: "/assets/gallery/weight-loss-new.jpg",
     description:
       "Physician-supervised GLP-1 weight loss program with tirzepatide and semaglutide. Monthly provider check-ins, tailored medication regimens, and regular weight assessments starting around $350 per month.",

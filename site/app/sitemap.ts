@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/skin-care`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/injectables`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${base}/weight-loss-1`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/weight-loss`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/iv-infusion-services`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/iv-infusions`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/injections`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },

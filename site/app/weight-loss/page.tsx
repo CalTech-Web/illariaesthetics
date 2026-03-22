@@ -4,9 +4,9 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Semaglutide & Ozempic Chicago | Medical Weight Loss by Dr. Chavez",
   description: "Physician-supervised tirzepatide and semaglutide weight loss in Chicago's Wicker Park. Dr. Chavez offers GLP-1 programs with monthly check-ins, tailored dosing, and real physician oversight. Starting at $350/month.",
-  alternates: { canonical: "https://illariaesthetics.com/weight-loss-1" },
+  alternates: { canonical: "https://illariaesthetics.com/weight-loss" },
   openGraph: {
-    url: "https://illariaesthetics.com/weight-loss-1",
+    url: "https://illariaesthetics.com/weight-loss",
     title: "Semaglutide & Ozempic Chicago | Medical Weight Loss by Dr. Chavez",
     description: "Physician-supervised semaglutide and tirzepatide weight loss in Chicago. GLP-1 program with monthly check-ins starting at $350/month.",
     images: [
@@ -86,7 +86,7 @@ const breadcrumbJsonLd = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://illariaesthetics.com" },
-    { "@type": "ListItem", position: 2, name: "Weight Loss", item: "https://illariaesthetics.com/weight-loss-1" },
+    { "@type": "ListItem", position: 2, name: "Weight Loss", item: "https://illariaesthetics.com/weight-loss" },
   ],
 };
 

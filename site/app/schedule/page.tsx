@@ -125,7 +125,7 @@ export default function SchedulePage() {
               },
               {
                 title: "Weight Loss",
-                href: "/weight-loss-1",
+                href: "/weight-loss",
                 items: ["GLP-1 Consultation", "Tirzepatide Program", "Semaglutide Program", "Monthly Check-In"],
               },
               {
