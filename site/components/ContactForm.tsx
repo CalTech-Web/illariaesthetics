@@ -1,10 +1,34 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+
+  /* --- Spam protection state --- */
+  const [honeypot, setHoneypot] = useState("");
+  const [mathQuestion, setMathQuestion] = useState("");
+  const [mathToken, setMathToken] = useState("");
+  const [mathAnswer, setMathAnswer] = useState("");
+
+  const fetchChallenge = useCallback(async () => {
+    try {
+      const res = await fetch("https://forms.caltechweb.com/api/challenge");
+      if (res.ok) {
+        const data = await res.json();
+        setMathQuestion(data.question);
+        setMathToken(data.token);
+        setMathAnswer("");
+      }
+    } catch {
+      /* challenge fetch failed, form still works */
+    }
+  }, []);
+
+  useEffect(() => {
+    fetchChallenge();
+  }, [fetchChallenge]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -23,16 +47,23 @@ export default function ContactForm() {
           email: formData.email,
           message: formData.message,
           source: "contact-page",
+          honeypot,
+          mathToken,
+          mathAnswer,
+          turnstileToken: document.querySelector<HTMLInputElement>("[name=cf-turnstile-response]")?.value || "",
         }),
       });
       if (res.ok) {
         setStatus("success");
         setFormData({ name: "", email: "", message: "" });
+        fetchChallenge();
       } else {
         setStatus("error");
+        fetchChallenge();
       }
     } catch {
       setStatus("error");
+      fetchChallenge();
     }
   };
 
@@ -101,11 +132,44 @@ export default function ContactForm() {
           className="w-full bg-white/5 border border-white/10 focus:border-gold outline-none px-4 py-3 text-white text-sm transition-colors duration-300 placeholder:text-white/20 resize-none"
         />
       </div>
+      {/* Honeypot */}
+      <div className="hidden" aria-hidden="true">
+        <input
+          type="text"
+          name="honeypot"
+          tabIndex={-1}
+          autoComplete="off"
+          value={honeypot}
+          onChange={(e) => setHoneypot(e.target.value)}
+        />
+      </div>
+
+      {/* Math CAPTCHA */}
+      {mathQuestion && (
+        <div>
+          <label htmlFor="math-answer" className="block text-xs tracking-widest uppercase text-white/40 font-sans mb-2">
+            {mathQuestion}
+          </label>
+          <input
+            id="math-answer"
+            type="text"
+            inputMode="numeric"
+            required
+            value={mathAnswer}
+            onChange={(e) => setMathAnswer(e.target.value)}
+            placeholder="Your answer"
+            className="w-full bg-white/5 border border-white/10 focus:border-gold outline-none px-4 py-3 text-white text-sm transition-colors duration-300 placeholder:text-white/20"
+          />
+        </div>
+      )}
+
       {status === "error" && (
         <p className="text-sm text-red-400">
           Something went wrong. Please try again or call us at 773.219.0326.
         </p>
       )}
+      <div className="cf-turnstile" data-sitekey="0x4AAAAAACyyv5z1Eu8aP-_e"></div>
+
       <button
         type="submit"
         disabled={status === "sending"}
